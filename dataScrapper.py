@@ -136,12 +136,27 @@ num_sci_fi_df = sci_fi_df.to_numpy();
 
 # print(num_sci_fi_df)
 
-columns = 8;
-rows = len(sci_fi_df) - 1;
 
-for j in num_sci_fi_df[8]:
-    for i in num_sci_fi_df[rows]:
-        print (num_sci_fi_df[i][j])
+for titles, years, ratings, genres, runtimes, imdb_ratings, metascores ,votes  in num_sci_fi_df:
+    print('<Movie>')
+    print(f"<Id value=\"\">")
+    print(f"<Name value=\"{titles}\">")
+    print(f"<Storyline value=\"\">")
+    print(f"<Year value=\"{years}\">")
+    print(f"<Genre value=\"{genres}\">")
+    print(f"<Type value=\"1\">")
+    print(f"<Episodes value=\"{runtimes}\">")
+    print(f"<Rating value=\"{imdb_ratings}\">")
+    print(f"<Blocks value=\"{runtimes}\">")
+    print(f"<Cult value=\"0\">")
+    print(f"<Special value=\"{ratings}\">")
+    print(f"<Pirate value=\"0\">")  
+    print(f"<Speech value=\"\">")
+    print(f"<ImageTV value=\"{titles}_{years}_tv.png\">")
+    print(f"<ImagePoster value=\"{titles}_{years}_p.png\">")
+    print('</Movie>')
+
+
 
 
 
