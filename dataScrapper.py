@@ -1,7 +1,6 @@
 # part of the code is taken from https://www.freecodecamp.org/news/web-scraping-sci-fi-movies-from-imdb-with-python/
 #pip install Pylance
 #from imdb import Cinemagoer #pip install Cinemagoer
-import sys #needed to write on notepad
 from requests import get  #pip install requests
 from bs4 import BeautifulSoup #pip install beautifulsoup4
 from warnings import warn
@@ -25,6 +24,7 @@ imdb_ratings = []
 imdb_ratings_standardized = []
 metascores = []
 votes = []
+movieorseries = []
 
 for page in pages:
    
@@ -44,61 +44,63 @@ for page in pages:
     
     #parse the content of current iteration of request
     page_html = BeautifulSoup(response.text, 'html.parser')
-      
     movie_containers = page_html.find_all('div', class_ = 'lister-item mode-advanced')
-
     #extract the 50 movies for that page
     for container in movie_containers:
-       
-        #conditional for all with metascore
-       if container.find('div', class_ = 'ratings-metascore') is not None:
 
-           #title
-            title = container.h3.a.text
-            titles.append(title)
+        #title
+        title = container.h3.a.text
+        titles.append(title)
 
-            if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None:
-            
-                #year released
-                year = container.h3.find('span', class_= 'lister-item-year text-muted unbold').text # remove the parentheses around the year and make it an integer
-                years.append(year)
+        if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None:
+        
+            #year released
+            year = container.h3.find('span', class_= 'lister-item-year text-muted unbold').text # remove the parentheses around the year and make it an integer
+            years.append(year)
 
-            else:
-                years.append(None) # each of the additional if clauses are to handle type None data, replacing it with an empty string so the arrays are of the same length at the end of the scraping
+        else:
+            years.append(None) # each of the additional if clauses are to handle type None data, replacing it with an empty string so the arrays are of the same length at the end of the scraping
 
-            if container.p.find('span', class_ = 'certificate') is not None:
-                #rating
-                rating = container.p.find('span', class_= 'certificate').text
-                ratings.append(rating)
+        if container.p.find('span', class_ = 'certificate') is not None:
+            #rating
+            rating = container.p.find('span', class_= 'certificate').text
+            ratings.append(rating)
 
-            else:
-                ratings.append("")
+        else:
+            ratings.append("")
 
-            if container.p.find('span', class_ = 'genre') is not None:
-                #genre
-                genre = container.p.find('span', class_ = 'genre').text.replace("\n", "").rstrip().split(',') # remove the whitespace character, strip, and split to create an array of genres
-                genres.append(genre)
-          
-            else:
-                genres.append("")
+        if container.p.find('span', class_ = 'genre') is not None:
+            #genre
+            genre = container.p.find('span', class_ = 'genre').text.replace("\n", "").rstrip().split(',') # remove the whitespace character, strip, and split to create an array of genres
+            genres.append(genre)
+        
+        else:
+            genres.append("")
 
-            if container.p.find('span', class_ = 'runtime') is not None:
+        if container.p.find('span', class_ = 'runtime') is not None:
 
-                #runtime
-                time = int(container.p.find('span', class_ = 'runtime').text.replace(" min", "")) # remove the minute word from the runtime and make it an integer
-                runtimes.append(time)
+            #runtime
+            time = int(container.p.find('span', class_ = 'runtime').text.replace(" min", "")) # remove the minute word from the runtime and make it an integer
+            runtimes.append(time)
 
-            else:
-                runtimes.append(None)
+        else:
+            runtimes.append(None)
 
-            if float(container.strong.text) is not None:
-                #IMDB ratings
-                imdb = float(container.strong.text) # non-standardized variable
-                imdb_ratings.append(imdb)
+        if (container.strong) is not None:
+            #IMDB ratings
+            imdb = float(container.strong.text) # non-standardized variable
+            imdb_ratings.append(imdb)
 
-            else:
-                imdb_ratings.append(None)
+        else:
+            imdb_ratings.append(None)
 
+        if container.find('span', class_ = 'metascore') is not None:
+            movieorseries.append("I am a movie")
+
+        else:
+            movieorseries.append("I am a series")
+
+        if container.find('span', attrs = {'name':'nv'}) is not None:
             if container.find('span', attrs = {'name':'nv'})['data-value'] is not None:
                 #Number of votes
                 vote = int(container.find('span', attrs = {'name':'nv'})['data-value'])
@@ -107,53 +109,9 @@ for page in pages:
             else:
                 votes.append(None)
 
-# for title in titles:
-#     print('<Movie>')
-#     print(f"<Id value=\"\">")
-#     print(f"<Name value=\"{title}\">")
-#     print(f"<Storyline value=\"\">")
-#     print(f"<Year value=\"2022\">")
-#     print(f"<Genre value=\"\">")
-#     print(f"<Type value=\"\">")
+titleandtype = {}
 
-sci_fi_df = pd.DataFrame({'movie': titles,
-                      'year': years,
-                      'rating': ratings,
-                      'genre': genres,
-                      'runtime_min': runtimes,
-                      'imdb': imdb_ratings,
-                      'votes': votes}
-                      )
-num_sci_fi_df = sci_fi_df.to_numpy();
+for title in titles:
+    titleandtype[title] = movieorseries[titles.index(title)]
 
-# print(num_sci_fi_df)
-
-with open('Output.txt', 'w') as sys.stdout:
-    for titles, years, ratings, genres, runtimes, imdb_ratings, votes  in num_sci_fi_df:
-        print('<Movie>')
-        print(f"<Id value=\"\">")
-        print(f"<Name value=\"{titles}\">")
-        print(f"<Storyline value=\"\">")
-        print(f"<Year value=\"{years}\">")
-        print(f"<Genre value=\"{genres}\">")
-        print(f"<Type value=\"1\">")
-        print(f"<Episodes value=\"{runtimes}\">")
-        print(f"<Rating value=\"{imdb_ratings}\">")
-        print(f"<Blocks value=\"{runtimes}\">")
-        print(f"<Cult value=\"0\">")
-        print(f"<Special value=\"{ratings}\">")
-        print(f"<Pirate value=\"0\">")  
-        print(f"<Speech value=\"\">")
-        print(f"<ImageTV value=\"{titles}_{years}_tv.png\">")
-        print(f"<ImagePoster value=\"{titles}_{years}_p.png\">")
-        print('</Movie>')
-
-
-
-
-
-    
-
-# x = len(sci_fi_df) 
-# print("arrayLength:")
-# print(x)
+print(titleandtype)
