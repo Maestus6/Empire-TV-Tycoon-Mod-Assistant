@@ -1,6 +1,7 @@
 # part of the code is taken from https://www.freecodecamp.org/news/web-scraping-sci-fi-movies-from-imdb-with-python/
 #pip install Pylance
 #from imdb import Cinemagoer #pip install Cinemagoer
+import sys #needed to write on notepad
 from requests import get  #pip install requests
 from bs4 import BeautifulSoup #pip install beautifulsoup4
 from warnings import warn
@@ -98,14 +99,6 @@ for page in pages:
             else:
                 imdb_ratings.append(None)
 
-            if container.find('span', class_ = 'metascore').text is not None:
-                #Metascore
-                m_score = int(container.find('span', class_ = 'metascore').text) # make it an integer
-                metascores.append(m_score)
-
-            else:
-                metascores.append(None)
-
             if container.find('span', attrs = {'name':'nv'})['data-value'] is not None:
                 #Number of votes
                 vote = int(container.find('span', attrs = {'name':'nv'})['data-value'])
@@ -129,36 +122,37 @@ sci_fi_df = pd.DataFrame({'movie': titles,
                       'genre': genres,
                       'runtime_min': runtimes,
                       'imdb': imdb_ratings,
-                      'metascore': metascores,
                       'votes': votes}
                       )
 num_sci_fi_df = sci_fi_df.to_numpy();
 
 # print(num_sci_fi_df)
 
-
-for titles, years, ratings, genres, runtimes, imdb_ratings, metascores ,votes  in num_sci_fi_df:
-    print('<Movie>')
-    print(f"<Id value=\"\">")
-    print(f"<Name value=\"{titles}\">")
-    print(f"<Storyline value=\"\">")
-    print(f"<Year value=\"{years}\">")
-    print(f"<Genre value=\"{genres}\">")
-    print(f"<Type value=\"1\">")
-    print(f"<Episodes value=\"{runtimes}\">")
-    print(f"<Rating value=\"{imdb_ratings}\">")
-    print(f"<Blocks value=\"{runtimes}\">")
-    print(f"<Cult value=\"0\">")
-    print(f"<Special value=\"{ratings}\">")
-    print(f"<Pirate value=\"0\">")  
-    print(f"<Speech value=\"\">")
-    print(f"<ImageTV value=\"{titles}_{years}_tv.png\">")
-    print(f"<ImagePoster value=\"{titles}_{years}_p.png\">")
-    print('</Movie>')
-
-
+with open('Output.txt', 'w') as sys.stdout:
+    for titles, years, ratings, genres, runtimes, imdb_ratings, votes  in num_sci_fi_df:
+        print('<Movie>')
+        print(f"<Id value=\"\">")
+        print(f"<Name value=\"{titles}\">")
+        print(f"<Storyline value=\"\">")
+        print(f"<Year value=\"{years}\">")
+        print(f"<Genre value=\"{genres}\">")
+        print(f"<Type value=\"1\">")
+        print(f"<Episodes value=\"{runtimes}\">")
+        print(f"<Rating value=\"{imdb_ratings}\">")
+        print(f"<Blocks value=\"{runtimes}\">")
+        print(f"<Cult value=\"0\">")
+        print(f"<Special value=\"{ratings}\">")
+        print(f"<Pirate value=\"0\">")  
+        print(f"<Speech value=\"\">")
+        print(f"<ImageTV value=\"{titles}_{years}_tv.png\">")
+        print(f"<ImagePoster value=\"{titles}_{years}_p.png\">")
+        print('</Movie>')
 
 
+
+
+
+    
 
 # x = len(sci_fi_df) 
 # print("arrayLength:")
