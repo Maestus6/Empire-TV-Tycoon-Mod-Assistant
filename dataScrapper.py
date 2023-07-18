@@ -11,7 +11,7 @@ import seaborn as sns #install seaborn
 
 #ia = Cinemagoer() #not going use it further
 
-pages = np.arange(1, 100, 50) #entry (start, stop), lines between each entry 
+pages = np.arange(1, 5, 50) #entry (start, stop), lines between each entry 
 headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandarin
 
 #initialize empty lists to store the variables scraped
@@ -38,7 +38,8 @@ for page in pages:
 
     #throw warning for status codes that are not 200
     if response.status_code != 200:
-       warn('Request: {}; Status code: {}'.format(requests, response.status_code))
+       #warn('Request: {}; Status code: {}'.format(requests, response.status_code)) gets issues with requests
+       print ("beep boop, not 200!!!")
     
     #parse the content of current iteration of request
     page_html = BeautifulSoup(response.text, 'html.parser')
@@ -112,3 +113,38 @@ for page in pages:
 
             else:
                 votes.append(None)
+
+# for title in titles:
+#     print('<Movie>')
+#     print(f"<Id value=\"\">")
+#     print(f"<Name value=\"{title}\">")
+#     print(f"<Storyline value=\"\">")
+#     print(f"<Year value=\"2022\">")
+#     print(f"<Genre value=\"\">")
+#     print(f"<Type value=\"\">")
+
+sci_fi_df = pd.DataFrame({'movie': titles,
+                      'year': years,
+                      'rating': ratings,
+                      'genre': genres,
+                      'runtime_min': runtimes,
+                      'imdb': imdb_ratings,
+                      'metascore': metascores,
+                      'votes': votes}
+                      )
+num_sci_fi_df = sci_fi_df.to_numpy();
+
+# print(num_sci_fi_df)
+
+columns = 8;
+rows = len(sci_fi_df) - 1;
+
+for j in num_sci_fi_df[8]:
+    for i in num_sci_fi_df[rows]:
+        print (num_sci_fi_df[i][j])
+
+
+
+# x = len(sci_fi_df) 
+# print("arrayLength:")
+# print(x)
