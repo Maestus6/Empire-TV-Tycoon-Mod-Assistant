@@ -9,9 +9,10 @@ from time import sleep
 from random import randint
 import numpy as np, pandas as pd
 import seaborn as sns #install seaborn
-from genreFunctions import *
-from runtimeFunctions import *
-from yearFunctions import *
+from Functions.genreFunctions import *
+from Functions.runtimeFunctions import *
+from Functions.yearFunctions import *
+from Functions.outputFunctions import *
 
 #ia = Cinemagoer() #not going use it further
 
@@ -77,16 +78,10 @@ for page in pages:
         if container.p.find('span', class_ = 'genre') is not None:
             
             genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres  
-            print(f"genresList: {genresList}")          
             genresNoWhiteSpace = genreSpaceFix(genresList)
-            print(f"genreSpaceFix: {genresNoWhiteSpace}")
             genresFormated = genreValidator(genresNoWhiteSpace)
-            print(f"genreValidator: {genresFormated}")
-            genrePicked = []
             genrePicked = genrePicker(genresFormated)
-            print(f"genrePicker: {genrePicked}")
             genreCompleted = str(genreStrToInt(genrePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
-            print(f"genreStrToInt: {genreCompleted}")
             genres.append(genreCompleted)
         
         else:
@@ -120,9 +115,6 @@ for page in pages:
 
 titleandtype = {}
 
-for title in titles:
-    titleandtype[title] = movieorseries[titles.index(title)]
-
 
 
 pdOutputFull = pd.DataFrame({'movie': titles,
@@ -133,7 +125,6 @@ pdOutputFull = pd.DataFrame({'movie': titles,
                       'imdb': imdb_ratings}
                       )
 numOutputFull = pdOutputFull.to_numpy()
-
 
 
 with open('Output.txt', 'w') as sys.stdout:

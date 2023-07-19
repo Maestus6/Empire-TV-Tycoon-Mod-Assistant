@@ -2,7 +2,7 @@
 
 Here are some useful notes for future development:
 
-#Format for XML files are:
+<!-- Format for XML files are: -->
 
 <!-- XML MOVIES #1.5.0#
 ----- [IMAGES] -----
@@ -39,7 +39,7 @@ EXAMPLE OF MODIFYING THE FIRST MOVIE OF THE GAME ID=500 (CHANGED THE STORYLINE A
 - WHEN ADDING A NEW MOVIE, YOU NEED TO INCLUDE ALL THE FIELDS EVEN IF SOME OF THEM(STORYLINE,SPEECH AND IMAGES) ARE LEFT BLANK.
 --> 
  
-<xml>
+<!-- <xml>
 	<Movies>
 		<Movie>
 			<Id value="500">
@@ -88,38 +88,6 @@ EXAMPLE OF MODIFYING THE FIRST MOVIE OF THE GAME ID=500 (CHANGED THE STORYLINE A
 		</Movie>
 		
 	</Movies>
-</xml>
+</xml> -->
 
 
-# Every genre available for movies:
-Short
-Drama
-Comedy
-Documentary
-Adult
-Action
-Romance
-Thriller
-Animation
-Family
-Crime
-Horror
-Music
-Adventure
-Fantasy
-Sci-Fi
-Mystery
-Biography
-Sport
-History
-Musical
-Western
-War
-Reality-TV
-News
-Talk-Show
-Game-Show
-Film-Noir
-Lifestyle
-Experimental
-Commercial
