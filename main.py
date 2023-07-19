@@ -103,7 +103,7 @@ for page in pages:
         if (container.strong) is not None:
             #IMDB ratings
             imdb = float(container.strong.text) # non-standardized variable
-            imdb = imdb / 10
+            imdb = round((imdb / 10), 2) #From 1/100 Point System to 0.00/1.00, formatting to max two decimals
             imdb_ratings.append(imdb)
 
         else:
