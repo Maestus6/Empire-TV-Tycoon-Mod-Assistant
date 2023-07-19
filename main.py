@@ -9,12 +9,16 @@ from random import randint
 import numpy as np 
 import pandas as pd
 import seaborn as sns #install seaborn
+from PIL import Image #pip install Pillow
+import shutil
+import urllib
 from Functions.genreFunctions import *
 from Functions.runtimeFunctions import *
 from Functions.yearFunctions import *
 from Functions.outputFunctions import *
 from Functions.ratingFunctions import *
-from 
+from Functions.bannerFunctions import *
+
 
 #ia = Cinemagoer() #not going use it further
 
@@ -117,6 +121,14 @@ for page in pages:
         else:
             movieorseries.append("2")
 
+
+        #get and download Banners, working
+        if container.find(class_ = 'loadlate') is not None:
+            banner = container.find(class_ = 'loadlate')
+            bannerUrl = bannerCodeClean(banner)
+            downloadBanner(bannerUrl,titles, years)
+            print(bannerUrl)
+
         # Not needed, but keeping it for future references and unique cases like this
         # if container.find('span', attrs = {'name':'nv'})['data-value'] is not None:
         #     #Number of votes
@@ -127,11 +139,7 @@ for page in pages:
 
 
 
-        # ##to get Banners, working
-        if container.find(class_ = 'loadlate') is not None:
-            banner = container.find(class_ = 'loadlate')
-            bannerUrl = 
-            print(banner)
+
 
         # else:
         #     bannerUrl.append(None)
