@@ -1,5 +1,7 @@
 # Empire-TV-Tycoon-Mod-Assistant
 
+Here are some useful notes for future development:
+
 #Format for XML files are:
 
 <!-- XML MOVIES #1.5.0#
@@ -87,3 +89,37 @@ EXAMPLE OF MODIFYING THE FIRST MOVIE OF THE GAME ID=500 (CHANGED THE STORYLINE A
 		
 	</Movies>
 </xml>
+
+
+# Every genre available for movies:
+Short
+Drama
+Comedy
+Documentary
+Adult
+Action
+Romance
+Thriller
+Animation
+Family
+Crime
+Horror
+Music
+Adventure
+Fantasy
+Sci-Fi
+Mystery
+Biography
+Sport
+History
+Musical
+Western
+War
+Reality-TV
+News
+Talk-Show
+Game-Show
+Film-Noir
+Lifestyle
+Experimental
+Commercial
