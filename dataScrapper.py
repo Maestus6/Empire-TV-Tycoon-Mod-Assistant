@@ -70,9 +70,13 @@ for page in pages:
             ratings.append("")
 
         if container.p.find('span', class_ = 'genre') is not None:
-            #genre
-            genre = container.p.find('span', class_ = 'genre').text.replace("\n", "").rstrip().split(',') # remove the whitespace character, strip, and split to create an array of genres
-            genres.append(genre)
+            #genre Temp solution by Anxious
+            genreslist = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres
+            genresnowhitespace = []
+            for genre in genreslist:
+                genre = genre.strip()
+                genresnowhitespace.append(genre)
+            genres.append(genresnowhitespace)
         
         else:
             genres.append("")
