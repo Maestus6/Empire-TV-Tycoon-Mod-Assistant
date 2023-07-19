@@ -8,16 +8,16 @@ def genreSpaceFix(genreslist):
 
 
 def genreValidator(genres):
-    validgenres = ['Comedy', 'Drama', 'Sci-Fi', 'Documentary', 'Horror', 'Western', 'Sport', 'Fantasy', 'Musical', 'Romance', 'Action', 'Gameshow', 'Adult', 'Adventure', 'Mystery', 
+    validGenres = ['Comedy', 'Drama', 'Sci-Fi', 'Documentary', 'Horror', 'Western', 'Sport', 'Fantasy', 'Musical', 'Romance', 'Action', 'Gameshow', 'Adult', 'Adventure', 'Mystery', 
                    'Thriller', 'War', 'Animation']
-    genresetsvalid = []
+    genreSetsValid = []
 
-    for genreset in genres:
-        genresetvalid = []
-        for genre in genreset:
-            if genre in validgenres:
-                genresetvalid.append(genre)
-        genresetsvalid.append(genresetvalid)
+    for genreSet in genres:
+        genreSetsValid = []
+        for genre in genreSet:
+            if genre in validGenres:
+                genreSetsValid.append(genre)
+        genreSetsValid.append(genreSetsValid)
 
 def genrePicker(genre):
     
@@ -88,7 +88,7 @@ def genrePicker(genre):
     if(GameShow == 1):  ##Start of certainity
         return 'Gameshow'
     elif(Documentary == 1):
-        return 'Documentry'
+        return 'Documentary'
     elif(Music == 1):
         return 'Music' ##End of certainity
     
@@ -106,7 +106,7 @@ def genrePicker(genre):
         if(Fantasy == 1):
             return 'Fantasy'
         elif(SciFi == 1):
-            return 'SciFi'
+            return 'Sci-Fi'
         elif(Western == 1):
             return 'Western'
         elif(Action == 1):
@@ -137,7 +137,7 @@ def genrePicker(genre):
     elif(Sport == 1): ##Rest of the main Genres
         return 'Sport'
     elif(SciFi == 1):
-        return 'SciFi'
+        return 'Sci-Fi'
     elif(Western == 1): 
         if(Horror == 1):
             return 'Horror'
@@ -156,6 +156,33 @@ def genrePicker(genre):
     elif(Comedy == 1):
         return 'Comedy' ##End of sad IF Block and function
     
+def genreStrToInt(genreStr):
+    for oneGenre in genreStr:
+        match oneGenre:
+            case "Comedy":
+                return 0
+            case "Drama":
+                return 1
+            case "Sci-Fi":
+                return 2
+            case "Documentary":
+                return 3
+            case "Horror":
+                return 4
+            case "Western":
+                return 5
+            case "Sport":
+                return 6
+            case "Fantasy":
+                return 7
+            case "Musical":
+                return 8
+            case "Romance":
+                return 9
+            case "Action":
+                return 10
+            case "Gameshow":
+                return 11
     
     
 

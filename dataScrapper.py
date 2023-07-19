@@ -72,10 +72,11 @@ for page in pages:
 
         if container.p.find('span', class_ = 'genre') is not None:
             #genre Temp solution by Anxious
-            genreslist = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres            
-            genresnowhitespace = genreSpaceFix(genreslist)
-            genresFixed = genreValidator(genresnowhitespace)
-            genreCompleted = genrePicker(genresFixed)
+            genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres            
+            genresNoWhiteSpace = genreSpaceFix(genresList)
+            genresFormated = genreValidator(genresNoWhiteSpace)
+            genrePicked = genrePicker(genresFormated)
+            genreCompleted = genreStrToInt(genrePicked)
             genres.append(genreCompleted)
         
         else:
