@@ -85,7 +85,7 @@ for page in pages:
             #rating
             rating = container.p.find('span', class_= 'certificate').text
             ratingFound = ratingFinder(genresAnimation, rating)
-            ratings.append(rating)
+            ratings.append(ratingFound)
 
         else:
             ratings.append("")

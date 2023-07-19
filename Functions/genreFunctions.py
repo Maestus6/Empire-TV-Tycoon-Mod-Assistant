@@ -8,7 +8,7 @@ def genreSpaceFix(genreslist):
     return genresnowhitespace
 
 
-def animationCheck (genreList)
+def animationCheck (genreList):
     if any("Animation" in s for s in genreList):
         return 1
     else:
