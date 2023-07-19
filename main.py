@@ -11,6 +11,7 @@ import numpy as np, pandas as pd
 import seaborn as sns #install seaborn
 from genreFunctions import *
 from runtimeFunctions import *
+from yearFunctions import *
 
 #ia = Cinemagoer() #not going use it further
 
@@ -59,7 +60,8 @@ for page in pages:
         
             #year released
             year = container.h3.find('span', class_= 'lister-item-year text-muted unbold').text # remove the parentheses around the year and make it an integer
-            years.append(year)
+            yearFixed = yearFormatter(year)
+            years.append(yearFixed)
 
         else:
             years.append(None) # each of the additional if clauses are to handle type None data, replacing it with an empty string so the arrays are of the same length at the end of the scraping
