@@ -93,8 +93,7 @@ for page in pages:
 
             #runtime
             time = int(container.p.find('span', class_ = 'runtime').text.replace(" min", "")) # remove the minute word from the runtime and make it an integer
-            fixedTime = runtimeFormatter(time)
-            print(f"runtimeFormatter: {fixedTime}")
+            fixedTime = str(runtimeFormatter(time)) #Formatting it to str, to prevent future code to treat int like float while printing
             runtimes.append(fixedTime)
 
         else:
