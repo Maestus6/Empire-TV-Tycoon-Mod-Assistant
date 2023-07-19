@@ -12,14 +12,10 @@ def genreValidator(genres):
     validGenres = ['Comedy', 'Drama', 'Sci-Fi', 'Documentary', 'Horror', 'Western', 'Sport', 'Fantasy', 'Musical', 'Romance', 'Action', 'Gameshow', 'Adult', 'Adventure', 'Mystery', 
                    'Thriller', 'War', 'Animation']
     genreSetsValid = []
-
     for genreSet in genres:
-        genreSetsValid = []
-        for genre in genreSet:
-            if genre in validGenres:
-                genreSetsValid.append(genre)
-        genreSetsValid.append(genreSetsValid)
-
+        if genreSet in validGenres:
+            genreSetsValid.append(genreSet)
+        #genreSetsValid.append(genreSetsValid)
     return genreSetsValid
 
 def genrePicker(genre):
@@ -161,34 +157,33 @@ def genrePicker(genre):
         return 'Something went wrong!'
     
 def genreStrToInt(genreStr):
-    for oneGenre in genreStr:
-        match oneGenre:
-            case "Comedy":
-                return 0
-            case "Drama":
-                return 1
-            case "Sci-Fi":
-                return 2
-            case "Documentary":
-                return 3
-            case "Horror":
-                return 4
-            case "Western":
-                return 5
-            case "Sport":
-                return 6
-            case "Fantasy":
-                return 7
-            case "Musical":
-                return 8
-            case "Romance":
-                return 9
-            case "Action":
-                return 10
-            case "Gameshow":
-                return 11
-            case "Something went wrong!":
-                return "Something went wrong!"
+    match genreStr:
+        case "Comedy":
+            return 0
+        case "Drama":
+            return 1
+        case "Sci-Fi":
+            return 2
+        case "Documentary":
+            return 3
+        case "Horror":
+            return 4
+        case "Western":
+            return 5
+        case "Sport":
+            return 6
+        case "Fantasy":
+            return 7
+        case "Musical":
+            return 8
+        case "Romance":
+            return 9
+        case "Action":
+            return 10
+        case "Gameshow":
+            return 11
+        case "Something went wrong!":
+            return "Something went wrong!"
     
     
 

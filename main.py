@@ -77,15 +77,16 @@ for page in pages:
         if container.p.find('span', class_ = 'genre') is not None:
             
             genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres  
-            #print(f"genresList: {genresList}")          
+            print(f"genresList: {genresList}")          
             genresNoWhiteSpace = genreSpaceFix(genresList)
-            #print(f"genreSpaceFix: {genresNoWhiteSpace}")
+            print(f"genreSpaceFix: {genresNoWhiteSpace}")
             genresFormated = genreValidator(genresNoWhiteSpace)
-            #print(f"genreValidator: {genresFormated}")
+            print(f"genreValidator: {genresFormated}")
+            genrePicked = []
             genrePicked = genrePicker(genresFormated)
-            #print(f"genrePicker: {genrePicked}")
-            genreCompleted = genreStrToInt(genrePicked)
-            #print(f"genreStrToInt: {genreCompleted}")
+            print(f"genrePicker: {genrePicked}")
+            genreCompleted = str(genreStrToInt(genrePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
+            print(f"genreStrToInt: {genreCompleted}")
             genres.append(genreCompleted)
         
         else:
