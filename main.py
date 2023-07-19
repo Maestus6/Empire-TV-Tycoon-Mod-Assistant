@@ -14,6 +14,7 @@ from Functions.runtimeFunctions import *
 from Functions.yearFunctions import *
 from Functions.outputFunctions import *
 from Functions.ratingFunctions import *
+from 
 
 #ia = Cinemagoer() #not going use it further
 
@@ -54,6 +55,7 @@ for page in pages:
     #extract the 50 movies for that page
     for container in movie_containers:
 
+        #print(container)
         #title
         title = container.h3.a.text
         titles.append(title)
@@ -115,13 +117,35 @@ for page in pages:
         else:
             movieorseries.append("2")
 
+        # Not needed, but keeping it for future references and unique cases like this
+        # if container.find('span', attrs = {'name':'nv'})['data-value'] is not None:
+        #     #Number of votes
+        #     vote = int(container.find('span', attrs = {'name':'nv'})['data-value'])
+        #     votes.append(vote)
+        # else:
+        #     votes.append(None)
+
+
+
+        # ##to get Banners, working
+        if container.find(class_ = 'loadlate') is not None:
+            banner = container.find(class_ = 'loadlate')
+            bannerUrl = 
+            print(banner)
+
+        # else:
+        #     bannerUrl.append(None)
+
+        #to get Storyline aka movie desc, not working
+        # if container.find('p', class_ = 'text-muted') is not None:
+        #     storylineValue = container.find('p', class_ = 'text-muted')
+        #     print(storylineValue)
+
+
+
+
 
 numOutputFull = dataFramer(titles, years, ratings, genres, runtimes, imdb_ratings)
-outputResults(numOutputFull) ##Output
+outputResults(numOutputFull)
 
-
-
-
-
-# print(titleandtype)
-
+##End
