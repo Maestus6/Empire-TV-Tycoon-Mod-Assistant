@@ -76,6 +76,8 @@ for page in pages:
             for genre in genreslist:
                 genre = genre.strip()
                 genresnowhitespace.append(genre)
+            
+
             genres.append(genresnowhitespace)
         
         else:
@@ -119,3 +121,103 @@ for title in titles:
     titleandtype[title] = movieorseries[titles.index(title)]
 
 print(titleandtype)
+
+# print(titleandtype)
+
+def genreCounter(arr):
+    Short = 0
+    Drama = 0
+    Comedy = 0
+    Documentary = 0
+    Adult = 0
+    Action = 0
+    Romance = 0
+    Thriller = 0
+    Animation = 0
+    Family = 0
+    Crime = 0
+    Horror = 0
+    Music = 0
+    Adventure = 0
+    Fantasy = 0
+    SciFi = 0
+    Mystery = 0
+    Biography = 0
+    Sport = 0
+    History = 0
+    Musical = 0
+    Western = 0
+    War = 0
+    RealityTV = 0
+    News = 0
+    TalkShow = 0
+    GameShow = 0
+    FilmNoir = 0
+    Lifestyle = 0
+    Experimental = 0
+    Commercial = 0
+
+    for oneGenre in genre:
+        match oneGenre:
+            case "Short":
+                Short+= 1
+            case "Drama":
+                Drama+= 1
+            case "Comedy":
+                Comedy+= 1
+            case "Documentary":
+                Documentary+= 1
+            case "Adult":
+                Adult+= 1
+            case "Action":
+                Action+= 1
+            case "Romance":
+                Romance+= 1
+            case "Thriller":
+                Thriller+= 1
+            case "Animation":
+                Animation+= 1
+            case "Family":
+                Family+= 1
+            case "Crime":
+                Crime+= 1
+            case "Horror":
+                Horror+= 1
+            case "Music":
+                Music+= 1
+            case "Adventure":
+                Adventure+= 1
+            case "Fantasy":
+                Fantasy+= 1
+            case "Sci-Fi":
+                SciFi+= 1
+            case "Mystery":
+                Mystery+= 1
+            case "Biography":
+                Biography+= 1
+            case "Sport":
+                Sport+= 1
+            case "History":
+                History+= 1
+            case "Musical":
+                Musical+= 1
+            case "Western":
+                Western+= 1
+            case "War":
+                War+= 1
+            case "Reality-TV":
+                RealityTV+= 1
+            case "News":
+                News+= 1
+            case "Talk-Show":
+                TalkShow+= 1
+            case "Game-Show":
+                GameShow+= 1
+            case "Film-Noir":
+                FilmNoir+= 1
+            case "Lifestyle":
+                Lifestyle+= 1
+            case "Experimental":
+                Experimental+= 1
+            case "Commercial":
+                Commercial+= 1
