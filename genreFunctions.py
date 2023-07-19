@@ -12,16 +12,15 @@ def genreValidator(genres):
     validGenres = ['Comedy', 'Drama', 'Sci-Fi', 'Documentary', 'Horror', 'Western', 'Sport', 'Fantasy', 'Musical', 'Romance', 'Action', 'Gameshow', 'Adult', 'Adventure', 'Mystery', 
                    'Thriller', 'War', 'Animation']
     genreSetsValid = []
-    genreSetsValidBack = []
 
     for genreSet in genres:
         genreSetsValid = []
         for genre in genreSet:
             if genre in validGenres:
                 genreSetsValid.append(genre)
-        genreSetsValidBack.append(genreSetsValid)
+        genreSetsValid.append(genreSetsValid)
 
-    return genreSetsValidBack
+    return genreSetsValid
 
 def genrePicker(genre):
     
