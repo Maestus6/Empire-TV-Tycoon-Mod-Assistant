@@ -10,6 +10,7 @@ from random import randint
 import numpy as np, pandas as pd
 import seaborn as sns #install seaborn
 from genreFunctions import *
+from runtimeFunctions import *
 
 #ia = Cinemagoer() #not going use it further
 
@@ -92,7 +93,9 @@ for page in pages:
 
             #runtime
             time = int(container.p.find('span', class_ = 'runtime').text.replace(" min", "")) # remove the minute word from the runtime and make it an integer
-            runtimes.append(time)
+            fixedTime = runtimeFormatter(time)
+            print(f"runtimeFormatter: {fixedTime}")
+            runtimes.append(fixedTime)
 
         else:
             runtimes.append(None)
@@ -100,6 +103,7 @@ for page in pages:
         if (container.strong) is not None:
             #IMDB ratings
             imdb = float(container.strong.text) # non-standardized variable
+            imdb = imdb / 10
             imdb_ratings.append(imdb)
 
         else:

@@ -1,5 +1,5 @@
 
-#Temp empty space solution by Anxious
+#Temp empty space solution
 def genreSpaceFix(genreslist):
     genresnowhitespace = []
     for genre in genreslist:
@@ -12,15 +12,16 @@ def genreValidator(genres):
     validGenres = ['Comedy', 'Drama', 'Sci-Fi', 'Documentary', 'Horror', 'Western', 'Sport', 'Fantasy', 'Musical', 'Romance', 'Action', 'Gameshow', 'Adult', 'Adventure', 'Mystery', 
                    'Thriller', 'War', 'Animation']
     genreSetsValid = []
+    genreSetsValidBack = []
 
     for genreSet in genres:
         genreSetsValid = []
         for genre in genreSet:
             if genre in validGenres:
                 genreSetsValid.append(genre)
-        genreSetsValid.append(genreSetsValid)
+        genreSetsValidBack.append(genreSetsValid)
 
-    return genreSetsValid
+    return genreSetsValidBack
 
 def genrePicker(genre):
     
@@ -87,7 +88,6 @@ def genrePicker(genre):
 
 
 ##Sorry for the big IF block, let's change this in the future if we can, it is not efficient at all --Maestus
-
     if(GameShow == 1):  ##Start of certainity
         return 'Gameshow'
     elif(Documentary == 1):
