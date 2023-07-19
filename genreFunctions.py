@@ -1,10 +1,11 @@
 
-
+#Temp empty space solution by Anxious
 def genreSpaceFix(genreslist):
     genresnowhitespace = []
     for genre in genreslist:
         genre = genre.strip()
         genresnowhitespace.append(genre)
+    return genresnowhitespace
 
 
 def genreValidator(genres):
@@ -18,6 +19,8 @@ def genreValidator(genres):
             if genre in validGenres:
                 genreSetsValid.append(genre)
         genreSetsValid.append(genreSetsValid)
+
+    return genreSetsValid
 
 def genrePicker(genre):
     
@@ -155,6 +158,8 @@ def genrePicker(genre):
         return 'Drama'
     elif(Comedy == 1):
         return 'Comedy' ##End of sad IF Block and function
+    else:
+        return 'Something went wrong!'
     
 def genreStrToInt(genreStr):
     for oneGenre in genreStr:
@@ -183,6 +188,8 @@ def genreStrToInt(genreStr):
                 return 10
             case "Gameshow":
                 return 11
+            case "Something went wrong!":
+                return "Something went wrong!"
     
     
 

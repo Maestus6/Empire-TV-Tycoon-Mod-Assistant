@@ -72,14 +72,17 @@ for page in pages:
             ratings.append("")
 
         if container.p.find('span', class_ = 'genre') is not None:
-            #genre Temp solution by Anxious
-            genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres            
+            
+            genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres  
+            print(f"genresList: {genresList}")          
             genresNoWhiteSpace = genreSpaceFix(genresList)
-            print("noWhiteSpace:" ge)
+            print(f"genreSpaceFix: {genresNoWhiteSpace}")
             genresFormated = genreValidator(genresNoWhiteSpace)
-            print("genresFormated:" {genresFormated})
+            print(f"genreValidator: {genresFormated}")
             genrePicked = genrePicker(genresFormated)
+            print(f"genrePicker: {genrePicked}")
             genreCompleted = genreStrToInt(genrePicked)
+            print(f"genreStrToInt: {genreCompleted}")
             genres.append(genreCompleted)
         
         else:
@@ -108,14 +111,6 @@ for page in pages:
         else:
             movieorseries.append("2")
 
-        if container.find('span', attrs = {'name':'nv'}) is not None:
-            if container.find('span', attrs = {'name':'nv'})['data-value'] is not None:
-                #Number of votes
-                vote = int(container.find('span', attrs = {'name':'nv'})['data-value'])
-                votes.append(vote)
-
-            else:
-                votes.append(None)
 
 titleandtype = {}
 
@@ -129,15 +124,14 @@ pdOutputFull = pd.DataFrame({'movie': titles,
                       'rating': ratings,
                       'genre': genres,
                       'runtime_min': runtimes,
-                      'imdb': imdb_ratings,
-                      'votes': votes}
+                      'imdb': imdb_ratings}
                       )
 numOutputFull = pdOutputFull.to_numpy()
 
 
 
 with open('Output.txt', 'w') as sys.stdout:
-    for titles, years, ratings, genres, runtimes, imdb_ratings, votes  in numOutputFull:
+    for titles, years, ratings, genres, runtimes, imdb_ratings in numOutputFull:
         print('<Movie>')
         print(f"<Id value=\"\">")
         print(f"<Name value=\"{titles}\">")
