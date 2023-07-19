@@ -8,9 +8,15 @@ def genreSpaceFix(genreslist):
     return genresnowhitespace
 
 
+def animationCheck (genreList)
+    if any("Animation" in s for s in genreList):
+        return 1
+    else:
+        return 0
+
 def genreValidator(genres):
     validGenres = ['Comedy', 'Drama', 'Sci-Fi', 'Documentary', 'Horror', 'Western', 'Sport', 'Fantasy', 'Musical', 'Romance', 'Action', 'Gameshow', 'Adult', 'Adventure', 'Mystery', 
-                   'Thriller', 'War', 'Animation']
+                   'Thriller', 'War']
     genreSetsValid = []
     for genreSet in genres:
         if genreSet in validGenres:
@@ -38,7 +44,6 @@ def genrePicker(genre):
     Western = 0 #
     GameShow = 0 #
     War = 0 #
-    Animation = 0 #
 
     for oneGenre in genre:
         match oneGenre:
@@ -78,8 +83,6 @@ def genrePicker(genre):
                 War+= 1
             case "Game-Show":
                 GameShow+= 1
-            case "Animation":
-                Animation+= 1
 
 
 ##Sorry for the big IF block, let's change this in the future if we can, it is not efficient at all --Maestus

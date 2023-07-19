@@ -13,6 +13,7 @@ from Functions.genreFunctions import *
 from Functions.runtimeFunctions import *
 from Functions.yearFunctions import *
 from Functions.outputFunctions import *
+from Functions.ratingFunctions import *
 
 #ia = Cinemagoer() #not going use it further
 
@@ -67,18 +68,11 @@ for page in pages:
         else:
             years.append(None) # each of the additional if clauses are to handle type None data, replacing it with an empty string so the arrays are of the same length at the end of the scraping
 
-        if container.p.find('span', class_ = 'certificate') is not None:
-            #rating
-            rating = container.p.find('span', class_= 'certificate').text
-            ratings.append(rating)
-
-        else:
-            ratings.append("")
-
         if container.p.find('span', class_ = 'genre') is not None:
             
             genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres  
             genresNoWhiteSpace = genreSpaceFix(genresList)
+            genresAnimation = str(animationCheck(genresNoWhiteSpace)) #to check if it is an animation
             genresFormated = genreValidator(genresNoWhiteSpace)
             genrePicked = genrePicker(genresFormated)
             genreCompleted = str(genreStrToInt(genrePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
@@ -86,6 +80,15 @@ for page in pages:
         
         else:
             genres.append("")
+
+        if container.p.find('span', class_ = 'certificate') is not None:
+            #rating
+            rating = container.p.find('span', class_= 'certificate').text
+            ratingFound = ratingFinder(genresAnimation, rating)
+            ratings.append(rating)
+
+        else:
+            ratings.append("")
 
         if container.p.find('span', class_ = 'runtime') is not None:
 
