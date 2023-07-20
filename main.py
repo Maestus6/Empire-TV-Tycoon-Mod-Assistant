@@ -18,6 +18,7 @@ from Functions.yearFunctions import *
 from Functions.outputFunctions import *
 from Functions.ratingFunctions import *
 from Functions.bannerFunctions import *
+from Functions.titleFunctions import *
 
 
 #ia = Cinemagoer() #not going use it further
@@ -28,6 +29,7 @@ headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandar
 #initialize empty lists to store the variables scraped
 titles = []
 years = []
+titleXMLPic = []
 ratings = []
 genres = []
 runtimes = []
@@ -80,12 +82,20 @@ for page in pages:
     for container in movie_containers:
 
         if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None: ##Control mechanism for Unaired shows (Not working as intended so far)
+            
+
             #print(container)
-            #title  
+
+            #Title  
             title = container.h3.a.text
             titles.append(title)
-            print(f"title:{titles}")
+            titleXMLPic = titleXMLPicFixer(titles) #Needed for naming during file creation and calling them via xml
+            #titleXMLPic.append(fixedXMLPic)
+            #print(f"title:{titles}")
+            print(f"titleXMLPic:{titleXMLPic}")
 
+
+            #Year
             if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None:
             
                 #year released
@@ -96,6 +106,9 @@ for page in pages:
             else:
                 years.append(None) # each of the additional if clauses are to handle type None data, replacing it with an empty string so the arrays are of the same length at the end of the scraping
 
+
+
+            #Genre
             if container.p.find('span', class_ = 'genre') is not None:
                 
                 genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres  
@@ -109,6 +122,9 @@ for page in pages:
             else:
                 genres.append("")
 
+
+
+            #Rating
             if container.p.find('span', class_ = 'certificate') is not None:
                 #rating
                 rating = container.p.find('span', class_= 'certificate').text
@@ -118,6 +134,9 @@ for page in pages:
             else:
                 ratings.append("")
 
+
+
+            #Movie Length(Block for EmpireTV)
             if container.p.find('span', class_ = 'runtime') is not None:
 
                 #runtime
@@ -128,6 +147,9 @@ for page in pages:
             else:
                 runtimes.append(None)
 
+
+
+            #IMDb ratings(Movie score)
             if (container.strong) is not None:
                 #IMDB ratings
                 imdb = float(container.strong.text) # non-standardized variable
@@ -137,6 +159,9 @@ for page in pages:
             else:
                 imdb_ratings.append(None)
 
+
+
+            #Metascore (Used to diverse movies from tvshows)
             if container.find('span', class_ = 'metascore') is not None:
                 movieorseries.append("1")
 
@@ -144,20 +169,22 @@ for page in pages:
                 movieorseries.append("2")
 
 
-            #get and download Banners, working
+
+            #Banners
             if container.find(class_ = 'loadlate') is not None:
                 banner = container.find(class_ = 'loadlate')
                 bannerUrl = bannerCodeClean(banner)
-                downloadBanner(bannerUrl,titles, years)
-                print(bannerUrl)
+                downloadBanner(bannerUrl,titleXMLPic, years)
+                #print(bannerUrl)
 
-            # else:
-            #     bannerUrl.append(None)
 
-            #to get Storyline aka movie desc, not working
+
+            #Storyline (movie desc) not working
             # if container.find('p', class_ = 'text-muted') is not None:
             #     storylineValue = container.find('p', class_ = 'text-muted')
             #     print(storylineValue)
+
+
 
             # Not needed, but keeping it for future references and unique cases like this
             # if container.find('span', attrs = {'name':'nv'})['data-value'] is not None:
@@ -169,12 +196,7 @@ for page in pages:
 
 
 
-
-
-
-
-
-numOutputFull = dataFramer(titles, years, ratings, genres, runtimes, imdb_ratings)
+numOutputFull = dataFramer(titles, years, ratings, genres, runtimes, imdb_ratings, titleXMLPic)
 outputResults(numOutputFull)
 
 ##End
