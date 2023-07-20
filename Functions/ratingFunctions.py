@@ -9,8 +9,7 @@ def getRating(container, genresAnimation):
     ratings.append(ratingFound)
     return ratings
 
-
-
+    
 def ratingFinder(animation, rating):
     if(animation == 1):
         return "4"
