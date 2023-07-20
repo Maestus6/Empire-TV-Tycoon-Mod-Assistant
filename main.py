@@ -83,15 +83,10 @@ for page in pages:
         if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None: ##Control mechanism for Unaired shows (Not working as intended so far)
             
 
-            #print(container)
-
-            #Title  
-            title = container.h3.a.text
-            titles.append(title)
-            titleXMLPic = titleXMLPicFixer(titles) #Needed for naming during file creation and calling them via xml
-            #titleXMLPic.append(fixedXMLPic)
-            #print(f"title:{titles}")
-            print(f"titleXMLPic:{titleXMLPic}")
+            #Title Main
+            (titlesLocal),(titleXMLPicLocal) = getTitle(container)
+            titles.append(titlesLocal)
+            titleXMLPic.append(titleXMLPicLocal)
 
 
             #Year
@@ -108,10 +103,11 @@ for page in pages:
 
 
             #Genre Main
-            (genres),(genresAnimation) = getGenre(container)
+            (genresLocal),(genresAnimation) = getGenre(container)
+            genres.append(genresLocal)
 
             #Rating Main
-            ratings = getRating(container, genresAnimation)
+            ratings.append(getRating(container, genresAnimation))
 
 
             #Movie Length(Block for EmpireTV)
@@ -148,12 +144,8 @@ for page in pages:
 
 
 
-            #Banners
-            if container.find(class_ = 'loadlate') is not None:
-                banner = container.find(class_ = 'loadlate')
-                bannerUrl = bannerCodeClean(banner)
-                downloadBanner(bannerUrl,titleXMLPic, years)
-                #print(bannerUrl)
+            #Banner Main
+                getBanner(container, titleXMLPic, years)
 
 
 

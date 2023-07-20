@@ -3,12 +3,16 @@
 #Rating Main
 def getRating(container, genresAnimation):
 
-    ratings = []
-    rating = container.p.find('span', class_= 'certificate').text
-    ratingFound = ratingFinder(genresAnimation, rating)
-    ratings.append(ratingFound)
-    return ratings
+    if container.p.find('span', class_ = 'certificate') is not None:
+        ratings = []
+        rating = container.p.find('span', class_= 'certificate').text
+        ratingFound = ratingFinder(genresAnimation, rating)
+        ratings.append(ratingFound)
+        return ratings
 
+    else:
+        ratings = []
+        return ratings.append("")
     
 def ratingFinder(animation, rating):
     if(animation == 1):

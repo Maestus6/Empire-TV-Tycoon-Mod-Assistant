@@ -3,6 +3,12 @@ from PIL import Image
 import pandas as pd
 import os
 
+def getBanner(container, titleXMLPic, years):
+     
+    if container.find(class_ = 'loadlate') is not None:
+        banner = container.find(class_ = 'loadlate')
+        bannerUrl = bannerCodeClean(banner)
+        downloadBanner(bannerUrl,titleXMLPic, years)
 
 def bannerCodeClean(banner):
     bannerMod = str(banner) #bs4.element.Tag to str
@@ -19,6 +25,7 @@ def downloadBanner(bannerURL, titleXMLPic, years):
 
     pdOutput = pd.DataFrame({'movie': titleXMLPic, 'year': years})
     numOutput = pdOutput.to_numpy()
+    print(numOutput)
 
     image_path = "images"
     if(os.path.exists(image_path) == False):
@@ -30,6 +37,8 @@ def downloadBanner(bannerURL, titleXMLPic, years):
     ##Looks horrible, need to find another source
     img.save(f"{image_path}/{saveName}")
     
+
+
 
 
 
