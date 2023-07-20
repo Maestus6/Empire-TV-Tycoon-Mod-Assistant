@@ -25,7 +25,7 @@ def downloadBanner(bannerURL, titles, years):
         os.mkdir(image_path) ##creates folder as images
 
     for titles, years in numOutput:
-        saveName =  titles + years + ".png"
+        saveName =  titles + "_" + years +"_p.png"
 
     ##Looks horrible, need to find another source
     img.save(f"{image_path}/{saveName}")

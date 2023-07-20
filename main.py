@@ -78,91 +78,92 @@ for page in pages:
     #extract the 50 movies for that page
     for container in movie_containers:
 
-        print(container)
-        #title
-        title = container.h3.a.text
-        titles.append(title)
+        if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None: ##Control mechanism for Unaired shows (Not working as intended so far)
+            #print(container)
+            #title  
+            title = container.h3.a.text
+            titles.append(title)
 
-        if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None:
-        
-            #year released
-            year = container.h3.find('span', class_= 'lister-item-year text-muted unbold').text # remove the parentheses around the year and make it an integer
-            yearFixed = yearFormatter(year)
-            years.append(yearFixed)
-
-        else:
-            years.append(None) # each of the additional if clauses are to handle type None data, replacing it with an empty string so the arrays are of the same length at the end of the scraping
-
-        if container.p.find('span', class_ = 'genre') is not None:
+            if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None:
             
-            genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres  
-            genresNoWhiteSpace = genreSpaceFix(genresList)
-            genresAnimation = str(animationCheck(genresNoWhiteSpace)) #to check if it is an animation
-            genresFormated = genreValidator(genresNoWhiteSpace)
-            genrePicked = genrePicker(genresFormated)
-            genreCompleted = str(genreStrToInt(genrePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
-            genres.append(genreCompleted)
-        
-        else:
-            genres.append("")
+                #year released
+                year = container.h3.find('span', class_= 'lister-item-year text-muted unbold').text # remove the parentheses around the year and make it an integer
+                yearFixed = yearFormatter(year)
+                years.append(yearFixed)
 
-        if container.p.find('span', class_ = 'certificate') is not None:
-            #rating
-            rating = container.p.find('span', class_= 'certificate').text
-            ratingFound = ratingFinder(genresAnimation, rating)
-            ratings.append(ratingFound)
+            else:
+                years.append(None) # each of the additional if clauses are to handle type None data, replacing it with an empty string so the arrays are of the same length at the end of the scraping
 
-        else:
-            ratings.append("")
+            if container.p.find('span', class_ = 'genre') is not None:
+                
+                genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres  
+                genresNoWhiteSpace = genreSpaceFix(genresList)
+                genresAnimation = str(animationCheck(genresNoWhiteSpace)) #to check if it is an animation
+                genresFormated = genreValidator(genresNoWhiteSpace)
+                genrePicked = genrePicker(genresFormated)
+                genreCompleted = str(genreStrToInt(genrePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
+                genres.append(genreCompleted)
+            
+            else:
+                genres.append("")
 
-        if container.p.find('span', class_ = 'runtime') is not None:
+            if container.p.find('span', class_ = 'certificate') is not None:
+                #rating
+                rating = container.p.find('span', class_= 'certificate').text
+                ratingFound = ratingFinder(genresAnimation, rating)
+                ratings.append(ratingFound)
 
-            #runtime
-            time = int(container.p.find('span', class_ = 'runtime').text.replace(" min", "")) # remove the minute word from the runtime and make it an integer
-            fixedTime = str(runtimeFormatter(time)) #Formatting it to str, to prevent future code to treat int like float while printing
-            runtimes.append(fixedTime)
+            else:
+                ratings.append("")
 
-        else:
-            runtimes.append(None)
+            if container.p.find('span', class_ = 'runtime') is not None:
 
-        if (container.strong) is not None:
-            #IMDB ratings
-            imdb = float(container.strong.text) # non-standardized variable
-            imdb = round((imdb / 10), 2) #From 1/100 Point System to 0.00/1.00, formatting to max two decimals
-            imdb_ratings.append(imdb)
+                #runtime
+                time = int(container.p.find('span', class_ = 'runtime').text.replace(" min", "")) # remove the minute word from the runtime and make it an integer
+                fixedTime = str(runtimeFormatter(time)) #Formatting it to str, to prevent future code to treat int like float while printing
+                runtimes.append(fixedTime)
 
-        else:
-            imdb_ratings.append(None)
+            else:
+                runtimes.append(None)
 
-        if container.find('span', class_ = 'metascore') is not None:
-            movieorseries.append("1")
+            if (container.strong) is not None:
+                #IMDB ratings
+                imdb = float(container.strong.text) # non-standardized variable
+                imdb = round((imdb / 10), 2) #From 1/100 Point System to 0.00/1.00, formatting to max two decimals
+                imdb_ratings.append(imdb)
 
-        else:
-            movieorseries.append("2")
+            else:
+                imdb_ratings.append(None)
+
+            if container.find('span', class_ = 'metascore') is not None:
+                movieorseries.append("1")
+
+            else:
+                movieorseries.append("2")
 
 
-        #get and download Banners, working
-        if container.find(class_ = 'loadlate') is not None:
-            banner = container.find(class_ = 'loadlate')
-            bannerUrl = bannerCodeClean(banner)
-            downloadBanner(bannerUrl,titles, years)
-            print(bannerUrl)
+            #get and download Banners, working
+            if container.find(class_ = 'loadlate') is not None:
+                banner = container.find(class_ = 'loadlate')
+                bannerUrl = bannerCodeClean(banner)
+                downloadBanner(bannerUrl,titles, years)
+                print(bannerUrl)
 
-        # else:
-        #     bannerUrl.append(None)
+            # else:
+            #     bannerUrl.append(None)
 
-        #to get Storyline aka movie desc, not working
-        # if container.find('p', class_ = 'text-muted') is not None:
-        #     storylineValue = container.find('p', class_ = 'text-muted')
-        #     print(storylineValue)
+            #to get Storyline aka movie desc, not working
+            # if container.find('p', class_ = 'text-muted') is not None:
+            #     storylineValue = container.find('p', class_ = 'text-muted')
+            #     print(storylineValue)
 
-        # Not needed, but keeping it for future references and unique cases like this
-        # if container.find('span', attrs = {'name':'nv'})['data-value'] is not None:
-        #     #Number of votes
-        #     vote = int(container.find('span', attrs = {'name':'nv'})['data-value'])
-        #     votes.append(vote)
-        # else:
-        #     votes.append(None)
+            # Not needed, but keeping it for future references and unique cases like this
+            # if container.find('span', attrs = {'name':'nv'})['data-value'] is not None:
+            #     #Number of votes
+            #     vote = int(container.find('span', attrs = {'name':'nv'})['data-value'])
+            #     votes.append(vote)
+            # else:
+            #     votes.append(None)
 
 
 
