@@ -79,59 +79,69 @@ for page in pages:
     #extract the 50 movies for that page
     for container in movie_containers:
 
-        if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None: ##Control mechanism for Unaired shows (Not working as intended so far)
+        #if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None: ##Control mechanism for Unaired shows (Not working as intended so far)
             
 
-            #Title Main
-            (titlesLocal),(titleXMLPicLocal) = getTitle(container)
-            titles.append(titlesLocal)
-            titleXMLPic.append(titleXMLPicLocal)
+        #Title Main
+        (titlesLocal),(titleXMLPicLocal) = getTitle(container)
+        titles.append(titlesLocal)
+        titleXMLPic.append(titleXMLPicLocal)
+
+        print(f"titles: {titles}")
+        print(f"titleXMLPic: {titleXMLPic}")
 
 
-            #Year Main
-            years.append(yearFormatter(container))
+        #Year Main
+        years.append(yearFormatter(container))
+        print(f"years: {years}")
 
 
-            #Genre Main
-            (genresLocal),(genresAnimation) = getGenre(container)
-            genres.append(genresLocal)
+        #Genre Main
+        (genresLocal),(genresAnimation) = getGenre(container)
+        genres.append(genresLocal)
+        print(f"genres: {genres}")
+        print(f"genresAnimation: {genresAnimation}")
 
 
-            #Rating Main
-            ratings.append(getRating(container, genresAnimation))
+        #Rating Main
+        ratings.append(getRating(container, genresAnimation))
+        print(f"ratings: {ratings}")
 
 
-            #Runtime Main(Blocks for EmpireTV)
-            runtimes.append(getRuntime(container))
+        #Runtime Main(Blocks for EmpireTV)
+        runtimes.append(getRuntime(container))
+        print(f"runtimes: {runtimes}")
 
 
-            #PageScore ratings(Movie score)
-            pageScore.append(getPageScore(container))
+        #PageScore ratings(Movie score)
+        pageScore.append(getPageScore(container))
+        print(f"pageScore: {pageScore}")
 
 
-            #AlternativeScore Main(Using pageScore.py) (Used to diverse movies from tvshows)
-            movieOrSeries.append(getAlternativeScore(container))
+        #AlternativeScore Main(Using pageScore.py) (Used to diverse movies from tvshows)
+        movieOrSeries.append(getAlternativeScore(container))
+        print(f"movieOrSeries: {movieOrSeries}")
 
 
-            #Banner Main
-            getBanner(container, titleXMLPic, years)
-
-
-
-            #Storyline (movie desc) not working
-            # if container.find('p', class_ = 'text-muted') is not None:
-            #     storylineValue = container.find('p', class_ = 'text-muted')
-            #     print(storylineValue)
+        #Banner Main
+        getBanner(container, titleXMLPic, years)
 
 
 
-            # Not needed, but keeping it for future references and unique cases like this
-            # if container.find('span', attrs = {'name':'nv'})['data-value'] is not None:
-            #     #Number of votes
-            #     vote = int(container.find('span', attrs = {'name':'nv'})['data-value'])
-            #     votes.append(vote)
-            # else:
-            #     votes.append(None)
+        #Storyline (movie desc) not working
+        # if container.find('p', class_ = 'text-muted') is not None:
+        #     storylineValue = container.find('p', class_ = 'text-muted')
+        #     
+
+
+
+        # Not needed, but keeping it for future references and unique cases like this
+        # if container.find('span', attrs = {'name':'nv'})['data-value'] is not None:
+        #     #Number of votes
+        #     vote = int(container.find('span', attrs = {'name':'nv'})['data-value'])
+        #     votes.append(vote)
+        # else:
+        #     votes.append(None)
 
 
 
