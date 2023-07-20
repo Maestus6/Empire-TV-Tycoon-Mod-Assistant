@@ -1,10 +1,11 @@
 # Remove following characters for Windows Naming rescrictions:  \ / : * ? " < > | and blank space
+import re
+
 def titleXMLPicFixer (titles):
     fixTitle = []
     for title in titles:
-        title.replace(":", "").replace(" ","").replace("*","").replace("?","").replace("/","").replace("<","").replace(">","").replace("|","")
-        title.replace("/","").replace("\\","").replace(">","").replace("|","").replace("/","").replace("\"","")
-        fixTitle.append(title)
+        titleChange =  re.sub('[^\w_.)( -]', '', title) 
+        fixTitle.append(titleChange)
 
     return fixTitle
     

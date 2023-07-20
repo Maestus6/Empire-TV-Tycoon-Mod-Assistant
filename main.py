@@ -43,7 +43,6 @@ movieorseries = []
 #!!!-------------------------------------!!!!!!!!!!-------------------------------------!!!#
 
 #THINGS NEEDS TO BE DONE, ORDERED BY IMPORTANCE
-#0- Fix the issue with titles that has ":" in it at bannerFunctions.py
 #1- Add an control mechanism to prevent unaired yet added on IMDb to getting processed to prevent errors (NEEDED) 
 #2- Banners come in really small sizes, need to find alternative sources to extract them from (NEEDED)
 #3- Find a way to get Storylines - Movie Descs. It is placed in a really generic place at movie containers to be extracted properly (NEEDED)
