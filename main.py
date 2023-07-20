@@ -107,32 +107,11 @@ for page in pages:
 
 
 
-            #Genre
-            if container.p.find('span', class_ = 'genre') is not None:
-                
-                genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres  
-                genresNoWhiteSpace = genreSpaceFix(genresList)
-                genresAnimation = str(animationCheck(genresNoWhiteSpace)) #to check if it is an animation
-                genresFormated = genreValidator(genresNoWhiteSpace)
-                genrePicked = genrePicker(genresFormated)
-                genreCompleted = str(genreStrToInt(genrePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
-                genres.append(genreCompleted)
-            
-            else:
-                genres.append("")
+            #Genre Main
+            (genres),(genresAnimation) = getGenre(container)
 
-
-
-            #Rating
-            if container.p.find('span', class_ = 'certificate') is not None:
-                #rating
-                rating = container.p.find('span', class_= 'certificate').text
-                ratingFound = ratingFinder(genresAnimation, rating)
-                ratings.append(ratingFound)
-
-            else:
-                ratings.append("")
-
+            #Rating Main
+            ratings = getRating(container, genresAnimation)
 
 
             #Movie Length(Block for EmpireTV)

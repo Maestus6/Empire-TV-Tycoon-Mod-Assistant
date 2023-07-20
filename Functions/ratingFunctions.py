@@ -1,5 +1,16 @@
 #(0) REGULAR MOVIE (1) +16 (2) XXX (3) GLAMOUR (4) CARTOON (5) ANIME
 
+#Rating Main
+def getRating(container, genresAnimation):
+
+    ratings = []
+    rating = container.p.find('span', class_= 'certificate').text
+    ratingFound = ratingFinder(genresAnimation, rating)
+    ratings.append(ratingFound)
+    return ratings
+
+
+
 def ratingFinder(animation, rating):
     if(animation == 1):
         return "4"
