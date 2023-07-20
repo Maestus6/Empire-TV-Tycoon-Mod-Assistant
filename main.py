@@ -87,41 +87,24 @@ for page in pages:
         titles.append(titlesLocal)
         titleXMLPic.append(titleXMLPicLocal)
 
-        print(f"titles: {titles}")
-        print(f"titleXMLPic: {titleXMLPic}")
-
-
         #Year Main
         years.append(getYear(container))
-        print(f"years: {years}")
-
 
         #Genre Main
         (genresLocal),genresSpecial = getGenre(container)
         genres.append(genresLocal)
-        print(f"genres: {genres}")
-        print(f"genresAnimation: {genresSpecial}")
-
 
         #Rating Main
         ratings.append(getRating(container, genresSpecial))
-        print(f"ratings: {ratings}")
-
 
         #Runtime Main(Blocks for EmpireTV)
         runtimes.append(getRuntime(container))
-        print(f"runtimes: {runtimes}")
-
 
         #PageScore ratings(Movie score)
         pageScore.append(getPageScore(container))
-        print(f"pageScore: {pageScore}")
-
 
         #AlternativeScore Main(Using pageScore.py) (Used to diverse movies from tvshows)
         movieOrSeries.append(getAlternativeScore(container))
-        print(f"movieOrSeries: {movieOrSeries}")
-
 
         #Banner Main
         getBanner(container, titleXMLPic, years)

@@ -3,6 +3,7 @@ from PIL import Image
 import pandas as pd
 import os
 
+#Banner main
 def getBanner(container, titleXMLPic, years):
      
     if container.find(class_ = 'loadlate') is not None:
@@ -25,7 +26,6 @@ def downloadBanner(bannerURL, titleXMLPic, years):
 
     pdOutput = pd.DataFrame({'movie': titleXMLPic, 'year': years})
     numOutput = pdOutput.to_numpy()
-    print(numOutput)
 
     image_path = "images"
     if(os.path.exists(image_path) == False):

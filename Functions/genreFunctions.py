@@ -4,28 +4,17 @@ def getGenre(container):
 
     if container.p.find('span', class_ = 'genre') is not None:
 
-        genres = []
         genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres  
         genresNoWhiteSpace = genreSpaceFix(genresList)
         genresSpecial = str(specialGenreCheck(genresNoWhiteSpace)) #to check if it is an animation
         genresFormated = genreValidator(genresNoWhiteSpace)
         genrePicked = genrePicker(genresFormated)
         genreCompleted = str(genreStrToInt(genrePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
-        #genres.append(genreCompleted)
         return genreCompleted, genresSpecial
     
     else:
         return genres.append(""), "0"
                 
-                # genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres  
-                # genresNoWhiteSpace = genreSpaceFix(genresList)
-                # genresAnimation = str(animationCheck(genresNoWhiteSpace)) #to check if it is an animation
-                # genresFormated = genreValidator(genresNoWhiteSpace)
-                # genrePicked = genrePicker(genresFormated)
-                # genreCompleted = str(genreStrToInt(genrePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
-                # genres.append(genreCompleted)
-            
-
 
 def genreSpaceFix(genreslist):
     genresnowhitespace = []
@@ -50,7 +39,6 @@ def genreValidator(genres):
     for genreSet in genres:
         if genreSet in validGenres:
             genreSetsValid.append(genreSet)
-        #genreSetsValid.append(genreSetsValid)
     return genreSetsValid
 
 def genrePicker(genre):
@@ -114,7 +102,7 @@ def genrePicker(genre):
                 GameShow+= 1
 
 
-##Sorry for the big IF block, let's change this in the future if we can, it is not efficient at all --Maestus
+##Sorry for the big IF block, let's change this in the future if we can, it is not efficient at all
     if(GameShow == 1):  ##Start of certainity
         return 'Gameshow'
     elif(Documentary == 1):

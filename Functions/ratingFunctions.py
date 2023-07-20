@@ -7,12 +7,9 @@ def getRating(container, genresSpecial):
         ratings = []
         rating = container.p.find('span', class_= 'certificate').text
         ratingFound = ratingFinder(genresSpecial, rating)
-        #ratings.append(ratingFound)
         return ratingFound
 
     else:
-        #ratings = []
-        #return ratings.append("")
         return ""
     
 def ratingFinder(specialGenre, rating):
