@@ -47,33 +47,36 @@ def getBannerAlter(titleXMLPic, years):
     response = google_images_download.googleimagesdownload()
     image_path = "images"
 
+    pdOutput = pd.DataFrame({'movie': titleXMLPic, 'year': years})
+    numOutput = pdOutput.to_numpy()
 
-    arguments = {"keywords": f"{titleXMLPic}_{years}_p.png",
-                 "format": "png",
-                 "limit":1,
-                 "print_urls":True,
-                 "size": "medium", #("large, medium, icon")
-                 "aspect_ratio":"tall",
-                 "output_directory": image_path} #Possible values: tall, square, wide, panoramic
-    try:
-        response.download(arguments)
-        getBannerFixSize(titleXMLPic, years)
-     
-    #Second Try to find a picture
-    except FileNotFoundError:
-        arguments = {"keywords": f"{titleXMLPic}_{years}_p",
-                     "format": "png",
-                     "limit":1,
-                     "print_urls":True,
-                     "size": "large",
-                     "aspect_ratio":"tall",
-                     "output_directory": image_path}
-                      
+    for titleXMLPic, years in numOutput:
+        arguments = {"keywords": f"{titleXMLPic}_{years}_p.png",
+                    "format": "png",
+                    "limit":1,
+                    "print_urls":True,
+                    "size": "medium", #("large, medium, icon")
+                    "aspect_ratio":"tall",
+                    "output_directory": image_path} #Possible values: tall, square, wide, panoramic
         try:
             response.download(arguments)
             getBannerFixSize(titleXMLPic, years)
-        except:
-            pass
+        
+        #Second Try to find a picture
+        except FileNotFoundError:
+            arguments = {"keywords": f"{titleXMLPic}_{years}_p",
+                        "format": "png",
+                        "limit":1,
+                        "print_urls":True,
+                        "size": "large",
+                        "aspect_ratio":"tall",
+                        "output_directory": image_path}
+                        
+            try:
+                response.download(arguments)
+                getBannerFixSize(titleXMLPic, years)
+            except:
+                pass
  
 
 def getBannerFixSize(titleXMLPic, years):
