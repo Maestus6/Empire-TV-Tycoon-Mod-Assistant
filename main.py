@@ -1,6 +1,6 @@
-# part of the code is taken from https://www.freecodecamp.org/news/web-scraping-sci-fi-movies-from-imdb-with-python/
+# part of the code is taken from https://www.freecodecamp.org/news/web-scraping-sci-fi-movies-from-pageScore-with-python/
 #pip install Pylance
-#from imdb import Cinemagoer #pip install Cinemagoer
+#from pageScore import Cinemagoer #pip install Cinemagoer
 from requests import get  #pip install requests
 from bs4 import BeautifulSoup #pip install beautifulsoup4
 from warnings import warn
@@ -19,6 +19,7 @@ from Functions.outputFunctions import *
 from Functions.ratingFunctions import *
 from Functions.bannerFunctions import *
 from Functions.titleFunctions import *
+from Functions.pageScoreFunctions import *
 
 
 #ia = Cinemagoer() #not going use it further
@@ -33,17 +34,15 @@ titleXMLPic = []
 ratings = []
 genres = []
 runtimes = []
-imdb_ratings = []
-imdb_ratings_standardized = []
-metascores = []
+pageScore = []
 votes = []
-movieorseries = []
+movieOrSeries = []
 
 
 #!!!-------------------------------------!!!!!!!!!!-------------------------------------!!!#
 
 #THINGS NEEDS TO BE DONE, ORDERED BY IMPORTANCE
-#1- Add an control mechanism to prevent unaired yet added on IMDb to getting processed to prevent errors (NEEDED) 
+#1- Add an control mechanism to prevent unaired yet added on pageScore to getting processed to prevent errors (NEEDED) 
 #2- Banners come in really small sizes, need to find alternative sources to extract them from (NEEDED)
 #3- Find a way to get Storylines - Movie Descs. It is placed in a really generic place at movie containers to be extracted properly (NEEDED)
 #4- Find a place to get a wide picture of a movie to put it on TV Screen, and do necessary changes in the code to implent it (NEEDED)
@@ -61,7 +60,7 @@ movieorseries = []
 for page in pages:
    
    #get request for sci-fi
-    response = get("https://www.imdb.com/search/title?genres=sci-fi&"
+    response = get("https://www.pageScore.com/search/title?genres=sci-fi&"
         + "start="
         + str(page)
         + "&explore=title_type,genres&ref_=adv_prv", headers=headers)
@@ -89,63 +88,33 @@ for page in pages:
             titleXMLPic.append(titleXMLPicLocal)
 
 
-            #Year
-            if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None:
-            
-                #year released
-                year = container.h3.find('span', class_= 'lister-item-year text-muted unbold').text # remove the parentheses around the year and make it an integer
-                yearFixed = yearFormatter(year)
-                years.append(yearFixed)
-
-            else:
-                years.append(None) # each of the additional if clauses are to handle type None data, replacing it with an empty string so the arrays are of the same length at the end of the scraping
-
+            #Year Main
+            years.append(yearFormatter(container))
 
 
             #Genre Main
             (genresLocal),(genresAnimation) = getGenre(container)
             genres.append(genresLocal)
 
+
             #Rating Main
             ratings.append(getRating(container, genresAnimation))
 
 
-            #Movie Length(Block for EmpireTV)
-            if container.p.find('span', class_ = 'runtime') is not None:
-
-                #runtime
-                time = int(container.p.find('span', class_ = 'runtime').text.replace(" min", "")) # remove the minute word from the runtime and make it an integer
-                fixedTime = str(runtimeFormatter(time)) #Formatting it to str, to prevent future code to treat int like float while printing
-                runtimes.append(fixedTime)
-
-            else:
-                runtimes.append(None)
+            #Runtime Main(Blocks for EmpireTV)
+            runtimes.append(getRuntime(container))
 
 
-
-            #IMDb ratings(Movie score)
-            if (container.strong) is not None:
-                #IMDB ratings
-                imdb = float(container.strong.text) # non-standardized variable
-                imdb = round((imdb / 10), 2) #From 1/100 Point System to 0.00/1.00, formatting to max two decimals
-                imdb_ratings.append(imdb)
-
-            else:
-                imdb_ratings.append(None)
+            #PageScore ratings(Movie score)
+            pageScore.append(getPageScore(container))
 
 
-
-            #Metascore (Used to diverse movies from tvshows)
-            if container.find('span', class_ = 'metascore') is not None:
-                movieorseries.append("1")
-
-            else:
-                movieorseries.append("2")
-
+            #AlternativeScore Main(Using pageScore.py) (Used to diverse movies from tvshows)
+            movieOrSeries.append(getAlternativeScore(container))
 
 
             #Banner Main
-                getBanner(container, titleXMLPic, years)
+            getBanner(container, titleXMLPic, years)
 
 
 
@@ -166,7 +135,7 @@ for page in pages:
 
 
 
-numOutputFull = dataFramer(titles, years, ratings, genres, runtimes, imdb_ratings, titleXMLPic)
+numOutputFull = dataFramer(titles, years, ratings, genres, runtimes, pageScore, titleXMLPic)
 outputResults(numOutputFull)
 
 ##End

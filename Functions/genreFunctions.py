@@ -11,8 +11,8 @@ def getGenre(container):
         genresFormated = genreValidator(genresNoWhiteSpace)
         genrePicked = genrePicker(genresFormated)
         genreCompleted = str(genreStrToInt(genrePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
-        genres.append(genreCompleted)
-        return genres, genresAnimation
+        #genres.append(genreCompleted)
+        return genreCompleted, genresAnimation
     
     else:
         return genres.append(""), "0"
