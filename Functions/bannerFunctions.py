@@ -1,6 +1,7 @@
 import requests
 from PIL import Image
 import pandas as pd
+import os
 
 
 def bannerCodeClean(banner):
@@ -19,9 +20,16 @@ def downloadBanner(bannerURL, titles, years):
     pdOutput = pd.DataFrame({'movie': titles, 'year': years})
     numOutput = pdOutput.to_numpy()
 
+    image_path = "images"
+    if(os.path.exists(image_path) == False):
+        os.mkdir(image_path) ##creates folder as images
+
     for titles, years in numOutput:
-        saveName = str(titles) + str(years) + ".png"
-        img.save(saveName)
+        saveName =  titles + years + ".png"
+
+    ##Looks horrible, need to find another source
+    img.save(f"{image_path}/{saveName}")
+    
 
 
 
