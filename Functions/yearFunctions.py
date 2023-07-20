@@ -7,7 +7,13 @@ def getYear(container):
     else:
         return "" # each of the additional if clauses are to handle type None data, replacing it with an empty string so the arrays are of the same length at the end of the scraping
 
-
+#    if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None:
+#         #year released
+#         year = container.h3.find('span', class_= 'lister-item-year text-muted unbold').text 
+#         yearFixed = yearFormatter(year)
+#         years.append(yearFixed)
+#     else:
+#         years.append(None) 
 def yearFormatter(year):
 
     year = year.replace('(','').replace(')','').replace('-','').replace('�','').replace(' ','') # doesn't fixes the problem for special invis characters

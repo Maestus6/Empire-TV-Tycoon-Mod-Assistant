@@ -7,12 +7,12 @@ def getGenre(container):
         genres = []
         genresList = container.p.find('span', class_ = 'genre').text.replace("\n", "").strip().split(",") # remove the whitespace character, strip, and split to create an array of genres  
         genresNoWhiteSpace = genreSpaceFix(genresList)
-        genresAnimation = str(animationCheck(genresNoWhiteSpace)) #to check if it is an animation
+        genresSpecial = str(specialGenreCheck(genresNoWhiteSpace)) #to check if it is an animation
         genresFormated = genreValidator(genresNoWhiteSpace)
         genrePicked = genrePicker(genresFormated)
         genreCompleted = str(genreStrToInt(genrePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
         #genres.append(genreCompleted)
-        return genreCompleted, genresAnimation
+        return genreCompleted, genresSpecial
     
     else:
         return genres.append(""), "0"
@@ -35,9 +35,11 @@ def genreSpaceFix(genreslist):
     return genresnowhitespace
 
 
-def animationCheck (genreList):
+def specialGenreCheck (genreList):
     if any("Animation" in s for s in genreList):
         return 1
+    elif any("Romance" in s for s in genreList):
+        return 2
     else:
         return 0
 
