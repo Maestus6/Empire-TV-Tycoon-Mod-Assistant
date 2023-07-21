@@ -45,22 +45,32 @@ from Functions.pageScoreFunctions import *
 
 #ia = Cinemagoer() #not going use it further
 
-pages = np.arange(1, 3, 1) #entry (start, stop), lines between each entry 
+pages = np.arange(1, 2, 100) #entry (start, stop), lines between each entry 
 headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandarin
 
 #initialize empty lists to store the variables scraped
-titles = []
-years = []
-titleXMLPic = []
-ratings = []
-genres = []
-runtimes = []
-pageScore = []
-votes = []
-movieOrSeries = []
+# titles = []
+# years = []
+# titleXMLPic = []
+# ratings = []
+# genres = []
+# runtimes = []
+# pageScore = []
+# votes = []
+# movieOrSeries = []
 
 
 for page in pages:
+
+    titles = []
+    years = []
+    titleXMLPic = []
+    ratings = []
+    genres = []
+    runtimes = []
+    pageScore = []
+    votes = []
+    movieOrSeries = []
    
    #get request for sci-fi
     response = get("https://www.imdb.com/search/title?genres=sci-fi&"
@@ -86,6 +96,7 @@ for page in pages:
         (titlesLocal),(titleXMLPicLocal) = getTitle(container)
         titles.append(titlesLocal)
         titleXMLPic.append(titleXMLPicLocal)
+        print(f"titles: {titles}")
 
         #Year Main
         years.append(getYear(container))

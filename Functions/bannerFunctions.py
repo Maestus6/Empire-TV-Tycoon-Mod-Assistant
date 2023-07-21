@@ -58,30 +58,30 @@ def getBannerAlter(titleXMLPic, years):
                     "size": "medium", #("large, medium, icon")
                     "aspect_ratio":"tall",
                     "output_directory": image_path} #Possible values: tall, square, wide, panoramic
-        try:
-            response.download(arguments)
-            getBannerFixSize(titleXMLPic, years)
         
-        #Second Try to find a picture
-        except FileNotFoundError:
-            arguments = {"keywords": f"{titleXMLPic}_{years}_p",
-                        "format": "png",
-                        "limit":1,
-                        "print_urls":True,
-                        "size": "large",
-                        "aspect_ratio":"tall",
-                        "output_directory": image_path}
+        response.download(arguments)
+        #getBannerFixSize(titleXMLPic, years)
+        
+        # #Second Try to find a picture
+        # except FileNotFoundError:
+        #     arguments = {"keywords": f"{titleXMLPic}_{years}_p",
+        #                 "format": "png",
+        #                 "limit":1,
+        #                 "print_urls":True,
+        #                 "size": "large",
+        #                 "aspect_ratio":"tall",
+        #                 "output_directory": image_path}
                         
-            try:
-                response.download(arguments)
-                getBannerFixSize(titleXMLPic, years)
-            except:
-                pass
+        #     try:
+        #         response.download(arguments)
+        #         getBannerFixSize(titleXMLPic, years)
+        #     except:
+        #         pass
  
 
 def getBannerFixSize(titleXMLPic, years):
 
-    im = Image.open(fr"images\{titleXMLPic}_{years}_p")
+    im = Image.open(fr"images\{titleXMLPic}_{years}_p\{titleXMLPic}_{years}_p.png")
     width, height = im.size
     newImgSize = (112, 168)
     img = img.resize(newImgSize)

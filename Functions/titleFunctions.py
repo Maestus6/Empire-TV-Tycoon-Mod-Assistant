@@ -2,7 +2,7 @@
 import re
 
 def getTitle(container):
-
+    print(f"container: {container}")
     title = container.h3.a.text
     titleXMLPic = titleXMLPicFixer(title) #Needed for naming during file creation and calling them via xml
     return title, titleXMLPic
