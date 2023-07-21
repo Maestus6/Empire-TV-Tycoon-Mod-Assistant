@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup #pip install beautifulsoup4
 from warnings import warn
 from time import sleep
 from random import randint
-import numpy as np 
+import numpy as np
 
 
 #Functions
@@ -43,34 +43,12 @@ from Functions.pageScoreFunctions import *
 #!!!-------------------------------------!!!!!!!!!!-------------------------------------!!!#
 
 
-#ia = Cinemagoer() #not going use it further
-
 pages = np.arange(1, 2, 100) #entry (start, stop), lines between each entry 
 headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandarin
-
-#initialize empty lists to store the variables scraped
-# titles = []
-# years = []
-# titleXMLPic = []
-# ratings = []
-# genres = []
-# runtimes = []
-# pageScore = []
-# votes = []
-# movieOrSeries = []
-
+counter = 0 #to Count loop iterations
+numOutputFull = []
 
 for page in pages:
-
-    titles = []
-    years = []
-    titleXMLPic = []
-    ratings = []
-    genres = []
-    runtimes = []
-    pageScore = []
-    votes = []
-    movieOrSeries = []
    
    #get request for sci-fi
     response = get("https://www.imdb.com/search/title?genres=sci-fi&"
@@ -78,48 +56,44 @@ for page in pages:
         + str(page)
         + "&explore=title_type,genres&ref_=adv_prv", headers=headers)
   
-    #probably exists for rate limit
-    sleep(randint(8,15)) 
+
+    sleep(randint(8,15)) #anti rate limit
 
     #throw warning for status codes that are not 200
     if response.status_code != 200:
        #warn('Request: {}; Status code: {}'.format(requests, response.status_code)) gets issues with requests
        print ("beep boop, not 200!!!")
     
-    #parse the content of current iteration of request
+
     page_html = BeautifulSoup(response.text, 'html.parser')
     movie_containers = page_html.find_all('div', class_ = 'lister-item mode-advanced')
-    #extract the 50 movies for that page
+
+
     for container in movie_containers:
 
         #Title Main
-        (titlesLocal),(titleXMLPicLocal) = getTitle(container)
-        titles.append(titlesLocal)
-        titleXMLPic.append(titleXMLPicLocal)
-        print(f"titles: {titles}")
+        (titles),(titleXMLPic) = getTitle(container)
 
         #Year Main
-        years.append(getYear(container))
+        years = getYear(container)
 
         #Genre Main
-        (genresLocal),genresSpecial = getGenre(container)
-        genres.append(genresLocal)
+        genres,genresSpecial = getGenre(container)
 
         #Rating Main
-        ratings.append(getRating(container, genresSpecial))
+        ratings = getRating(container, genresSpecial)
 
         #Runtime Main(Blocks for EmpireTV)
-        runtimes.append(getRuntime(container))
+        runtimes = getRuntime(container)
 
         #PageScore ratings(Movie score)
-        pageScore.append(getPageScore(container))
+        pageScore = getPageScore(container)
 
         #AlternativeScore Main(Using pageScore.py) (Used to diverse movies from tvshows)
-        movieOrSeries.append(getAlternativeScore(container))
+        movieOrSeries = getAlternativeScore(container)
 
         #Banner Main
         getBanner(container, titleXMLPic, years)
-        #getBannerAlter(titleXMLPic, years)
 
 
         #Storyline (movie desc) not working
@@ -128,8 +102,14 @@ for page in pages:
         #     
 
 
-#Output Main
-numOutputFull = dataFramer(titles, years, ratings, genres, runtimes, pageScore, titleXMLPic)
-outputResults(numOutputFull)
+        #Save Movies for usage of Output main once we get every data
+        counter += 1
+        numOutputFull.append(dataArrSaver(titles, years, ratings, genres, runtimes, pageScore, titleXMLPic, counter))
 
-        ##End
+        ##End of Loop
+        
+
+#Output Main
+dataFramer(numOutputFull)
+
+print(f"Loop iterated {counter} times")

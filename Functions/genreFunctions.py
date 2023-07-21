@@ -13,7 +13,7 @@ def getGenre(container):
         return genreCompleted, genresSpecial
     
     else:
-        return genres.append(""), "0"
+        return (""), "0"
                 
 
 def genreSpaceFix(genreslist):
