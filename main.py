@@ -1,5 +1,3 @@
-# part of the code is taken from https://www.freecodecamp.org/news/web-scraping-sci-fi-movies-from-pageScore-with-python/
-
 #Libraries
 from requests import get  #pip install requests
 from bs4 import BeautifulSoup #pip install beautifulsoup4
@@ -18,6 +16,7 @@ from Functions.ratingFunctions import *
 from Functions.bannerFunctions import *
 from Functions.titleFunctions import *
 from Functions.pageScoreFunctions import *
+
 
 #Possible Future Use
 # import pandas as pd
@@ -48,6 +47,7 @@ headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandar
 counter = 0 #to Count loop iterations
 numOutputFull = []
 
+
 for page in pages:
    
    #get request for sci-fi
@@ -55,7 +55,7 @@ for page in pages:
         + "start="
         + str(page)
         + "&explore=title_type,genres&ref_=adv_prv", headers=headers)
-  
+      
 
     sleep(randint(8,15)) #anti rate limit
 
@@ -70,7 +70,7 @@ for page in pages:
 
 
     for container in movie_containers:
-
+        print(container)
         #Title Main
         (titles),(titleXMLPic) = getTitle(container)
 
@@ -93,14 +93,13 @@ for page in pages:
         movieOrSeries = getAlternativeScore(container)
 
         #Banner Main
+        #getBanner(container, titleXMLPic, years)
         getBanner(container, titleXMLPic, years)
-
 
         #Storyline (movie desc) not working
         # if container.find('p', class_ = 'text-muted') is not None:
         #     storylineValue = container.find('p', class_ = 'text-muted')
         #     
-
 
         #Save Movies for usage of Output main once we get every data
         counter += 1

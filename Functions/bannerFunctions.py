@@ -1,7 +1,7 @@
 import requests
 from PIL import Image
-import pandas as pd
 import os
+import time
 from google_images_download import google_images_download #pip install google_images_download
 
 #Banner main
@@ -49,18 +49,18 @@ def getBannerAlter(titleXMLPic, years):
                 "print_urls":True,
                 "size": "medium", #("large, medium, icon")
                 "aspect_ratio":"tall",
-                "output_directory": image_path} #Possible values: tall, square, wide, panoramic
+                "output_directory": image_path,
+                "specific_site" : "www.imdb.com"} #Possible values: tall, square, wide, panoramic
         
     response.download(arguments)
-    getBannerFixSize(titleXMLPic, years)
-        
+    #getBannerFixSize(titleXMLPic, years)
  
-def getBannerFixSize(titleXMLPic, years):
+# def getBannerFixSize(titleXMLPic, years):
 
-    im = Image.open(fr"images\{titleXMLPic}_{years}_p\{titleXMLPic}_{years}_p.png")
-    width, height = im.size
-    newImgSize = (112, 168)
-    img = img.resize(newImgSize)
+#     im = Image.open(fr"images\{titleXMLPic}_{years}_p\{titleXMLPic}_{years}_p.png")
+#     width, height = im.size
+#     newImgSize = (112, 168)
+#     img = img.resize(newImgSize)
 
 
 
