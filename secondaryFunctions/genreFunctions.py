@@ -203,7 +203,8 @@ def genreStrToInt(genreStr):
         case "Gameshow":
             return 11
         case "Something went wrong!":
-            return "Something went wrong!"
+            print("Something went wrong at Genres!")
+            return ""
     
     
 
@@ -215,22 +216,108 @@ def getAnimeGenre(container):
     if container.find('span', class_ = 'genre')is not None:
 
         genreAnimeList = container.find_all('span', class_ = 'genre')
-        genresAnimeFormated = getAnimeValidator(genreAnimeList)
-        # genrePicked = genrePicker(genresFormated)
-        # genreCompleted = str(genreStrToInt(genrePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
-        print (genresAnimeFormated)
+        genresAnimeFixed = genreAnimeFixed(genreAnimeList)
+        genreAnimeValidated = genreAnimeValidator(genresAnimeFixed)
+        genreAnimePicked = genreAnimePicker(genreAnimeValidated)
+        genreCompleted = str(genreStrToInt(genreAnimePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
+        print (genreCompleted)
     #     return genreCompleted, genresSpecial
     
     # else:
     #     return (""), "0"
 
 
-def getAnimeValidator(genreAnimeList):
+def genreAnimeFixed(genreAnimeList):
+    genreAnimeReturn = []
 
     for genreAnime in genreAnimeList:
-        genreAnimListFixed = genreAnime.split("\">", 1)
+        genreAnime = str(genreAnime)
+        genreAnimListFixed = genreAnime.rsplit("\">", 1)
         genreAnimeFix = genreAnimListFixed[1]
-        genreAnimListFixed = genreAnime.split("</", 1)
-        genreAnimeFix = genreAnimListFixed[0]
+        genreAnimListFixed2 = genreAnimeFix.split("</", 1)
+        genreAnimeFix = genreAnimListFixed2[0]
+        genreAnimeReturn.append(genreAnimeFix)
 
-        return genreAnimeFix
+    return genreAnimeReturn
+
+
+
+def genreAnimeValidator(genres):
+    validGenres = ['Comedy', 'Drama', 'Sci-Fi', 'Horror', 'Sports', 'Fantasy', 'Romance', 'Action', 'Mecha', 'Adventure']
+    genreSetsValid = []
+    for genreSet in genres:
+        if genreSet in validGenres:
+            genreSetsValid.append(genreSet)
+    return genreSetsValid
+
+
+def genreAnimePicker(genre):
+
+    Comedy = 0
+    Drama = 0
+    SciFi = 0
+    Horror = 0
+    Sports = 0
+    Fantasy = 0
+    Romance = 0
+    Action = 0
+    Mecha = 0
+    Adventure = 0
+
+    for oneGenre in genre:
+        match oneGenre:
+            case "Comedy": #
+                Comedy+= 1
+            case "Drama": #
+                Drama+= 1
+            case "Sci-Fi": #
+                SciFi+= 1
+            case "Horror": #
+                Horror+= 1
+            case "Sports": #
+                Sports+= 1
+            case "Fantasy": #
+                Fantasy+= 1
+            case "Romance": #
+                Romance+= 1
+            case "Action": #
+                Action+= 1
+            case "Mecha": #
+                Mecha+= 1
+            case "Adventure": #
+                Adventure+= 1
+            case "Something went wrong!":
+                print("Something went wrong at Genres!")
+
+##Lets improvise both IF blocks sometime
+
+        if Horror == 1:  
+            return 'Horror'
+        elif Sports == 1:
+            return 'Sport'
+        elif Mecha == 1:
+            return 'SciFi'
+        elif Adventure == 1:
+            if(SciFi == 1):
+                return 'SciFi'
+            elif(Fantasy == 1):
+                return 'Fantasy'
+            elif(Action == 1):
+                return 'Action'
+        elif SciFi == 1:
+            return 'SciFi'
+        elif Fantasy == 1 and Romance != 1:
+            return 'Fantasy'
+        elif Action == 1:
+            return 'Action'
+        elif Drama == 1:
+            return 'Drama'
+        elif Romance == 1:
+            return 'Romance'
+        elif Comedy == 1:
+            return 'Comedy'
+        else:
+            return '' 
+        
+
+
