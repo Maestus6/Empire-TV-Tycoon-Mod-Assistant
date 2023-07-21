@@ -1,4 +1,5 @@
 from primaryFunctions.getDataForMovies import *
+from primaryFunctions.getDataForAnime import *
 
 
 #!!!-------------------------------------!!!!!!!!!!-------------------------------------!!!#
@@ -16,6 +17,7 @@ from primaryFunctions.getDataForMovies import *
 
 #!!!-------------------------------------!!!!!!!!!!-------------------------------------!!!#
 
-movieLoops()
+#movieLoops()
+animeLoops()
 
 

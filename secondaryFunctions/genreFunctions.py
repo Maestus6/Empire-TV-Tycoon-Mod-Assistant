@@ -208,3 +208,29 @@ def genreStrToInt(genreStr):
     
 
 
+
+#Anime Genre Main
+def getAnimeGenre(container):
+
+    if container.find('span', class_ = 'genre')is not None:
+
+        genreAnimeList = container.find_all('span', class_ = 'genre')
+        genresAnimeFormated = getAnimeValidator(genreAnimeList)
+        # genrePicked = genrePicker(genresFormated)
+        # genreCompleted = str(genreStrToInt(genrePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
+        print (genresAnimeFormated)
+    #     return genreCompleted, genresSpecial
+    
+    # else:
+    #     return (""), "0"
+
+
+def getAnimeValidator(genreAnimeList):
+
+    for genreAnime in genreAnimeList:
+        genreAnimListFixed = genreAnime.split("\">", 1)
+        genreAnimeFix = genreAnimListFixed[1]
+        genreAnimListFixed = genreAnime.split("</", 1)
+        genreAnimeFix = genreAnimListFixed[0]
+
+        return genreAnimeFix
