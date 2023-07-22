@@ -68,4 +68,6 @@ def animeLoops():
 
         #Anime List Main
         animeCounter += 1
-        animeFilteredList = dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeRatings, animeRuntime, animePageScore, animeXMLTitle, animeCounter)
+        animeFilteredList.append(dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeRatings, animeRuntime, animePageScore, animeXMLTitle, animeCounter))
+
+    print(animeFilteredList)

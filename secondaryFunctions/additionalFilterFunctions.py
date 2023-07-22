@@ -40,12 +40,12 @@ def dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeRatings, animeRu
                       'animeXMLTitle': str(animeXMLTitle)} , index = [animeCounter]
                       )
     
-    animeList = pdOutputFull.values.tolist()
-    animeFilteredList = animeTurnIntoList(animeList)
+    #animeList = pdOutputFull.values.tolist()
+    animeFilteredList = animeTurnIntoList(pdOutputFull)
+    animeList = animeFilteredList.to_numpy()
+    #print(animeFilteredList)
 
-    print(animeFilteredList)
-
-    return animeFilteredList
+    return animeList
 
 
 
@@ -53,8 +53,12 @@ def dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeRatings, animeRu
 
 def animeTurnIntoList(animeList):
 
-    for animeTitle, animeYears, animeGenres, animeRatings, animeRuntime, animePageScore, animeXMLTitle in animeList.copy():
-        if animeTitle == "" or animeYears == "" or animeGenres == "" or animeRuntime == "" or animePageScore == "" or animePageScore == "0":
-            animeList.remove(animeList)
-    
-    return animeList
+    purifiedAnimeList = animeList[~(animeList == "None").any(axis=1)]
+    purifiedAnimeList1 = purifiedAnimeList[~(animeList == "?").any(axis=1)]
+    purifiedAnimeList2 = purifiedAnimeList1[~(animeList == "Remove me from list").any(axis=1)]
+
+
+
+    return purifiedAnimeList2
+
+

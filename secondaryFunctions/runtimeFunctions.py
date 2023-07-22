@@ -24,6 +24,7 @@ def getAnimeRuntime(container):
         
         runtimeList = container.find_all('div', class_ = 'info')
         runtimeFormatFixed = str(getAnimeTextFormat(runtimeList))
+        return runtimeFormatFixed
     else:
         print("")
 
@@ -43,7 +44,7 @@ def getAnimeTextFormat(runtimeList):
 def runtimeAnimeFormatter(eps):
     
     if(eps < 7):
-        return 0
+        return ""
     elif(eps < 9):
         return 1
     elif(eps < 15):
