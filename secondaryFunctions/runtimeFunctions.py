@@ -1,3 +1,4 @@
+#runtime main
 def getRuntime(container):
 
     if container.p.find('span', class_ = 'runtime') is not None:
@@ -15,3 +16,12 @@ def runtimeFormatter(runtime):
         return 2
     elif(runtime > 151):
         return 3
+    
+#anime runtime main
+def getAnimeRuntime(container):
+
+    if container.find_all('div', class_ = 'info') is not None:
+        testList = container.find_all('div', class_ = 'info')
+        print(testList)
+    else:
+        print("")

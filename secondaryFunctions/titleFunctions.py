@@ -23,7 +23,6 @@ def getAnimeTitle(animeContainer):
 
         title = animeContainer.find('span', class_ = 'js-title')
         titleXMLPic = fixAnimeContainer(str(title))
-        print(titleXMLPic)
         return title, titleXMLPic
 
     else:

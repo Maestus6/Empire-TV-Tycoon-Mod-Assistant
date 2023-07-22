@@ -10,9 +10,9 @@ import fnmatch
 #Functions
 from secondaryFunctions.genreFunctions import *
 from secondaryFunctions.runtimeFunctions import *
-from secondaryFunctions.yearFunctions import *
+#from secondaryFunctions.yearFunctions import *
 from secondaryFunctions.outputFunctions import *
-from secondaryFunctions.ratingFunctions import *
+#from secondaryFunctions.ratingFunctions import *
 from secondaryFunctions.bannerFunctions import *
 from secondaryFunctions.titleFunctions import *
 from secondaryFunctions.pageScoreFunctions import *
@@ -25,8 +25,8 @@ def animeLoops():
     counter = 0 #to Count loop iterations
     numOutputFull = []
 
-    yearVal = str(input("Enter the year: "))
-    seasonVal = str(input("Enter the season2: "))
+    yearVal = "2022"
+    seasonVal = "summer"
 
     #https://myanimelist.net/anime/season/2023/fall
     #get request for anime series
@@ -48,4 +48,14 @@ def animeLoops():
         #Anime Title Main
         (animeTitle),(animeXMLTitle) = getAnimeTitle(container)
 
-        genres = getAnimeGenre(container)
+        #Anime Year Main
+        animeYears = str(yearVal)
+
+        #Anime Genre Main
+        animeGenres = getAnimeGenre(container)
+
+        #Anime Rating Main
+        animeRatings = "5"
+
+        #Anime Runtime Main
+        animeRuntime = getAnimeRuntime(container)

@@ -173,8 +173,7 @@ def genrePicker(genre):
         return 'Drama'
     elif(Comedy == 1):
         return 'Comedy' ##End of sad IF Block and function
-    else:
-        return 'Something went wrong!'
+    
     
 def genreStrToInt(genreStr):
     match genreStr:
@@ -201,15 +200,8 @@ def genreStrToInt(genreStr):
         case "Action":
             return 10
         case "Gameshow":
-            return 11
-        case "Something went wrong!":
-            print("Something went wrong at Genres!")
-            return ""
+            return 11    
     
-    
-
-
-
 #Anime Genre Main
 def getAnimeGenre(container):
 
@@ -220,11 +212,11 @@ def getAnimeGenre(container):
         genreAnimeValidated = genreAnimeValidator(genresAnimeFixed)
         genreAnimePicked = genreAnimePicker(genreAnimeValidated)
         genreCompleted = str(genreStrToInt(genreAnimePicked)) #Formatting it to str, to prevent future code to treat int like float while printing
-        print (genreCompleted)
-    #     return genreCompleted, genresSpecial
+
+        return genreCompleted
     
-    # else:
-    #     return (""), "0"
+    else:
+        return (""), "0"
 
 
 def genreAnimeFixed(genreAnimeList):
@@ -286,8 +278,6 @@ def genreAnimePicker(genre):
                 Mecha+= 1
             case "Adventure": #
                 Adventure+= 1
-            case "Something went wrong!":
-                print("Something went wrong at Genres!")
 
 ##Lets improvise both IF blocks sometime
 
@@ -316,8 +306,6 @@ def genreAnimePicker(genre):
             return 'Romance'
         elif Comedy == 1:
             return 'Comedy'
-        else:
-            return '' 
         
 
 
