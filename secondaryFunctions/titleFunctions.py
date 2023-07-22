@@ -35,7 +35,6 @@ def fixAnimeContainer (titles):
     titleFix = firstFixList[1]
     secondFixList = titleFix.split("</span>", 1)
     titleFix = secondFixList[0]
-    titleFix = titleXMLPicFixer(titleFix)
     return titleFix
     
 

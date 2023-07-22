@@ -57,6 +57,9 @@ def animeLoops():
         #Anime Genre Main
         animeGenres = getAnimeGenre(container)
 
+        #Anime Type Main
+        animeType = "1"
+
         #Anime Rating Main
         animeRatings = "5"
 
@@ -65,13 +68,15 @@ def animeLoops():
         
         #Anime Score Main
         animePageScore = getAnimeScore(container)
-
+        
         #Anime List Main
         animeCounter += 1 
         tempAnimeList = []
-        tempAnimeList = dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeRatings, animeRuntime, animePageScore, animeXMLTitle)
+        tempAnimeList = dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeRatings, animeRuntime, animePageScore, animeXMLTitle)
 
         if(tempAnimeList != "DONTADD"):
             animeFilteredList.append(tempAnimeList)
 
-    print(animeFilteredList)
+
+    dataFramer(animeFilteredList)
+    print(f"Loop iterated {animeCounter} times")
