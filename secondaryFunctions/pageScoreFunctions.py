@@ -38,5 +38,5 @@ def animeScoreFormater(scoreAnime):
         scoreAnime = round(float(scoreAnimeFix) , 1)
         return scoreAnime
     else:
-        return ""
+        return "DELETEME"
     

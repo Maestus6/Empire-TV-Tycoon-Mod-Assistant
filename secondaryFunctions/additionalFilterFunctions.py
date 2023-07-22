@@ -29,21 +29,13 @@ def getMoviesOrSeries(container):
 
 
 
-def dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeRatings, animeRuntime, animePageScore, animeXMLTitle, animeCounter):
+def dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeRatings, animeRuntime, animePageScore, animeXMLTitle):
 
-    pdOutputFull = pd.DataFrame({'animeTitle': animeTitle,
-                      'animeYears': str(animeYears),
-                      'animeRatings': str(animeRatings),
-                      'animeGenres': str(animeGenres),
-                      'animeRuntime': str(animeRuntime),
-                      'animePageScore': str(animePageScore),
-                      'animeXMLTitle': str(animeXMLTitle)} , index = [animeCounter]
-                      )
-    
-    #animeList = pdOutputFull.values.tolist()
-    animeFilteredList = animeTurnIntoList(pdOutputFull)
-    animeList = animeFilteredList.to_numpy()
-    #print(animeFilteredList)
+
+    if(animeGenres == "DELETEME" or animeRuntime == "DELETEME" or animePageScore == "DELETEME"):
+        animeList = "DONTADD"
+    else:
+        animeList = [animeTitle, animeYears, animeGenres, animeRatings, animeRuntime, animePageScore, animeXMLTitle]
 
     return animeList
 

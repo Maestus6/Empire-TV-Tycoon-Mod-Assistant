@@ -307,7 +307,7 @@ def genreAnimePicker(genre):
         elif Comedy == 1:
             return 'Comedy'
         else:
-            return 'Remove me from list'
+            return 'DELETEME'
         
 
 

@@ -67,7 +67,11 @@ def animeLoops():
         animePageScore = getAnimeScore(container)
 
         #Anime List Main
-        animeCounter += 1
-        animeFilteredList.append(dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeRatings, animeRuntime, animePageScore, animeXMLTitle, animeCounter))
+        animeCounter += 1 
+        tempAnimeList = []
+        tempAnimeList = dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeRatings, animeRuntime, animePageScore, animeXMLTitle)
+
+        if(tempAnimeList != "DONTADD"):
+            animeFilteredList.append(tempAnimeList)
 
     print(animeFilteredList)
