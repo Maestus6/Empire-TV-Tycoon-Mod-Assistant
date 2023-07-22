@@ -21,22 +21,23 @@ def runtimeFormatter(runtime):
 def getAnimeRuntime(container):
 
     if container.find_all('div', class_ = 'info') is not None:
+        
         runtimeList = container.find_all('div', class_ = 'info')
-        #print(runtimeList)
-        animeFormatFixed = str(getAnimeTextFormat(runtimeList))
-        print (animeFormatFixed)
+        runtimeFormatFixed = str(getAnimeTextFormat(runtimeList))
     else:
         print("")
 
 
 def getAnimeTextFormat(runtimeList):
     
-    firstFixList = str(runtimeList).rsplit(" eps", 1)
-    titleFix = firstFixList[0]
+    a = runtimeList
+    firstFixList = str(runtimeList).rsplit(" ep", 1)
+    titleFix = str(firstFixList[0])
     secondFixList = titleFix.rsplit("<span>", 1)
-    titleFix = secondFixList[1]
+    titleSecondFix = str(secondFixList[1])
 
-    return titleFix
+    return titleSecondFix
+
 
 
 def runtimeAnimeFormatter(eps):

@@ -59,3 +59,6 @@ def animeLoops():
 
         #Anime Runtime Main
         animeRuntime = getAnimeRuntime(container)
+        
+        #Anime Score Main
+        pageScore = getAnimeScore(container)
