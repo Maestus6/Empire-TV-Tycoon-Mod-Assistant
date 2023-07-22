@@ -16,17 +16,18 @@ from secondaryFunctions.outputFunctions import *
 from secondaryFunctions.bannerFunctions import *
 from secondaryFunctions.titleFunctions import *
 from secondaryFunctions.pageScoreFunctions import *
+from secondaryFunctions.additionalFilterFunctions import *
 
 
 
 def animeLoops():
 
     headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandarin
-    counter = 0 #to Count loop iterations
-    numOutputFull = []
-
     yearVal = "2022"
     seasonVal = "summer"
+    animeFilteredList = []
+    animeCounter = 0
+
 
     #https://myanimelist.net/anime/season/2023/fall
     #get request for anime series
@@ -42,6 +43,8 @@ def animeLoops():
 
     page_html = BeautifulSoup(response.text, 'html.parser')
     animeContainers = page_html.find_all('div', class_ = 'js-anime-category-producer')
+
+
 
     for container in animeContainers:
 
@@ -61,4 +64,8 @@ def animeLoops():
         animeRuntime = getAnimeRuntime(container)
         
         #Anime Score Main
-        pageScore = getAnimeScore(container)
+        animePageScore = getAnimeScore(container)
+
+        #Anime List Main
+        animeCounter += 1
+        animeFilteredList = dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeRatings, animeRuntime, animePageScore, animeXMLTitle, animeCounter)

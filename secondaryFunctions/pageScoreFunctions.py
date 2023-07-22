@@ -8,16 +8,9 @@ def getPageScore(container):
     else:
         return ""
     
-
-#AlternativeScore main
-def getAlternativeScore(container):
-    if container.find('span', class_ = 'metascore') is not None:
-        return 1
-    else:
-        return 2
     
 
-#Anime score main
+#Anime Score main
 def getAnimeScore(container):
 
     scoreAnimeList = container.find_all('div', class_ = 'scormem-container')

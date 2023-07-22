@@ -1,20 +1,4 @@
-import pandas as pd #needed for dataframe
 import sys #needed to write on notepad
-
-def dataArrSaver(titles, years, ratings, genres, runtimes, pageScore, titleXMLPic, counter):
-    
-    pdOutputFull = pd.DataFrame({'movie': titles,
-                      'year': years,
-                      'rating': ratings,
-                      'genre': genres,
-                      'runtime_min': runtimes,
-                      'imdb': pageScore,
-                      'titleXMLPic': titleXMLPic} , index = [counter]
-                      )
-    numOutputFull = pdOutputFull.to_numpy()
-
-    return numOutputFull
-
 
 def dataFramer(numOutputFull):  #outputResults (numOutputFull)
 

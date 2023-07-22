@@ -15,6 +15,7 @@ from secondaryFunctions.ratingFunctions import *
 from secondaryFunctions.bannerFunctions import *
 from secondaryFunctions.titleFunctions import *
 from secondaryFunctions.pageScoreFunctions import *
+from secondaryFunctions.additionalFilterFunctions import *
 
 
 
@@ -66,8 +67,8 @@ def movieLoops():
             #PageScore ratings(Movie score)
             pageScore = getPageScore(container)
 
-            #AlternativeScore Main(Using pageScore.py) (Used to diverse movies from tvshows)
-            movieOrSeries = getAlternativeScore(container)
+            #AlternativeScore Main(additionalFilterFunctions.py) (Used to diverse movies from tvshows)
+            movieOrSeries = getMoviesOrSeries(container)
 
             #Banner Main
             #getBanner(container, titleXMLPic, years)

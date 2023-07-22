@@ -42,7 +42,7 @@ def getAnimeTextFormat(runtimeList):
 
 def runtimeAnimeFormatter(eps):
     
-    if(eps < 6):
+    if(eps < 7):
         return 0
     elif(eps < 9):
         return 1
