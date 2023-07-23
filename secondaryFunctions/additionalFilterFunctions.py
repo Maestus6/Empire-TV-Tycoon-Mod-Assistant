@@ -1,17 +1,16 @@
 import pandas as pd #needed for dataframe
 import sys #needed to write on notepad
-
 #Movies List Main
 def dataArrSaver(titles, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter):
     
-    pdOutputFull = pd.DataFrame({'movie': str(titles),
+    pdOutputFull = pd.DataFrame({'name': str(titles),
                       'year': str(years),
-                      'rating': str(ratings),
                       'genre': str(genres),
                       'type' : str(movieOrSeries),
                       'episodes' :str(episodes),
-                      'runtime_min': str(runtimes),
-                      'imdb': str(pageScore),
+                      'rating': str(pageScore),
+                      'block': str(runtimes),
+                      'special': str(ratings),
                       'titleXMLPic': str(titleXMLPic)} , index = [counter]
                       )
     numOutputFull = pdOutputFull.to_numpy()

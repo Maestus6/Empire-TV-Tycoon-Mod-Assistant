@@ -61,10 +61,12 @@ def movieLoops():
             #AlternativeScore Main(additionalFilterFunctions.py) (Used to diverse movies from tvshows)
             movieOrSeries = getMoviesOrSeries(container)
 
-            if movieOrSeries == 0:
+            if movieOrSeries == 1:
                 episodes = "0"
-            elif movieOrSeries == 1:
+            elif movieOrSeries == 2:
                 episodes = "10"
+            else:
+                episodes = "DELETEME"
 
             #PageScore ratings(Movie score)
             pageScore = getPageScore(container)
