@@ -18,7 +18,7 @@ from primaryFunctions.getDataForAnime import *
 
 #!!!-------------------------------------!!!!!!!!!!-------------------------------------!!!#
 
-movieLoops()
-#animeLoops()
+#movieLoops()
+animeLoops()
 
 

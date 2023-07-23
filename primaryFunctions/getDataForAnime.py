@@ -3,8 +3,7 @@ from requests import get  #pip install requests
 from bs4 import BeautifulSoup #pip install beautifulsoup4
 from time import sleep
 from random import randint
-import numpy as np
-import fnmatch
+import pandas as pd
 
 
 #Functions
@@ -17,6 +16,7 @@ from secondaryFunctions.bannerFunctions import *
 from secondaryFunctions.titleFunctions import *
 from secondaryFunctions.pageScoreFunctions import *
 from secondaryFunctions.additionalFilterFunctions import *
+from secondaryFunctions.episodesFunctions import *
 
 
 
@@ -52,7 +52,7 @@ def animeLoops():
         (animeTitle),(animeXMLTitle) = getAnimeTitle(container)
 
         #Anime Year Main
-        animeYears = str(yearVal)
+        animeYears = yearVal
 
         #Anime Genre Main
         animeGenres = str(getAnimeGenre(container))
@@ -61,7 +61,10 @@ def animeLoops():
         animeType = "1"
 
         #Anime Episodes Main
-        animeEpisodes = str(getAnimeRuntime(container))
+        animeEpisodes = str(getAnimeEpisode(container))
+
+        #Anime Score Main
+        animePageScore = str(getAnimeScore(container))
 
         #Anime Rating Main
         animeRatings = "5"
@@ -69,16 +72,11 @@ def animeLoops():
         #Anime Runtime Main
         animeRuntime = "1"
         
-        #Anime Score Main
-        animePageScore = str(getAnimeScore(container))
-        
         #Anime List Main
         animeCounter += 1 
-        tempAnimeList = []
-        tempAnimeList = dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore, animeRatings, animeRuntime, animeXMLTitle)
 
-        if(tempAnimeList != "DONTADD"):
-            animeFilteredList.append(tempAnimeList)
+        animeFilteredList.append(dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore,
+        animeRatings, animeRuntime, animeXMLTitle, animeCounter))
     
     #print(f"Anime list: {animeFilteredList}")
     dataFramer(animeFilteredList)

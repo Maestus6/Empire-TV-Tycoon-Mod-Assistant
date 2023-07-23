@@ -30,17 +30,24 @@ def getMoviesOrSeries(container):
 
 
 #Anime List Main
-def dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore, animeRatings, animeRuntime, animeXMLTitle):
+def dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore, animeRatings, animeRuntime, animeXMLTitle, animeCounter):
 
-    if(animeTitle == "DELETEME" or animeYears == "DELETEME" or animeGenres == "DELETEME" or animeType == "DELETEME" or animeEpisodes == "DELETEME" or animePageScore == "DELETEME" or animeRatings == "DELETEME" or animeRuntime == "DELETEME" or animeXMLTitle == "DELETEME"):
-        animeList = "DONTADD"
-    else:
-        animeList = [animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore, animeRatings, animeRuntime, animeXMLTitle]
-
-    return animeList
-
-
-
+    if(animeTitle != "DELETEME" and animeYears != "DELETEME" and animeGenres != "DELETEME" and animeType != "DELETEME" and animeEpisodes != "DELETEME" 
+       and animePageScore != "DELETEME" and animeRatings != "DELETEME" and animeRuntime != "DELETEME" and animeXMLTitle != "DELETEME"):
+        #animeList = [animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore, animeRatings, animeRuntime, animeXMLTitle]
+        animePandaFull = pd.DataFrame({'name': str(animeTitle),
+                        'year': str(animeYears),
+                        'genre': str(animeGenres),
+                        'type' : str(animeType),
+                        'episodes' :str(animeEpisodes),
+                        'rating': str(animePageScore),
+                        'block': str(animeRatings),
+                        'special': str(animeRuntime),
+                        'titleXMLPic': str(animeXMLTitle)} , index = [animeCounter]
+                        )
+        animeNumFull = animePandaFull.to_numpy()
+        return animeNumFull
+    
 
 
 def animeTurnIntoList(animeList):

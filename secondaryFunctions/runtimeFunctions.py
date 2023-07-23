@@ -16,45 +16,6 @@ def runtimeFormatter(runtime):
         return 2
     elif(runtime > 151):
         return 3
-    
-#anime runtime main
-def getAnimeRuntime(container):
 
-    if container.find_all('div', class_ = 'info') is not None:
-        
-        runtimeList = container.find_all('div', class_ = 'info')
-        runtimeFormatFixed = str(getAnimeTextFormat(runtimeList))
-        runtimeAnimeFormat = runtimeAnimeFormatter(runtimeFormatFixed)
-        return runtimeAnimeFormat
-    else:
-        return("DELETEME")
-
-
-def getAnimeTextFormat(runtimeList):
-    
-    a = runtimeList
-    firstFixList = str(runtimeList).rsplit(" ep", 1)
-    titleFix = str(firstFixList[0])
-    secondFixList = titleFix.rsplit("<span>", 1)
-    titleSecondFix = str(secondFixList[1])
-
-    return titleSecondFix
-
-
-
-def runtimeAnimeFormatter(eps):
-
-    try :
-        ep = int(eps)
-        if(ep < 7):
-            return "DELETEME"
-        elif(ep < 9):
-            return "1"
-        elif(ep < 15):
-            return "2"
-        elif(ep > 15):
-            return "3"
-    except :
-        return "DELETEME"
     
     
