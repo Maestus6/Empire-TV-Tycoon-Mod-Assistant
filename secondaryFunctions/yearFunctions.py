@@ -5,7 +5,7 @@ def getYear(container):
         yearFixed = yearFormatter(year)
         return yearFixed
     else:
-        return ""
+        return "DELETEME"
 
 def yearFormatter(year):
 

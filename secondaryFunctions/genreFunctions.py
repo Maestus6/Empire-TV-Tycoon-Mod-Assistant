@@ -216,7 +216,7 @@ def getAnimeGenre(container):
         return genreCompleted
     
     else:
-        return (""), "0"
+        return ("DELETEME"), "0"
 
 
 def genreAnimeFixed(genreAnimeList):

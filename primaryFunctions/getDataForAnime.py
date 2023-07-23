@@ -55,13 +55,13 @@ def animeLoops():
         animeYears = str(yearVal)
 
         #Anime Genre Main
-        animeGenres = getAnimeGenre(container)
+        animeGenres = str(getAnimeGenre(container))
 
         #Anime Type Main
         animeType = "1"
 
         #Anime Episodes Main
-        animeEpisodes = getAnimeRuntime(container)
+        animeEpisodes = str(getAnimeRuntime(container))
 
         #Anime Rating Main
         animeRatings = "5"
@@ -79,7 +79,7 @@ def animeLoops():
 
         if(tempAnimeList != "DONTADD"):
             animeFilteredList.append(tempAnimeList)
-
+    
     #print(f"Anime list: {animeFilteredList}")
     dataFramer(animeFilteredList)
     #print(f"Loop iterated {animeCounter} times")

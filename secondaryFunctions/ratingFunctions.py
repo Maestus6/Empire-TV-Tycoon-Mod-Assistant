@@ -10,7 +10,7 @@ def getRating(container, genresSpecial):
         return ratingFound
 
     else:
-        return ""
+        return "DELETEME"
     
 def ratingFinder(specialGenre, rating):
     if(specialGenre == 1):

@@ -27,7 +27,7 @@ def getAnimeTitle(animeContainer):
         return title, titleXMLPic
 
     else:
-        return "", ""
+        return "DELETEME", "DELETEME"
 
 def fixAnimeContainer (titles):
 

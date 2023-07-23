@@ -33,7 +33,7 @@ def getMoviesOrSeries(container):
 #Anime List Main
 def dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore, animeRatings, animeRuntime, animeXMLTitle):
 
-    if(animeGenres == "DELETEME" or animeRuntime == "DELETEME" or animePageScore == "DELETEME" or animeEpisodes == "DELETEME"):
+    if(animeTitle == "DELETEME" or animeYears == "DELETEME" or animeGenres == "DELETEME" or animeType == "DELETEME" or animeEpisodes == "DELETEME" or animePageScore == "DELETEME" or animeRatings == "DELETEME" or animeRuntime == "DELETEME" or animeXMLTitle == "DELETEME"):
         animeList = "DONTADD"
     else:
         animeList = [animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore, animeRatings, animeRuntime, animeXMLTitle]
