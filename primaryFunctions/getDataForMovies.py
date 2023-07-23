@@ -61,18 +61,21 @@ def movieLoops():
             #AlternativeScore Main(additionalFilterFunctions.py) (Used to diverse movies from tvshows)
             movieOrSeries = getMoviesOrSeries(container)
 
-            episodes = "0"
-
-            #Rating Main
-            ratings = getRating(container, genresSpecial)
-
-            #Runtime Main(Blocks for EmpireTV)
-            runtimes = getRuntime(container)
+            if movieOrSeries == 0:
+                episodes = "0"
+            elif movieOrSeries == 1:
+                episodes = "10"
 
             #PageScore ratings(Movie score)
             pageScore = getPageScore(container)
 
 
+
+            #Runtime Main(Blocks for EmpireTV)
+            runtimes = getRuntime(container)
+
+            #Rating Main
+            ratings = getRating(container, genresSpecial)
 
             #Banner Main
             #getBanner(container, titleXMLPic, years)
@@ -85,7 +88,7 @@ def movieLoops():
 
             #Save Movies for usage of Output main once we get every data
             counter += 1
-            numOutputFull.append(dataArrSaver(titles, years, genres, movieOrSeries, ratings, runtimes, pageScore, titleXMLPic, counter))
+            numOutputFull.append(dataArrSaver(titles, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter))
 
             ##End of Loop
             

@@ -5,7 +5,7 @@ def dataFramer(numOutputFull):  #outputResults (numOutputFull)
     orig_stdout = sys.stdout ##Original stdout
     with open('Output.txt', 'w') as sys.stdout:
         for looper in numOutputFull:
-            for titles, years, genres, movieOrSeries, runtimes, pageScore, ratings, titleXMLPic in looper:
+            for titles, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic in looper:
                 print('<Movie>')
                 print(f"<Id value=\"\">")
                 print(f"<Name value=\"{titles}\">")
@@ -13,7 +13,7 @@ def dataFramer(numOutputFull):  #outputResults (numOutputFull)
                 print(f"<Year value=\"{years}\">")
                 print(f"<Genre value=\"{genres}\">") 
                 print(f"<Type value=\"{movieOrSeries}\">")
-                print(f"<Episodes value=\"{runtimes}\">")
+                print(f"<Episodes value=\"{episodes}\">")
                 print(f"<Rating value=\"{pageScore}\">")
                 print(f"<Blocks value=\"{runtimes}\">")
                 print(f"<Cult value=\"0\">")

@@ -2,13 +2,14 @@ import pandas as pd #needed for dataframe
 import sys #needed to write on notepad
 
 #Movies List Main
-def dataArrSaver(titles, years, ratings, genres, runtimes, pageScore, titleXMLPic, counter, movieOrSeries):
+def dataArrSaver(titles, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter):
     
     pdOutputFull = pd.DataFrame({'movie': str(titles),
                       'year': str(years),
                       'rating': str(ratings),
                       'genre': str(genres),
                       'type' : str(movieOrSeries),
+                      'episodes' :str(episodes),
                       'runtime_min': str(runtimes),
                       'imdb': str(pageScore),
                       'titleXMLPic': str(titleXMLPic)} , index = [counter]
@@ -30,12 +31,12 @@ def getMoviesOrSeries(container):
 
 
 #Anime List Main
-def dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeRatings, animeRuntime, animePageScore, animeXMLTitle):
+def dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore, animeRatings, animeRuntime, animeXMLTitle):
 
-    if(animeGenres == "DELETEME" or animeRuntime == "DELETEME" or animePageScore == "DELETEME"):
+    if(animeGenres == "DELETEME" or animeRuntime == "DELETEME" or animePageScore == "DELETEME" or animeEpisodes == "DELETEME"):
         animeList = "DONTADD"
     else:
-        animeList = [animeTitle, animeYears, animeGenres, animeType, animeRatings, animeRuntime, animePageScore, animeXMLTitle]
+        animeList = [animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore, animeRatings, animeRuntime, animeXMLTitle]
 
     return animeList
 
