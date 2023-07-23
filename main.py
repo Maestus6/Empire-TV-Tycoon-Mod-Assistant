@@ -14,6 +14,7 @@ from primaryFunctions.getDataForAnime import *
 #6- Find a way to only take movies between exact dates for get Request, as getting new movies with no start dates etc. (NEEDED)
 #7- A minor task, needs to add rating and genre filter functions for TV-Series. (NEEDED)
 #8- Get data from quote webpages to fill in Quote/Viewer Speech part of the XML, it is not needed but would be amazing (OPTIONAL)
+#9- Make naming more consistent for variables, right now they are rather confusing (NEEDED)
 
 #!!!-------------------------------------!!!!!!!!!!-------------------------------------!!!#
 

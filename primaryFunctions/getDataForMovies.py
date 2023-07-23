@@ -16,7 +16,7 @@ from secondaryFunctions.bannerFunctions import *
 from secondaryFunctions.titleFunctions import *
 from secondaryFunctions.pageScoreFunctions import *
 from secondaryFunctions.additionalFilterFunctions import *
-
+from secondaryFunctions.episodesFunctions import *
 
 
 def movieLoops():
@@ -48,7 +48,7 @@ def movieLoops():
 
 
         for container in movie_containers:
-            print(container)
+
             #Title Main
             (titles),(titleXMLPic) = getTitle(container)
 
@@ -61,17 +61,11 @@ def movieLoops():
             #AlternativeScore Main(additionalFilterFunctions.py) (Used to diverse movies from tvshows)
             movieOrSeries = getMoviesOrSeries(container)
 
-            if movieOrSeries == 1:
-                episodes = "0"
-            elif movieOrSeries == 2:
-                episodes = "10"
-            else:
-                episodes = "DELETEME"
+            #Episodes main
+            episodes = getEpisodes(movieOrSeries)
 
             #PageScore ratings(Movie score)
             pageScore = getPageScore(container)
-
-
 
             #Runtime Main(Blocks for EmpireTV)
             runtimes = getRuntime(container)
