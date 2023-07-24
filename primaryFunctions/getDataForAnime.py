@@ -48,38 +48,40 @@ def animeLoops():
 
     for container in animeContainers:
 
-        getAnimeBanner(container)
+        #Anime Title Main
+        (animeTitle),(animeXMLTitle) = getAnimeTitle(container)
 
-    #     #Anime Title Main
-    #     (animeTitle),(animeXMLTitle) = getAnimeTitle(container)
+        #Anime Year Main
+        animeYears = yearVal
 
-    #     #Anime Year Main
-    #     animeYears = yearVal
+        #Anime Genre Main
+        animeGenres = str(getAnimeGenre(container))
 
-    #     #Anime Genre Main
-    #     animeGenres = str(getAnimeGenre(container))
+        #Anime Type Main
+        animeType = "1"
 
-    #     #Anime Type Main
-    #     animeType = "1"
+        #Anime Episodes Main
+        animeEpisodes = str(getAnimeEpisode(container))
 
-    #     #Anime Episodes Main
-    #     animeEpisodes = str(getAnimeEpisode(container))
+        #Anime Score Main
+        animePageScore = str(getAnimeScore(container))
 
-    #     #Anime Score Main
-    #     animePageScore = str(getAnimeScore(container))
+        #Anime Rating Main
+        animeRatings = "5"
 
-    #     #Anime Rating Main
-    #     animeRatings = "5"
-
-    #     #Anime Runtime Main
-    #     animeRuntime = "1"
+        #Anime Runtime Main
+        animeRuntime = "1"
         
-    #     #Anime List Main
-    #     animeCounter += 1 
+        #Anime List Main
+        animeCounter += 1 
 
-    #     animeFilteredList.append(dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore,
-    #     animeRatings, animeRuntime, animeXMLTitle, animeCounter))
+        #Anime Banner Main
+        getBanner(container, animeXMLTitle, animeYears)
+
+        animeFilteredList.append(dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore,
+        animeRatings, animeRuntime, animeXMLTitle, animeCounter))
+        
     
-    # #print(f"Anime list: {animeFilteredList}")
-    # dataFramer(animeFilteredList)
-    # #print(f"Loop iterated {animeCounter} times")
+    #print(f"Anime list: {animeFilteredList}")
+    dataFramer(animeFilteredList)
+    #print(f"Loop iterated {animeCounter} times")
