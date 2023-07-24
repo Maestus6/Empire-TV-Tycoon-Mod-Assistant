@@ -12,12 +12,24 @@ def getAnimeStoryline (container):
 
 def animeStorylineFix (animeStoryline):
 
+    strExists = 0
     animeStorylineFix = animeStoryline.split("<p class=\"preline\">", 1)
-    try:
-        animeStorylineFix1 = []
-        animeStorylineFix1 = animeStorylineFix[1].split("[Written by MAL Rewrite]</p>", 1)
-        return animeStorylineFix1[0]
-    except:
-        animeStorylineFix1 = []
-        animeStorylineFix1 = animeStorylineFix[1].split("<button class=\"js-toggle-text", 1)
-        return animeStorylineFix1[0]
+    animeStorylineFix1 = animeStorylineFix[1]
+    strExists = animeStorylineFix1.find('<button class=\"js-toggle-text')
+
+    if strExists < 0:
+        return ""
+    
+    elif strExists > 1:
+        strExists = animeStorylineFix1.find('[Written by MAL Rewrite]')
+        if(strExists < 1):
+            animeStorylineFix2 = animeStorylineFix1.split("<button class=\"js-toggle-text", 1)
+            return animeStorylineFix2[0]      
+        else:
+            animeStorylineFix2 = animeStorylineFix1.split("[Written by MAL Rewrite]", 1)
+            return animeStorylineFix2[0]
+
+        
+    
+    # else:
+    #     return ""
