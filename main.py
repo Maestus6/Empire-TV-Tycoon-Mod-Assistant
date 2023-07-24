@@ -18,6 +18,8 @@ from primaryFunctions.getDataForAnime import *
 
 #!!!-------------------------------------!!!!!!!!!!-------------------------------------!!!#
 
+##TEST IS DONE VIA COMMENTING THE UNNEEDED ONE FOR NOW!!!
+
 #movieLoops()
 animeLoops()
 
