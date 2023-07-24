@@ -5,16 +5,16 @@ from primaryFunctions.getDataForAnime import *
 #!!!-------------------------------------!!!!!!!!!!-------------------------------------!!!#
 
 #THINGS NEEDS TO BE DONE, ORDERED BY IMPORTANCE
-#0- Find a way to make Functions.pageScoreFunctions.getBannerAlter work (OPTIONAL, RELATED TO #2)!!!!!!!
-#1- Add an control mechanism to prevent unaired yet added on pageScore to getting processed to prevent errors (NEEDED) 
-#2- Banners come in really small sizes, need to find alternative sources to extract them from (NEEDED)
-#3- Find a way to get Storylines - Movie Descs. It is placed in a really generic place at movie containers to be extracted properly (NEEDED)
-#4- Find a place to get a wide picture of a movie to put it on TV Screen, and do necessary changes in the code to implent it (NEEDED)
-#5- Complete Anime part of the code (NEEDED) --- Currently working on this
-#6- Find a way to only take movies between exact dates for get Request, as getting new movies with no start dates etc. (NEEDED)
-#7- A minor task, needs to add rating and genre filter functions for TV-Series. (NEEDED)
-#8- Get data from quote webpages to fill in Quote/Viewer Speech part of the XML, it is not needed but would be amazing (OPTIONAL)
-#9- Make naming more consistent for variables, right now they are rather confusing (NEEDED)
+#0- Add Banners, Add Anime desc and normal TV screen for Anime (NEEDED)
+#1- Get Descs(Probably other source), Get Banners from a different webpage(Other source), Movie Tv screen(Other source) for Movies/TV Series(NEEDED)
+#2- Find a way to only take movies between exact dates for get Request, as getting new movies with no start dates etc. (NEEDED) //We can filter this too but would be handy
+#3 Overhaul Episodes for TV Series(Movies) (NEEDED)   //Currently incomplete
+#4 Overhaul Runtime for Anime based on ep mins (NEEDED)
+#5- Make naming more consistent for variables, right now they are rather confusing (NEEDED)
+#6- Get data from quote webpages to fill in Quote/Viewer Speech part of the XML, it is not needed but would be amazing (OPTIONAL)
+#7- Add an control mechanism to prevent unaired yet added on pageScore to getting processed to prevent errors (OPTIONAL)   //Can filter the input or list for them 
+#8- Allow user input to be taken for getting needed stuff (NEEDED)
+#9- Create a proper, non-text based UI(GUI) (NEEDED)
 
 #!!!-------------------------------------!!!!!!!!!!-------------------------------------!!!#
 
