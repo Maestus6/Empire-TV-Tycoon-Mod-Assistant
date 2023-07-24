@@ -17,6 +17,7 @@ from secondaryFunctions.titleFunctions import *
 from secondaryFunctions.pageScoreFunctions import *
 from secondaryFunctions.additionalFilterFunctions import *
 from secondaryFunctions.episodesFunctions import *
+from secondaryFunctions.storylineFunctions import *
 
 
 
@@ -50,7 +51,7 @@ def animeLoops():
         (animeTitle),(animeXMLTitle) = getAnimeTitle(container)
 
         #Anime Storyline Main
-        animeStoryline = ""
+        animeStoryline = getAnimeStoryline(container)
 
         #Anime Year Main
         animeYears = yearVal
