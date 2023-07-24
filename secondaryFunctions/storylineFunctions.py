@@ -5,7 +5,7 @@ def getAnimeStoryline (container):
     if container.find('div', class_ = 'synopsis js-synopsis') is not None:
         animeStoryline = container.find('div', class_ = 'synopsis js-synopsis')
         animeStoryline = animeStorylineFix(str(animeStoryline))
-        print(animeStoryline)
+        return animeStoryline
     else:
         return ""
 

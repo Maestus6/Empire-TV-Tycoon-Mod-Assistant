@@ -72,7 +72,7 @@ def animeLoops():
         animeRatings = "5"
 
         #Anime Runtime Main
-        animeRuntime = "1"
+        animeRuntime = animeGetRuntime(container)
         
         #Anime List Main
         animeCounter += 1 
