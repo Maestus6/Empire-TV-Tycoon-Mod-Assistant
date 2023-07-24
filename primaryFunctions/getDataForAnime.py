@@ -48,36 +48,38 @@ def animeLoops():
 
     for container in animeContainers:
 
-        #Anime Title Main
-        (animeTitle),(animeXMLTitle) = getAnimeTitle(container)
+        getAnimeBanner(container)
 
-        #Anime Year Main
-        animeYears = yearVal
+    #     #Anime Title Main
+    #     (animeTitle),(animeXMLTitle) = getAnimeTitle(container)
 
-        #Anime Genre Main
-        animeGenres = str(getAnimeGenre(container))
+    #     #Anime Year Main
+    #     animeYears = yearVal
 
-        #Anime Type Main
-        animeType = "1"
+    #     #Anime Genre Main
+    #     animeGenres = str(getAnimeGenre(container))
 
-        #Anime Episodes Main
-        animeEpisodes = str(getAnimeEpisode(container))
+    #     #Anime Type Main
+    #     animeType = "1"
 
-        #Anime Score Main
-        animePageScore = str(getAnimeScore(container))
+    #     #Anime Episodes Main
+    #     animeEpisodes = str(getAnimeEpisode(container))
 
-        #Anime Rating Main
-        animeRatings = "5"
+    #     #Anime Score Main
+    #     animePageScore = str(getAnimeScore(container))
 
-        #Anime Runtime Main
-        animeRuntime = "1"
+    #     #Anime Rating Main
+    #     animeRatings = "5"
+
+    #     #Anime Runtime Main
+    #     animeRuntime = "1"
         
-        #Anime List Main
-        animeCounter += 1 
+    #     #Anime List Main
+    #     animeCounter += 1 
 
-        animeFilteredList.append(dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore,
-        animeRatings, animeRuntime, animeXMLTitle, animeCounter))
+    #     animeFilteredList.append(dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore,
+    #     animeRatings, animeRuntime, animeXMLTitle, animeCounter))
     
-    #print(f"Anime list: {animeFilteredList}")
-    dataFramer(animeFilteredList)
-    #print(f"Loop iterated {animeCounter} times")
+    # #print(f"Anime list: {animeFilteredList}")
+    # dataFramer(animeFilteredList)
+    # #print(f"Loop iterated {animeCounter} times")
