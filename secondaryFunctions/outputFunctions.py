@@ -7,10 +7,9 @@ def dataFramer(numOutputFull):  #outputResults (numOutputFull)
         for looper in numOutputFull:
             if looper is not None:
                 for titles, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic in looper:
-                    titleUTCFix = str(titles.encode("utf-8"))
                     print('<Movie>')
                     print(f"<Id value=\"\">")
-                    print(f"<Name value=\"{titleUTCFix}\">")
+                    print(f"<Name value=\"{titles}\">")
                     print("<Storyline value=\"\">")
                     print(f"<Year value=\"{years}\">")
                     print(f"<Genre value=\"{genres}\">") 
@@ -28,5 +27,4 @@ def dataFramer(numOutputFull):  #outputResults (numOutputFull)
 
     sys.stdout.close()
     sys.stdout=orig_stdout ##Back to original stdout after writing is done
-
 

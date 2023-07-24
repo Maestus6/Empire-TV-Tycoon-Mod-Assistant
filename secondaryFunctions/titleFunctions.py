@@ -5,14 +5,25 @@ import re
 def getTitle(container):
     
     title = container.h3.a.text
-    titleXMLPic = titleXMLPicFixer(title) #Needed for naming during file creation and calling them via xml
-    return title, titleXMLPic
+    titleStr = titleUTCFixer(title)
+    titleXMLPic = titleXMLPicFixer(titleStr) #Needed for naming during file creation and calling them via xml
+    return titleStr, titleXMLPic
 
 def titleXMLPicFixer (titles):
     
-    titleChange =  re.sub('[^\w_.)( -]', '', titles)
+    titleChange =  re.sub('[^\w_.)( -]', '', str(titles))
     titleChange = titleChange.replace(' ', '_')
     return titleChange
+
+def titleUTCFixer (title):
+
+    titleUTCFix = str(title.encode("utf-8"))
+    if titleUTCFix[0] == "b":
+        titleUTCFix = titleUTCFix[2:]
+        titleUTCFix = titleUTCFix[:-1]
+        return str(titleUTCFix)
+    else:
+        return str(titleUTCFix)
 
 
 
@@ -23,8 +34,9 @@ def getAnimeTitle(animeContainer):
 
         title = animeContainer.find('span', class_ = 'js-title')
         title = fixAnimeContainer(str(title))
-        titleXMLPic = titleXMLPicFixer(title)
-        return title, titleXMLPic
+        titleStr = titleUTCFixer(title)
+        titleXMLPic = titleXMLPicFixer(titleStr)
+        return titleStr, titleXMLPic
 
     else:
         return "DELETEME", "DELETEME"
@@ -36,7 +48,9 @@ def fixAnimeContainer (titles):
     secondFixList = titleFix.split("</span>", 1)
     titleFix = secondFixList[0]
     return titleFix
-    
+
+
+
 
 
 
