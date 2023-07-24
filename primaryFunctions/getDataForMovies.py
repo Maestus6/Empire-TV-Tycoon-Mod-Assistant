@@ -52,6 +52,9 @@ def movieLoops():
             #Title Main
             (titles),(titleXMLPic) = getTitle(container)
 
+            #Storyline Main
+            storyline = ""
+
             #Year Main
             years = getYear(container)
 
@@ -84,7 +87,7 @@ def movieLoops():
 
             #Save Movies for usage of Output main once we get every data
             counter += 1
-            numOutputFull.append(dataArrSaver(titles, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter))
+            numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter))
 
             ##End of Loop
             

@@ -43,13 +43,14 @@ def animeLoops():
 
     page_html = BeautifulSoup(response.text, 'html.parser')
     animeContainers = page_html.find_all('div', class_ = 'js-anime-category-producer')
-
-
-
+    
     for container in animeContainers:
 
         #Anime Title Main
         (animeTitle),(animeXMLTitle) = getAnimeTitle(container)
+
+        #Anime Storyline Main
+        animeStoryline = ""
 
         #Anime Year Main
         animeYears = yearVal
@@ -76,10 +77,13 @@ def animeLoops():
         animeCounter += 1 
 
         #Anime Banner Main
-        getBanner(container, animeXMLTitle, animeYears)
+        getAnimeBanner(container, animeXMLTitle, animeYears)
 
-        animeFilteredList.append(dataArrAnimeSaver(animeTitle, animeYears, animeGenres, animeType, animeEpisodes, animePageScore,
+        animeFilteredList.append(dataArrAnimeSaver(animeTitle, animeStoryline, animeYears, animeGenres, animeType, animeEpisodes, animePageScore,
         animeRatings, animeRuntime, animeXMLTitle, animeCounter))
+
+        if(animeCounter > 3):  #To make loop iterate 3 times
+            break
         
     
     #print(f"Anime list: {animeFilteredList}")
