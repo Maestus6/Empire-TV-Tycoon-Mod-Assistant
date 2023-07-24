@@ -24,10 +24,12 @@ def animeStorylineFix (animeStoryline):
         strExists = animeStorylineFix1.find('[Written by MAL Rewrite]')
         if(strExists < 1):
             animeStorylineFix2 = animeStorylineFix1.split("<button class=\"js-toggle-text", 1)
-            return animeStorylineFix2[0]      
+            animeStorylineFix3 = animeStorylineFix2[0].split("\n", 1)
+            return animeStorylineFix3[0]      
         else:
             animeStorylineFix2 = animeStorylineFix1.split("[Written by MAL Rewrite]", 1)
-            return animeStorylineFix2[0]
+            animeStorylineFix3 = animeStorylineFix2[0].split("\n", 1)
+            return animeStorylineFix3[0]
 
         
     
