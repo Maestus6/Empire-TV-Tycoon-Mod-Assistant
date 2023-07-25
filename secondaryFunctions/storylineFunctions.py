@@ -1,5 +1,32 @@
-# synopsis js-synopsis
+#Storyline Main
+def getStoryline(container):
 
+    if container.find('div', class_ = 'lister-item-content') is not None:
+        storyline = container.find('div', class_ = 'lister-item-content')
+        storyline = storylineFix(str(storyline))
+        return storyline
+
+
+def storylineFix (storyline):
+    strExists = storyline.find('Metascore\n            </div>\n</div>\n<p class="text-muted">\n')
+    
+    if strExists > 0:
+        storylineFixList = storyline.split('Metascore\n            </div>\n</div>\n<p class="text-muted">\n', 1)
+        storylineFix = storylineFixList[1]
+    else:
+        storylineFixList = storyline.split("\n</div>\n</div>\n<p class=\"text-muted\">\n", 1)
+        storylineFix = storylineFixList[1]
+    
+    storylineFixList = storylineFix.split("\n", 1) #Needed for series with long descs
+    storylineFix = storylineFixList[0]
+    storylineFixList = storylineFix.split("</p>", 1)
+    storylineFix = storylineFixList[0]
+    return storylineFix
+
+
+
+
+#Anime Storyline Main
 def getAnimeStoryline (container):
 
     if container.find('div', class_ = 'synopsis js-synopsis') is not None:

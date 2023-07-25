@@ -17,6 +17,7 @@ from secondaryFunctions.titleFunctions import *
 from secondaryFunctions.pageScoreFunctions import *
 from secondaryFunctions.additionalFilterFunctions import *
 from secondaryFunctions.episodesFunctions import *
+from secondaryFunctions.storylineFunctions import *
 
 
 def movieLoops():
@@ -45,15 +46,14 @@ def movieLoops():
 
         page_html = BeautifulSoup(response.text, 'html.parser')
         movie_containers = page_html.find_all('div', class_ = 'lister-item mode-advanced')
-
-
+        
         for container in movie_containers:
 
             #Title Main
             (titles),(titleXMLPic) = getTitle(container)
 
             #Storyline Main
-            storyline = ""
+            storyline = getStoryline(container)
 
             #Year Main
             years = getYear(container)
@@ -89,6 +89,10 @@ def movieLoops():
             counter += 1
             numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter))
 
+
+
+            if(counter > 3):  #To make loop iterate 3 times
+                break
             ##End of Loop
             
 
