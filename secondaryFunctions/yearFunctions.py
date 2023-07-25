@@ -1,3 +1,5 @@
+##NO LONGER USED, BUT WILL BE USED FOR SOME OF THE FUTURE FUNCTIONALITIES OF PROGRAM
+
 def getYear(container):
 
     if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not None:

@@ -26,17 +26,15 @@ def movieLoops():
     headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandarin
     counter = 0 #to Count loop iterations
     numOutputFull = []
+    yearVal = 2022
+    endYearVal = yearVal + 1
 
 
     for page in pages:
-    
+    # https://www.imdb.com/search/title/?release_date=2022-01-01,2023-01-01&languages=en&start=51&ref_=adv_nxt
     #get request for sci-fi
-        response = get("https://www.imdb.com/search/title?genres=sci-fi&"
-            + "start="
-            + str(page)
-            + "&explore=title_type,genres&ref_=adv_prv", headers=headers)
+        response = get(f"https://www.imdb.com/search/title/?release_date={str(yearVal)}-01-01,{str(endYearVal)}-01-01&languages=en&start={str(page)}&ref_=adv_nxt", headers=headers)
         
-
         sleep(randint(8,15)) #anti rate limit
 
         if response.status_code != 200:
@@ -56,7 +54,7 @@ def movieLoops():
             storyline = getStoryline(container)
 
             #Year Main
-            years = getYear(container)
+            years = str(yearVal)
 
             #Genre Main
             genres,genresSpecial = getGenre(container)
