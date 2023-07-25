@@ -43,6 +43,7 @@ def downloadBanner(bannerURL, titleXMLPic, years):
 
 
 #Banner Alter Main --- DOESNT WORK
+#GOTTA TAKE THIS PROCESS OUT OF LOOP AND RECREATE WHOLE PROCESS, IT TAKES FOREVER DUE TO FRAME LIMITATION
 
 def getBannerAlter(title, titleXMLPic, years, headers):
     bannerContainer = getBannerConnection(title, years, headers)

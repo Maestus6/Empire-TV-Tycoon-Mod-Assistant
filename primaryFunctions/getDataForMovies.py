@@ -22,7 +22,7 @@ from secondaryFunctions.storylineFunctions import *
 
 def movieLoops():
 
-    pages = np.arange(1, 4, 50) #entry (start, stop), lines between each entry 
+    pages = np.arange(1, 2, 1) #entry (start, stop), lines between each entry 
     headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandarin
     counter = 0 #to Count loop iterations
     numOutputFull = []
@@ -75,10 +75,10 @@ def movieLoops():
             ratings = getRating(container, genresSpecial)
 
             #Banner Main
-            #getBanner(container, titleXMLPic,years)
+            getBanner(container, titleXMLPic,years)
 
             #Banner Alter Main
-            getBannerAlter(titles, titleXMLPic, years, headers)
+            #getBannerAlter(titles, titleXMLPic, years, headers)
 
             #Save Movies for usage of Output main once we get every data
             counter += 1
@@ -87,7 +87,7 @@ def movieLoops():
 
 
             if(counter > 3):  #To make loop iterate 3 times
-                break
+                 break
             ##End of Loop
             
 
