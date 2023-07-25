@@ -49,7 +49,8 @@ def getBannerAlter(bannerContainer, headers):
     for singleBanner in bannerContainer:
         for movieUrl, titleXMLPic, years in singleBanner:
             bannerFullHTML = getBannerConnection(movieUrl, headers)
-            print (f"bannerFullHTML = {bannerFullHTML}")
+            for singeBannerHTML in bannerFullHTML:
+                print (f"singeBannerHTML = {singeBannerHTML}")
      
 
 
