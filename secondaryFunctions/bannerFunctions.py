@@ -42,35 +42,32 @@ def downloadBanner(bannerURL, titleXMLPic, years):
 
 
 
-#Banner Alter Main --- DOESNT WORK
+#Banner Alter Main 
 
 def getBannerAlter(bannerContainer, headers):
     
     for singleBanner in bannerContainer:
-        for title, titleXMLPic, years in singleBanner:
-            bannerContainer = getBannerConnection(title, years, headers)
-            getBannerFormatted(bannerContainer)
+        for movieUrl, titleXMLPic, years in singleBanner:
+            bannerFullHTML = getBannerConnection(movieUrl, headers)
+            print (f"bannerFullHTML = {bannerFullHTML}")
      
 
-def getBannerConnection(title, years, headers):
-    response = get(f"https://www.movieposters.com/collections/shop?q={title}+{years}", headers=headers)
+
+
+def getBannerConnection(movieUrl, headers):
+    response = get(movieUrl, headers=headers)
     sleep(randint(8,15))
 
-    if response.status_code != 200:
-    #warn('Request: {}; Status code: {}'.format(requests, response.status_code)) gets issues with requests
-        print ("beep boop, not 200!!!")
-    
 
     page_html = BeautifulSoup(response.text, 'html.parser')
-    return page_html
+    bannerFullHTML = page_html.find_all('div', class_ = 'ipc-media ipc-media--poster-27x40 ipc-image-media-ratio--poster-27x40 ipc-media--baseAlt ipc-media--poster-l ipc-poster__poster-image ipc-media__img')
+    return bannerFullHTML
     #bannerContainer = page_html.find_all('div', class_ = 'js-anime-category-producer')
 
 
 def getBannerFormatted(bannerContainer):
-    bannerFormatted = bannerContainer.find_all('div', class_ = 'grid grid--uniform')
+    bannerFormatted = bannerContainer.find_all('div', class_ = 'ipc-media ipc-media--poster-27x40 ipc-image-media-ratio--poster-27x40 ipc-media--baseAlt ipc-media--poster-l ipc-poster__poster-image ipc-media__img')
     print(f"bannerFormatted:{bannerFormatted}")
-
-
 
 
 
@@ -98,3 +95,5 @@ def animeBannerFormat(animeBanner):
 
 
 
+
+##KEEPING IT FOR POSSIBLE FUTURE SIMILAR CASES

@@ -29,15 +29,34 @@ def getMoviesOrSeries(container):
     
 
 #Banner saver for after loop
-def dataBannerSaver(titles, titleXMLPic, years, counter):
+def dataBannerSaver(movieUrl, titleXMLPic, years, counter):
 
-    pdOutputFull = pd.DataFrame({'title': str(titles),
+    pdOutputFull = pd.DataFrame({'movieUrl': str(movieUrl),
                       'titleXMLPic': str(titleXMLPic),
                       'year': str(years)} , index = [counter]
                       )
     numOutputFull = pdOutputFull.to_numpy()
 
     return numOutputFull
+
+
+
+#Get URL Main(for Banners and TV Screens)
+def getUrlForMovie(container):
+    if container.find('h3', class_ = 'lister-item-header') is not None:
+        bannerURLList = container.find('h3', class_ = 'lister-item-header')
+        bannerURL = getUrlFormatter(str(bannerURLList))
+        return bannerURL
+    else:
+        return ""
+
+def getUrlFormatter(bannerURLList):
+
+    bannerURLList = bannerURLList.split("<a href=\"" , 1)
+    bannerURLList = bannerURLList[1].split("\">" , 1)
+    bannerURL = f"https://www.imdb.com{bannerURLList[0]}"
+
+    return bannerURL
 
 
 
