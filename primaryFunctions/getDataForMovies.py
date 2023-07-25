@@ -95,9 +95,9 @@ def movieLoops():
                  break
             ##End of Loop
     
-    print(f"numBannerFull: {numBannerFull}")
-    #Banner Alter Main
-    getBannerAlter(numBannerFull, headers)
+
+    #Banner Alter Main -- Doesnt works at the moment, also takes some time
+    #getBannerAlter(numBannerFull, headers)
 
     #Output Main
     dataFramer(numOutputFull)
