@@ -77,13 +77,10 @@ def movieLoops():
             ratings = getRating(container, genresSpecial)
 
             #Banner Main
-            #getBanner(container, titleXMLPic, years)
-            getBanner(container, titleXMLPic, years)
+            #getBanner(container, titleXMLPic,years)
 
-            #Storyline (movie desc) not working
-            # if container.find('p', class_ = 'text-muted') is not None:
-            #     storylineValue = container.find('p', class_ = 'text-muted')
-            #     
+            #Banner Alter Main
+            getBannerAlter(titles, titleXMLPic, years, headers)
 
             #Save Movies for usage of Output main once we get every data
             counter += 1

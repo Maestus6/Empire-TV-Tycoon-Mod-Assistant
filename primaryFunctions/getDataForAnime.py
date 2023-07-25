@@ -30,7 +30,6 @@ def animeLoops():
     animeCounter = 0
 
 
-    #https://myanimelist.net/anime/season/2023/fall
     #get request for anime series
     response = get(f"https://myanimelist.net/anime/season/{yearVal}/{seasonVal}", headers=headers)
     

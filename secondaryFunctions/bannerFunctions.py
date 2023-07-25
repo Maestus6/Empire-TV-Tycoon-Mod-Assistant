@@ -1,7 +1,10 @@
 import requests
 from PIL import Image
 import os
-import time
+from requests import get  #pip install requests
+from bs4 import BeautifulSoup #pip install beautifulsoup4
+from time import sleep
+from random import randint
 
 #Banner main
 def getBanner(container, titleXMLPic, years):
@@ -13,6 +16,7 @@ def getBanner(container, titleXMLPic, years):
 
 
 def bannerCodeClean(banner):
+
     bannerMod = str(banner) #bs4.element.Tag to str
     bannerMod = bannerMod.split("height=\"98\" loadlate=\"",1)[1]
     bannerMod = bannerMod.split("\" src=", 1)[0]
@@ -35,6 +39,36 @@ def downloadBanner(bannerURL, titleXMLPic, years):
     ##Looks horrible, need to find another source
     img.save(f"{image_path}/{saveName}")
     
+
+
+
+#Banner Alter Main --- DOESNT WORK
+
+def getBannerAlter(title, titleXMLPic, years, headers):
+    bannerContainer = getBannerConnection(title, years, headers)
+    getBannerFormatted(bannerContainer)
+     
+
+def getBannerConnection(title, years, headers):
+    response = get(f"https://www.movieposters.com/collections/shop?q={title}+{years}", headers=headers)
+    sleep(randint(8,15))
+
+    if response.status_code != 200:
+    #warn('Request: {}; Status code: {}'.format(requests, response.status_code)) gets issues with requests
+        print ("beep boop, not 200!!!")
+    
+
+    page_html = BeautifulSoup(response.text, 'html.parser')
+    return page_html
+    #bannerContainer = page_html.find_all('div', class_ = 'js-anime-category-producer')
+
+
+def getBannerFormatted(bannerContainer):
+    bannerFormatted = bannerContainer.find_all('div', class_ = 'grid grid--uniform')
+    print(f"bannerFormatted:{bannerFormatted}")
+
+
+
 
 
 
