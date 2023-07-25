@@ -49,8 +49,9 @@ def getBannerAlter(bannerContainer, headers):
     for singleBanner in bannerContainer:
         for movieUrl, titleXMLPic, years in singleBanner:
             bannerFullHTML = getBannerConnection(movieUrl, headers)
-            for singeBannerHTML in bannerFullHTML:
-                print (f"singeBannerHTML = {singeBannerHTML}")
+            #print (f"bannerFullHTML = {bannerFullHTML}")
+            #for singeBannerHTML in bannerFullHTML:
+
      
 
 
@@ -61,14 +62,14 @@ def getBannerConnection(movieUrl, headers):
 
 
     page_html = BeautifulSoup(response.text, 'html.parser')
-    bannerFullHTML = page_html.find_all('div', class_ = 'ipc-media ipc-media--poster-27x40 ipc-image-media-ratio--poster-27x40 ipc-media--baseAlt ipc-media--poster-l ipc-poster__poster-image ipc-media__img')
+    print(f"page_html: {page_html}")
+    bannerFullHTML = page_html.find_all('img', class_ = 'ipc-lockup-overlay__screen)
     return bannerFullHTML
-    #bannerContainer = page_html.find_all('div', class_ = 'js-anime-category-producer')
 
 
-def getBannerFormatted(bannerContainer):
-    bannerFormatted = bannerContainer.find_all('div', class_ = 'ipc-media ipc-media--poster-27x40 ipc-image-media-ratio--poster-27x40 ipc-media--baseAlt ipc-media--poster-l ipc-poster__poster-image ipc-media__img')
-    print(f"bannerFormatted:{bannerFormatted}")
+# def getBannerFormatted(bannerContainer):
+#     bannerFormatted = bannerContainer.find_all('div', class_ = 'ipc-media ipc-media--poster-27x40 ipc-image-media-ratio--poster-27x40 ipc-media--baseAlt ipc-media--poster-l ipc-poster__poster-image ipc-media__img')
+#     print(f"bannerFormatted:{bannerFormatted}")
 
 
 
