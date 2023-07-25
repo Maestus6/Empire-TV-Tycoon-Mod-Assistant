@@ -14,13 +14,12 @@ from primaryFunctions.getDataForAnime import *
 #6- Add an control mechanism to prevent unaired yet added on pageScore to getting processed to prevent errors (OPTIONAL)   //Can filter the input or list for them 
 #7- Allow user input to be taken for getting needed stuff (NEEDED)
 #8- Create a proper, non-text based UI(GUI) (NEEDED)
-#9 - /n problem needs to be fixed for Anime storyline
 
 #!!!-------------------------------------!!!!!!!!!!-------------------------------------!!!#
 
 ##TEST IS DONE VIA COMMENTING THE UNNEEDED ONE FOR NOW!!!
 
-movieLoops()
-#animeLoops()
+#movieLoops()
+animeLoops()
 
 

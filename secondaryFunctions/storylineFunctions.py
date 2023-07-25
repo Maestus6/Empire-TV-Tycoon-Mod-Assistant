@@ -40,23 +40,29 @@ def getAnimeStoryline (container):
 def animeStorylineFix (animeStoryline):
 
     strExists = 0
-    animeStorylineFix = animeStoryline.split("<p class=\"preline\">", 1)
-    animeStorylineFix1 = animeStorylineFix[1]
-    strExists = animeStorylineFix1.find('<button class=\"js-toggle-text')
+    animeStorylineFixList = animeStoryline.split("<p class=\"preline\">", 1)
+    animeStorylineFix = animeStorylineFixList[1]
+    strExists = animeStorylineFix.find('<button class=\"js-toggle-text')
 
     if strExists < 0:
         return ""
     
     elif strExists > 1:
-        strExists = animeStorylineFix1.find('[Written by MAL Rewrite]')
+        strExists = animeStorylineFix.find('[Written by MAL Rewrite]')
         if(strExists < 1):
-            animeStorylineFix2 = animeStorylineFix1.split("<button class=\"js-toggle-text", 1)
-            animeStorylineFix3 = animeStorylineFix2[0].split("\n", 1)
-            return animeStorylineFix3[0]      
+            animeStorylineFixList = animeStorylineFix.split("<button class=\"js-toggle-text", 1)
+            animeStorylineFixList = animeStorylineFixList[0].split("\n", 1)
+            animeStorylineFixList = animeStorylineFixList[0].split("\r", 1)
+            animeStorylineFix = animeStorylineFixList[0]
+            return animeStorylineFix    
+         
         else:
-            animeStorylineFix2 = animeStorylineFix1.split("[Written by MAL Rewrite]", 1)
-            animeStorylineFix3 = animeStorylineFix2[0].split("\n", 1)
-            return animeStorylineFix3[0]
+        
+            animeStorylineFixList = animeStorylineFix.split("[Written by MAL Rewrite]", 1)
+            animeStorylineFixList = animeStorylineFixList[0].split("\n", 1)
+            animeStorylineFixList = animeStorylineFixList[0].split("\r", 1)
+            animeStorylineFix = animeStorylineFixList[0]
+            return animeStorylineFix
 
         
     
