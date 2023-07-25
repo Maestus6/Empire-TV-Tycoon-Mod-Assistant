@@ -26,6 +26,7 @@ def movieLoops():
     headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandarin
     counter = 0 #to Count loop iterations
     numOutputFull = []
+    numBannerFull = []
     yearVal = 2022
     endYearVal = yearVal + 1
 
@@ -78,20 +79,26 @@ def movieLoops():
             getBanner(container, titleXMLPic,years)
 
             #Banner Alter Main
-            #getBannerAlter(titles, titleXMLPic, years, headers)
+
 
             #Save Movies for usage of Output main once we get every data
             counter += 1
             numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter))
 
 
+            #Save Some Movie parts for Banner correction after loop
+            numBannerFull.append(dataBannerSaver(titles, titleXMLPic, years, headers, counter))
+
+
 
             if(counter > 3):  #To make loop iterate 3 times
                  break
             ##End of Loop
-            
+    
+    print(f"numBannerFull: {numBannerFull}")
+    #Banner Alter Main
+    getBannerAlter(numBannerFull)
 
     #Output Main
     dataFramer(numOutputFull)
-
     print(f"Loop iterated {counter} times")
