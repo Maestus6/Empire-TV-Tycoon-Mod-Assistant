@@ -29,12 +29,11 @@ def getMoviesOrSeries(container):
     
 
 #Banner saver for after loop
-def dataBannerSaver(titles, titleXMLPic, years, headers, counter):
+def dataBannerSaver(titles, titleXMLPic, years, counter):
 
     pdOutputFull = pd.DataFrame({'title': str(titles),
                       'titleXMLPic': str(titleXMLPic),
-                      'year': str(years),
-                      'headers': str(headers)} , index = [counter]
+                      'year': str(years)} , index = [counter]
                       )
     numOutputFull = pdOutputFull.to_numpy()
 

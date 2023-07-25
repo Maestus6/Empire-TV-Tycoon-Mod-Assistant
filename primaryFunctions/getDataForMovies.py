@@ -87,7 +87,7 @@ def movieLoops():
 
 
             #Save Some Movie parts for Banner correction after loop
-            numBannerFull.append(dataBannerSaver(titles, titleXMLPic, years, headers, counter))
+            numBannerFull.append(dataBannerSaver(titles, titleXMLPic, years, counter))
 
 
 
@@ -97,7 +97,7 @@ def movieLoops():
     
     print(f"numBannerFull: {numBannerFull}")
     #Banner Alter Main
-    getBannerAlter(numBannerFull)
+    getBannerAlter(numBannerFull, headers)
 
     #Output Main
     dataFramer(numOutputFull)

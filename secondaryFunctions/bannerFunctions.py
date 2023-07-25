@@ -44,11 +44,12 @@ def downloadBanner(bannerURL, titleXMLPic, years):
 
 #Banner Alter Main --- DOESNT WORK
 
-def getBannerAlter(bannerContainer):
-    for title, titleXMLPic, years, headers in bannerContainer:
-
-        bannerContainer = getBannerConnection(title, years, headers)
-        getBannerFormatted(bannerContainer)
+def getBannerAlter(bannerContainer, headers):
+    
+    for singleBanner in bannerContainer:
+        for title, titleXMLPic, years in singleBanner:
+            bannerContainer = getBannerConnection(title, years, headers)
+            getBannerFormatted(bannerContainer)
      
 
 def getBannerConnection(title, years, headers):
