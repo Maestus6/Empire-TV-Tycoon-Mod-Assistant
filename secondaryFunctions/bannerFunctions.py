@@ -79,8 +79,11 @@ def getBannerAlterAlter (title, year, headers, titleXMLPic):
     response = get(movieUrl, headers=headers)
     sleep(randint(8,15))
     page_html = BeautifulSoup(response.text, 'html.parser')
-    bannerAlterAlterHTML = page_html.find_all("div", class_ = "image-and-overlay-container")
-    print(f"pagehtml: {bannerAlterAlterHTML}")
+    bruhList1 = str(page_html).split("\"httpsImageUrl\":\"")
+    bruhlist2 = bruhList1[1].split("\",")
+    print(f"pagehtml: {bruhlist2[0]}")
+    #bannerAlterAlterHTML = page_html.find_all("div", class_ = "image-and-overlay-container")
+
     # https://www.movieposters.com/collections/shop?q=kill
 
 
