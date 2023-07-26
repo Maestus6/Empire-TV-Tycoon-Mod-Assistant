@@ -64,6 +64,7 @@ def getBannerConnection(movieUrl, headers):
     page_html = BeautifulSoup(response.text, 'html.parser')
     print(f"page_html: {page_html}")
     bannerFullHTML = page_html.find_all('img', class_ = 'ipc-lockup-overlay__screen')
+    bannerFullHTML2 = page_html.find_all('img', class_ = 'image-and-overlay-container')
     return bannerFullHTML
 
 
@@ -73,6 +74,14 @@ def getBannerConnection(movieUrl, headers):
 
 
 
+def getBannerAlterAlter (title, year, headers, titleXMLPic):
+    movieUrl = f"https://www.allposters.com/gallery?txtSearch={title} {year}"
+    response = get(movieUrl, headers=headers)
+    sleep(randint(8,15))
+    page_html = BeautifulSoup(response.text, 'html.parser')
+    bannerAlterAlterHTML = page_html.find_all("div", class_ = "image-and-overlay-container")
+    print(f"pagehtml: {bannerAlterAlterHTML}")
+    # https://www.movieposters.com/collections/shop?q=kill
 
 
 #Anime Banner main
