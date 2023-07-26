@@ -63,7 +63,7 @@ def getBannerConnection(movieUrl, headers):
 
     page_html = BeautifulSoup(response.text, 'html.parser')
     print(f"page_html: {page_html}")
-    bannerFullHTML = page_html.find_all('img', class_ = 'ipc-lockup-overlay__screen)
+    bannerFullHTML = page_html.find_all('img', class_ = 'ipc-lockup-overlay__screen')
     return bannerFullHTML
 
 
