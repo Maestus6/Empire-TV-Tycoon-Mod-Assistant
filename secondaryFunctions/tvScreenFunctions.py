@@ -47,10 +47,18 @@ def getScreenOriginContainer (screenLinkURL):
     response = get(screenLinkURL, headers={'User-Agent': choice(userAgentsList)})  
     sleep(randint(8,15))
     page_html = BeautifulSoup(response.text, 'html.parser')
+    foundIt = str(page_html).find("&quot;}")
 
-    screenList = str(page_html).split("&quot;path&quot;:&quot;" , 1)
-    screenList = screenList[1].split("&quot;}")
-    screenOriginURL = (screenList[0].replace("\\", "/")).replace("//" ,  "/")
+    if foundIt > 0 :
+        screenList = str(page_html).split("&quot;path&quot;:&quot;" , 1)
+        screenList = screenList[1].split("&quot;}")
+        screenOriginURL = (screenList[0].replace("\\", "/")).replace("//" ,  "/")
+    #"path":"
+    else:
+        screenList = str(page_html).split("path\":\"" , 1)
+        screenList = screenList[1].split("\"},")
+        screenOriginURL = (screenList[0].replace("\\", "/")).replace("//" ,  "/")        
+
 
     return(screenOriginURL)
      

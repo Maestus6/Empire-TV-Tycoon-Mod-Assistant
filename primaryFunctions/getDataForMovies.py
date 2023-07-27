@@ -27,7 +27,7 @@ def movieLoops():
     counter = 0 #to Count loop iterations
     numOutputFull = []
     numBannerFull = []
-    yearVal = 2022
+    yearVal = 1995
     endYearVal = yearVal + 1
 
 
