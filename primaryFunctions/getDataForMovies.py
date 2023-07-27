@@ -78,28 +78,15 @@ def movieLoops():
             #Banner Main
             getBanner(container, titleXMLPic,years)
 
-            #Get URL Main
-           #movieUrl = getUrlForMovie(container)
-
-            getBannerAlterAlter(titles, years, headers, titleXMLPic)
-
             #Save Movies for usage of Output main once we get every data
             counter += 1
             numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter))
-
-
-            #Save Some Movie parts for Banner correction after loop
-            #numBannerFull.append(dataBannerSaver(movieUrl, titleXMLPic, years, counter))
-
-
 
             if(counter > 2):  #To make loop iterate 2 times
                  break
             ##End of Loop
     
 
-    #Banner Alter Main -- Doesnt works at the moment, also takes some time
-    #getBannerAlter(numBannerFull, headers)
 
     #Output Main
     dataFramer(numOutputFull)

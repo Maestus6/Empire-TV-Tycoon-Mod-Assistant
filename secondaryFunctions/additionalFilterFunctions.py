@@ -28,39 +28,6 @@ def getMoviesOrSeries(container):
         return 2
     
 
-#Banner saver for after loop
-def dataBannerSaver(movieUrl, titleXMLPic, years, counter):
-
-    pdOutputFull = pd.DataFrame({'movieUrl': str(movieUrl),
-                      'titleXMLPic': str(titleXMLPic),
-                      'year': str(years)} , index = [counter]
-                      )
-    numOutputFull = pdOutputFull.to_numpy()
-
-    return numOutputFull
-
-
-
-#Get URL Main(for Banners and TV Screens)
-def getUrlForMovie(container):
-    if container.find('h3', class_ = 'lister-item-header') is not None:
-        bannerURLList = container.find('h3', class_ = 'lister-item-header')
-        bannerURL = getUrlFormatter(str(bannerURLList))
-        return bannerURL
-    else:
-        return ""
-
-def getUrlFormatter(bannerURLList):
-
-    bannerURLList = bannerURLList.split("<a href=\"" , 1)
-    bannerURLList = bannerURLList[1].split("\">" , 1)
-    bannerURL = f"https://www.imdb.com{bannerURLList[0]}"
-
-    return bannerURL
-
-
-
-
 #Anime List Main
 def dataArrAnimeSaver(animeTitle, animeStoryline, animeYears, animeGenres, animeType, animeEpisodes, animePageScore, animeRatings, animeRuntime, animeXMLTitle, animeCounter):
 
@@ -94,3 +61,40 @@ def animeTurnIntoList(animeList):
     return purifiedAnimeList2
 
 
+
+
+
+##HEADER LIST
+# HEADERS = []
+# HEADERS[0] = {
+#         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
+#         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+#         "Accept-Language": "en-US,en;q=0.5",
+#         "Accept-Encoding": "gzip, deflate",
+#         "Connection": "keep-alive",
+#         "Upgrade-Insecure-Requests": "1",
+#         "Sec-Fetch-Dest": "document",
+#         "Sec-Fetch-Mode": "navigate",
+#         "Sec-Fetch-Site": "none",
+#         "Sec-Fetch-User": "?1",
+#         "Cache-Control": "max-age=0",
+#     }
+# HEADERS[1] = {
+#     {
+#         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0",
+#         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+#         "Accept-Language": "en-US,en;q=0.5",
+#         "Accept-Encoding": "gzip, deflate",
+#         "Connection": "keep-alive",
+#         "Upgrade-Insecure-Requests": "1",
+#         "Sec-Fetch-Dest": "document",
+#         "Sec-Fetch-Mode": "navigate",
+#         "Sec-Fetch-Site": "none",
+#         "Sec-Fetch-User": "?1",
+#         "Cache-Control": "max-age=0",
+#     }
+# }
+
+# HEADERS[2] = {
+
+# }

@@ -5,23 +5,32 @@ from requests import get  #pip install requests
 from bs4 import BeautifulSoup #pip install beautifulsoup4
 from time import sleep
 from random import randint
+import movieposters as mp
 
 #Banner main
 def getBanner(container, titleXMLPic, years):
-     
-    if container.find(class_ = 'loadlate') is not None:
-        banner = container.find(class_ = 'loadlate')
-        bannerUrl = bannerCodeClean(banner)
-        downloadBanner(bannerUrl,titleXMLPic, years)
+    if container.find('h3', class_ = 'lister-item-header') is not None:
+        bannerURLList = container.find('h3', class_ = 'lister-item-header')
+        bannerURL = getUrlFormatter(str(bannerURLList))
+        bannerRealURL = getMovieBannerLink(bannerURL)
+        downloadBanner(bannerRealURL,titleXMLPic, years)
+    else:
+        return ""
 
 
-def bannerCodeClean(banner):
+def getUrlFormatter(bannerURLList):
 
-    bannerMod = str(banner) #bs4.element.Tag to str
-    bannerMod = bannerMod.split("height=\"98\" loadlate=\"",1)[1]
-    bannerMod = bannerMod.split("\" src=", 1)[0]
+    bannerURLList = bannerURLList.split("/title/" , 1)
+    bannerURLList = bannerURLList[1].split("/", 1)
 
-    return bannerMod
+    return bannerURLList[0]
+
+
+def getMovieBannerLink (movieUrl):
+    
+    link = mp.get_poster(id= movieUrl)
+    return link   
+
 
 
 def downloadBanner(bannerURL, titleXMLPic, years):
@@ -36,55 +45,15 @@ def downloadBanner(bannerURL, titleXMLPic, years):
 
     saveName =  titleXMLPic + "_" + years +"_p.png"
 
-    ##Looks horrible, need to find another source
     img.save(f"{image_path}/{saveName}")
     
 
 
 
-#Banner Alter Main 
-
-def getBannerAlter(bannerContainer, headers):
-    
-    for singleBanner in bannerContainer:
-        for movieUrl, titleXMLPic, years in singleBanner:
-            bannerFullHTML = getBannerConnection(movieUrl, headers)
-            #print (f"bannerFullHTML = {bannerFullHTML}")
-            #for singeBannerHTML in bannerFullHTML:
-
      
 
 
 
-def getBannerConnection(movieUrl, headers):
-    response = get(movieUrl, headers=headers)
-    sleep(randint(8,15))
-
-
-    page_html = BeautifulSoup(response.text, 'html.parser')
-    print(f"page_html: {page_html}")
-    bannerFullHTML = page_html.find_all('img', class_ = 'ipc-lockup-overlay__screen')
-    bannerFullHTML2 = page_html.find_all('img', class_ = 'image-and-overlay-container')
-    return bannerFullHTML
-
-
-# def getBannerFormatted(bannerContainer):
-#     bannerFormatted = bannerContainer.find_all('div', class_ = 'ipc-media ipc-media--poster-27x40 ipc-image-media-ratio--poster-27x40 ipc-media--baseAlt ipc-media--poster-l ipc-poster__poster-image ipc-media__img')
-#     print(f"bannerFormatted:{bannerFormatted}")
-
-
-
-def getBannerAlterAlter (title, year, headers, titleXMLPic):
-    movieUrl = f"https://www.allposters.com/gallery?txtSearch={title} {year}"
-    response = get(movieUrl, headers=headers)
-    sleep(randint(8,15))
-    page_html = BeautifulSoup(response.text, 'html.parser')
-    bruhList1 = str(page_html).split("\"httpsImageUrl\":\"")
-    bruhlist2 = bruhList1[1].split("\",")
-    print(f"pagehtml: {bruhlist2[0]}")
-    #bannerAlterAlterHTML = page_html.find_all("div", class_ = "image-and-overlay-container")
-
-    # https://www.movieposters.com/collections/shop?q=kill
 
 
 #Anime Banner main
