@@ -18,6 +18,7 @@ from secondaryFunctions.additionalFilterFunctions import *
 from secondaryFunctions.episodesFunctions import *
 from secondaryFunctions.storylineFunctions import *
 from secondaryFunctions.tvScreenFunctions import *
+from secondaryFunctions.quoteFunctions import *
 
 
 def movieLoops():
@@ -77,6 +78,9 @@ def movieLoops():
 
             #Banner Main
             urlSecondPart = getBanner(container, titleXMLPic,years)
+
+            #Quote Main (Hard to make use of it)
+            #quotes = getQuote(urlSecondPart)
 
             #TV Screen Main
             getTVScreen(urlSecondPart, titleXMLPic, years)
