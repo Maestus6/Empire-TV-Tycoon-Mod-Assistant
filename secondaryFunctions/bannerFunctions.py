@@ -1,11 +1,7 @@
 import requests
 from PIL import Image
 import os
-from requests import get  #pip install requests
-from bs4 import BeautifulSoup #pip install beautifulsoup4
-from time import sleep
-from random import randint
-import movieposters as mp
+import movieposters as mp #ONLY USED FOR MOVIE BANNERS
 
 #Banner main
 def getBanner(container, titleXMLPic, years):
@@ -51,10 +47,6 @@ def downloadBanner(bannerURL, titleXMLPic, years):
 
 
      
-
-
-
-
 
 #Anime Banner main
 
