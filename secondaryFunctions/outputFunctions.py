@@ -3,7 +3,7 @@ import sys #needed to write on notepad
 def dataFramer(numOutputFull):  #outputResults (numOutputFull)
 
     orig_stdout = sys.stdout ##Original stdout
-    with open('Output.txt', 'w') as sys.stdout:
+    with open(f'Output_{years}.txt', 'w') as sys.stdout:
         for looper in numOutputFull:
             if looper is not None:
                 for titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic in looper:

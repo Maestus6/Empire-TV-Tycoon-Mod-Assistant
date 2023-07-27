@@ -28,7 +28,7 @@ def movieLoops():
     counter = 0 #to Count loop iterations
     numOutputFull = []
     numBannerFull = []
-    yearVal = 1995
+    yearVal = 1990
     endYearVal = yearVal + 1
 
 
@@ -89,8 +89,8 @@ def movieLoops():
             counter += 1
             numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter))
 
-            if(counter > 1):  #To make loop iterate 2 times
-                 break
+            # if(counter > 1):  #To make loop iterate 2 times
+            #      break
             ##End of Loop
     
 

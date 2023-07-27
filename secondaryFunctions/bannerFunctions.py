@@ -5,14 +5,16 @@ import movieposters as mp #ONLY USED FOR MOVIE BANNERS
 
 #Banner main
 def getBanner(container, titleXMLPic, years):
-    if container.find('h3', class_ = 'lister-item-header') is not None:
-        bannerURLList = container.find('h3', class_ = 'lister-item-header')
-        bannerURL = getUrlFormatter(str(bannerURLList))
-        bannerRealURL = getMovieBannerLink(bannerURL)
-        downloadBanner(bannerRealURL,titleXMLPic, years)
-        return bannerURL
-    else:
-        return "DELETEME"
+    check_file = os.path.isfile(titleXMLPic + "_" + years +"_p.png")
+    if(check_file == False):
+        if container.find('h3', class_ = 'lister-item-header') is not None:
+            bannerURLList = container.find('h3', class_ = 'lister-item-header')
+            bannerURL = getUrlFormatter(str(bannerURLList))
+            bannerRealURL = getMovieBannerLink(bannerURL)
+            downloadBanner(bannerRealURL,titleXMLPic, years)
+            return bannerURL
+        else:
+            return "DELETEME"
 
 
 def getUrlFormatter(bannerURLList):
@@ -35,7 +37,7 @@ def downloadBanner(bannerURL, titleXMLPic, years):
     newImgSize = (112, 168)
     img = img.resize(newImgSize)
 
-    image_path = "images"
+    image_path = f"imagesMoviePoster_{years}"
     if(os.path.exists(image_path) == False):
         os.mkdir(image_path) ##creates folder as images
 

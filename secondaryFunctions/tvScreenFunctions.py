@@ -21,10 +21,14 @@ userAgentsList = [
 
 #TV Screen Main
 def getTVScreen (urlSecondPart, titleXMLPic, years):
-    if(urlSecondPart != "DELETEME"):
-        screenLinkURL = getScreenSearchContainer(urlSecondPart)
-        screenOriginURL = getScreenOriginContainer(screenLinkURL)
-        downloadScreen(screenOriginURL, titleXMLPic, years)
+
+    check_file = os.path.isfile(titleXMLPic + "_" + years +".png")
+    if(check_file == False):
+        if(urlSecondPart != "DELETEME"):
+            screenLinkURL = getScreenSearchContainer(urlSecondPart)
+            screenOriginURL = getScreenOriginContainer(screenLinkURL)
+            if(screenOriginURL != "DELETEME"):
+                downloadScreen(screenOriginURL, titleXMLPic, years)
 
 
 
@@ -40,6 +44,7 @@ def getScreenSearchContainer(urlSecondPart):
     screenList = screenList[1].split("\" style")
     screenSearchURL = f"https://www.moviestillsdb.com{screenList[0]}"
     return screenSearchURL
+
     
 
 def getScreenOriginContainer (screenLinkURL):
@@ -47,16 +52,22 @@ def getScreenOriginContainer (screenLinkURL):
     response = get(screenLinkURL, headers={'User-Agent': choice(userAgentsList)})  
     sleep(randint(8,15))
     page_html = BeautifulSoup(response.text, 'html.parser')
-    foundIt = str(page_html).find("&quot;}")
+    foundIt = str(page_html).find("&quot;path&quot;:&quot;")
 
     if foundIt > 0 :
         screenList = str(page_html).split("&quot;path&quot;:&quot;" , 1)
-        screenList = screenList[1].split("&quot;}")
+        try:
+            screenList = screenList[1].split("&quot;}")
+        except:
+            return "DELETEME"
         screenOriginURL = (screenList[0].replace("\\", "/")).replace("//" ,  "/")
     #"path":"
     else:
         screenList = str(page_html).split("path\":\"" , 1)
-        screenList = screenList[1].split("\"},")
+        try:
+            screenList = screenList[1].split("\"},")
+        except:
+            return "DELETEME"
         screenOriginURL = (screenList[0].replace("\\", "/")).replace("//" ,  "/")        
 
 
@@ -70,7 +81,7 @@ def downloadScreen(screenOriginURL, titleXMLPic, years):
     newImgSize = (374, 254)
     img = img.resize(newImgSize)
 
-    image_path = "images"
+    image_path = f"images_{years}"
     if(os.path.exists(image_path) == False):
         os.mkdir(image_path) ##creates folder as images
 
