@@ -9,7 +9,6 @@ import numpy as np
 #Functions
 from secondaryFunctions.genreFunctions import *
 from secondaryFunctions.runtimeFunctions import *
-from secondaryFunctions.yearFunctions import *
 from secondaryFunctions.outputFunctions import *
 from secondaryFunctions.ratingFunctions import *
 from secondaryFunctions.bannerFunctions import *
@@ -18,6 +17,7 @@ from secondaryFunctions.pageScoreFunctions import *
 from secondaryFunctions.additionalFilterFunctions import *
 from secondaryFunctions.episodesFunctions import *
 from secondaryFunctions.storylineFunctions import *
+from secondaryFunctions.tvScreenFunctions import *
 
 
 def movieLoops():
@@ -76,13 +76,16 @@ def movieLoops():
             ratings = getRating(container, genresSpecial)
 
             #Banner Main
-            getBanner(container, titleXMLPic,years)
+            urlSecondPart = getBanner(container, titleXMLPic,years)
+
+            #TV Screen Main
+            getTVScreen(urlSecondPart, titleXMLPic, years)
 
             #Save Movies for usage of Output main once we get every data
             counter += 1
             numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter))
 
-            if(counter > 2):  #To make loop iterate 2 times
+            if(counter > 1):  #To make loop iterate 2 times
                  break
             ##End of Loop
     

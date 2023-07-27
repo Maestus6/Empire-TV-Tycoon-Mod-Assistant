@@ -9,7 +9,6 @@ import pandas as pd
 #Functions
 from secondaryFunctions.genreFunctions import *
 from secondaryFunctions.runtimeFunctions import *
-#from secondaryFunctions.yearFunctions import *
 from secondaryFunctions.outputFunctions import *
 #from secondaryFunctions.ratingFunctions import *
 from secondaryFunctions.bannerFunctions import *
@@ -18,6 +17,7 @@ from secondaryFunctions.pageScoreFunctions import *
 from secondaryFunctions.additionalFilterFunctions import *
 from secondaryFunctions.episodesFunctions import *
 from secondaryFunctions.storylineFunctions import *
+from secondaryFunctions.tvScreenFunctions import *
 
 
 

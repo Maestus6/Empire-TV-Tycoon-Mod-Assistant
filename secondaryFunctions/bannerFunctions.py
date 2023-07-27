@@ -10,15 +10,15 @@ def getBanner(container, titleXMLPic, years):
         bannerURL = getUrlFormatter(str(bannerURLList))
         bannerRealURL = getMovieBannerLink(bannerURL)
         downloadBanner(bannerRealURL,titleXMLPic, years)
+        return bannerURL
     else:
-        return ""
+        return "DELETEME"
 
 
 def getUrlFormatter(bannerURLList):
 
     bannerURLList = bannerURLList.split("/title/" , 1)
     bannerURLList = bannerURLList[1].split("/", 1)
-
     return bannerURLList[0]
 
 
@@ -71,4 +71,3 @@ def animeBannerFormat(animeBanner):
 
 
 
-##KEEPING IT FOR POSSIBLE FUTURE SIMILAR CASES
