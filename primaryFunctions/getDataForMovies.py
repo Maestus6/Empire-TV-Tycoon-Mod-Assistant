@@ -89,8 +89,8 @@ def movieLoops():
             counter += 1
             numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter))
 
-            if(counter > 20):  #To make loop iterate 20 times
-                 break
+            # if(counter > 20):  #To make loop iterate 20 times
+            #      break
             #End of Loop
     
 

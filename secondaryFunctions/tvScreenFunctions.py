@@ -52,7 +52,7 @@ def getScreenSearchContainer(urlSecondPart):
 def getScreenOriginContainerAlter (screenLinkURL):
      
     response = get(screenLinkURL, headers={'User-Agent': choice(userAgentsList)})  
-    sleep(randint(8,15))
+    #sleep(randint(8,15))  we already wait during searchcontainer
     page_html = BeautifulSoup(response.text, 'html.parser')
     return str(page_html)
 
@@ -101,7 +101,9 @@ def getScreenContainerFilter (page_html):
                 print(f"heightSecond: {height}")   
 
                 widthList = screenList[iterator].split(",&quot;width&quot;:", 1)
+                widthList = widthList[1].split(",&quot;path&", 1)
                 width = int(widthList[0])
+
                 print(f"widthSecond: {width}")   
                 
                 if(height < width):
@@ -121,12 +123,10 @@ def getScreenContainerFilter (page_html):
             try:
                 heightList = screenList[iterator].split(",\"", 1)
                 height = int(heightList[0])
-                print(f"height: {height}")
 
                 widthList = screenList[iterator].split("th\":", 1)
                 widthList = widthList[1].split(",", 1)
                 width = int(widthList[0])
-                print(f"width: {width}")
                 
                 if(height < width):
                     screenIteratingList = screenList[iterator].split("path\":\"", 1)
