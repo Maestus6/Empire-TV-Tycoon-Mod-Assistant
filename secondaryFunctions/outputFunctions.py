@@ -1,9 +1,12 @@
 import sys #needed to write on notepad
+import os
 
-def dataFramer(numOutputFull):  #outputResults (numOutputFull)
+def dataFramer(numOutputFull, year):  #outputResults (numOutputFull)
 
     orig_stdout = sys.stdout ##Original stdout
-    with open(f'Output_{years}.txt', 'w') as sys.stdout:
+    if(os.path.exists("output") == False):
+        os.mkdir("output") ##creates folder as images
+    with open(f'output/Output_{year}.txt', 'w') as sys.stdout:
         for looper in numOutputFull:
             if looper is not None:
                 for titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic in looper:

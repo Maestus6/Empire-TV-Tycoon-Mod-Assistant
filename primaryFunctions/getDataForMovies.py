@@ -89,12 +89,12 @@ def movieLoops():
             counter += 1
             numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter))
 
-            # if(counter > 1):  #To make loop iterate 2 times
-            #      break
-            ##End of Loop
+            if(counter > 1):  #To make loop iterate 2 times
+                 break
+            #End of Loop
     
 
 
     #Output Main
-    dataFramer(numOutputFull)
+    dataFramer(numOutputFull, years)
     print(f"Loop iterated {counter} times")

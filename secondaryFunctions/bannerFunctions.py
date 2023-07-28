@@ -36,8 +36,7 @@ def downloadBanner(bannerURL, titleXMLPic, years):
     img = Image.open(requests.get(img_url, stream = True).raw)
     newImgSize = (112, 168)
     img = img.resize(newImgSize)
-
-    image_path = f"imagesMoviePoster_{years}"
+    image_path = f"images/imagesMoviePoster_{years}"
     if(os.path.exists(image_path) == False):
         os.mkdir(image_path) ##creates folder as images
 

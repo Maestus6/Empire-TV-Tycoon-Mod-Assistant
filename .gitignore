@@ -1,8 +1,11 @@
 Output.txt
 images/
+output/
 __pycache__/
 secondaryFunctions/__pycache__/
 primaryFunctions/__pycache__/
 
 
 primaryFunctions/__pycache__/getDataForAnime.cpython-310.pyc
+output/Output_1990.txt
+output/

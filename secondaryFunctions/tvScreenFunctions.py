@@ -69,8 +69,7 @@ def getScreenOriginContainer (screenLinkURL):
         except:
             return "DELETEME"
         screenOriginURL = (screenList[0].replace("\\", "/")).replace("//" ,  "/")        
-
-
+        
     return(screenOriginURL)
      
 
@@ -81,7 +80,7 @@ def downloadScreen(screenOriginURL, titleXMLPic, years):
     newImgSize = (374, 254)
     img = img.resize(newImgSize)
 
-    image_path = f"images_{years}"
+    image_path = f"images/imagesMovieTV_{years}"
     if(os.path.exists(image_path) == False):
         os.mkdir(image_path) ##creates folder as images
 
