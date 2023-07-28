@@ -83,13 +83,13 @@ def movieLoops():
             #quotes = getQuote(urlSecondPart)
 
             #TV Screen Main
-            getTVScreen(urlSecondPart, titleXMLPic, years)
+            getTVScreenAlter(urlSecondPart, titleXMLPic, years)
 
             #Save Movies for usage of Output main once we get every data
             counter += 1
             numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter))
 
-            if(counter > 1):  #To make loop iterate 2 times
+            if(counter > 20):  #To make loop iterate 20 times
                  break
             #End of Loop
     

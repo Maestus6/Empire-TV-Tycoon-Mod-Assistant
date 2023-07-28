@@ -19,15 +19,17 @@ userAgentsList = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9' ]
 
 
-#TV Screen Main
-def getTVScreen (urlSecondPart, titleXMLPic, years):
 
-    check_file = os.path.isfile(titleXMLPic + "_" + years +".png")
+#TV Screen Main
+def getTVScreenAlter (urlSecondPart, titleXMLPic, years):
+
+    check_file = os.path.isfile("images/imagesMovieTV_" + years + "/" + titleXMLPic + "_" + years +".png")
     if(check_file == False):
-        if(urlSecondPart != "DELETEME"):
+        if urlSecondPart != "DELETEME":
             screenLinkURL = getScreenSearchContainer(urlSecondPart)
-            screenOriginURL = getScreenOriginContainer(screenLinkURL)
-            if(screenOriginURL != "DELETEME"):
+            page_html = getScreenOriginContainerAlter(screenLinkURL)
+            screenOriginURL = getScreenContainerFilter(page_html)
+            if screenOriginURL != "DELETEME":
                 downloadScreen(screenOriginURL, titleXMLPic, years)
 
 
@@ -45,33 +47,98 @@ def getScreenSearchContainer(urlSecondPart):
     screenSearchURL = f"https://www.moviestillsdb.com{screenList[0]}"
     return screenSearchURL
 
-    
 
-def getScreenOriginContainer (screenLinkURL):
+
+def getScreenOriginContainerAlter (screenLinkURL):
      
     response = get(screenLinkURL, headers={'User-Agent': choice(userAgentsList)})  
     sleep(randint(8,15))
     page_html = BeautifulSoup(response.text, 'html.parser')
-    foundIt = str(page_html).find("&quot;path&quot;:&quot;")
+    return str(page_html)
 
-    if foundIt > 0 :
-        screenList = str(page_html).split("&quot;path&quot;:&quot;" , 1)
-        try:
-            screenList = screenList[1].split("&quot;}")
-        except:
-            return "DELETEME"
-        screenOriginURL = (screenList[0].replace("\\", "/")).replace("//" ,  "/")
-    #"path":"
+
+
+
+def getScreenContainerFilter (page_html):
+
+    iterator = 1
+    foundIt = 0
+
+    if (str(page_html).find("\"preview\":{\"")) > 0:
+        screenList = str(page_html).split("\"preview\":{\"")
+
+
+        while(foundIt == 0):
+            try:
+                heightList = screenList[iterator].split("ght\":", 1)
+                heightList = heightList[1].split(",", 1)
+                height = int(heightList[0])
+                print(f"height: {height}")
+
+                widthList = screenList[iterator].split("th\":", 1)
+                widthList = widthList[1].split(",\"", 1)
+                width = int(widthList[0])
+                print(f"width: {width}")
+                
+                if(height < width):
+                    screenIteratingList = screenList[iterator].split("\"path\":\"", 1)
+                    screenIteratingList = screenIteratingList[1].split("\"},\"", 1)
+                    screenOriginURL = (screenIteratingList[0].replace("\\", "/")).replace("//" ,  "/")
+                    return screenOriginURL
+                else:
+                    iterator += 1
+            except:
+                return("DELETEME")
+
+    elif (str(page_html).find("{&quot;height&quot;:")) > 0 :
+        screenList = str(page_html).split("{&quot;height&quot;:")
+
+
+        while(foundIt == 0):
+            try:
+                heightList = screenList[iterator].split(",&quot;", 1)
+                height = int(heightList[0])
+                print(f"heightSecond: {height}")   
+
+                widthList = screenList[iterator].split(",&quot;width&quot;:", 1)
+                width = int(widthList[0])
+                print(f"widthSecond: {width}")   
+                
+                if(height < width):
+                    screenIteratingList = screenList[iterator].split("path&quot;:&quot;", 1)
+                    screenIteratingList = screenIteratingList[1].split("&quot;}", 1)
+                    screenOriginURL = (screenIteratingList[0].replace("\\", "/")).replace("//" ,  "/")
+                    return screenOriginURL
+                else:
+                    iterator += 1
+            except:
+                 return("DELETEME")
+
     else:
-        screenList = str(page_html).split("path\":\"" , 1)
-        try:
-            screenList = screenList[1].split("\"},")
-        except:
-            return "DELETEME"
-        screenOriginURL = (screenList[0].replace("\\", "/")).replace("//" ,  "/")        
-        
-    return(screenOriginURL)
-     
+        screenList = str(page_html).split("{\"height\":")
+
+        while(foundIt == 0):
+            try:
+                heightList = screenList[iterator].split(",\"", 1)
+                height = int(heightList[0])
+                print(f"height: {height}")
+
+                widthList = screenList[iterator].split("th\":", 1)
+                widthList = widthList[1].split(",", 1)
+                width = int(widthList[0])
+                print(f"width: {width}")
+                
+                if(height < width):
+                    screenIteratingList = screenList[iterator].split("path\":\"", 1)
+                    screenIteratingList = screenIteratingList[1].split("\"},", 1)
+                    screenOriginURL = (screenIteratingList[0].replace("\\", "/")).replace("//" ,  "/")
+                    print(screenOriginURL)
+                    return screenOriginURL
+                else:
+                    iterator += 1
+            except:
+                return("DELETEME")
+            
 
 
 def downloadScreen(screenOriginURL, titleXMLPic, years):
@@ -105,10 +172,22 @@ def downloadScreen(screenOriginURL, titleXMLPic, years):
 
 
 
+    # foundIt = str(page_html).find("&quot;path&quot;:&quot;")
 
+    # if foundIt > 0 :
+    #     screenList = str(page_html).split("&quot;path&quot;:&quot;" , 1)
+    #     try:
+    #         screenList = screenList[1].split("&quot;}")
+    #     except:
+    #         return "DELETEME"
+    #     screenOriginURL = (screenList[0].replace("\\", "/")).replace("//" ,  "/")
+    # #"path":"
+    # else:
+    #     screenList = str(page_html).split("path\":\"" , 1)
+    #     try:
+    #         screenList = screenList[1].split("\"},")
+    #     except:
+    #         return "DELETEME"
+    #     screenOriginURL = (screenList[0].replace("\\", "/")).replace("//" ,  "/")        
 
-
-
-
-
-
+    # return(screenOriginURL)
