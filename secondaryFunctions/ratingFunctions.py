@@ -4,7 +4,6 @@
 def getRating(container, genresSpecial):
 
     if container.p.find('span', class_ = 'certificate') is not None:
-        ratings = []
         rating = container.p.find('span', class_= 'certificate').text
         ratingFound, movieOrSeries = ratingFinder(genresSpecial, rating)
         return ratingFound, movieOrSeries

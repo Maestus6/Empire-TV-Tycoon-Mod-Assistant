@@ -1,8 +1,8 @@
 #Episode Main
 def getEpisodes(movieOrSeries):
-    if movieOrSeries == 1:
+    if movieOrSeries == '1':
         episodes = "0"
-    elif movieOrSeries == 2:
+    elif movieOrSeries == '2':
         episodes = "10"
     else:
         episodes = "DELETEME"

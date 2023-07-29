@@ -67,10 +67,7 @@ def movieLoops():
                 genres,genresSpecial = getGenre(container)
 
                 #AlternativeScore Main(additionalFilterFunctions.py) (Used to diverse movies from tvshows)
-                movieOrSeries = getMoviesOrSeries(container)
-
-                #Episodes main
-                episodes = getEpisodes(movieOrSeries)
+                #movieOrSeries = getMoviesOrSeries(container)
 
                 #PageScore ratings(Movie score)
                 pageScore = getPageScore(container)
@@ -79,7 +76,10 @@ def movieLoops():
                 runtimes = getRuntime(container)
 
                 #Rating Main
-                ratings = getRating(container, genresSpecial)
+                ratings, movieOrSeries = getRating(container, genresSpecial)
+
+                #Episodes main
+                episodes = getEpisodes(movieOrSeries)
 
                 #Banner Main
                 urlSecondPart = getBanner(container, titleXMLPic,years)
