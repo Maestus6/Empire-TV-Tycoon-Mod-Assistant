@@ -87,5 +87,5 @@ def animeLoops():
         
     
     #print(f"Anime list: {animeFilteredList}")
-    dataFramer(animeFilteredList)
+    dataFramer(animeFilteredList, animeYears)
     #print(f"Loop iterated {animeCounter} times")

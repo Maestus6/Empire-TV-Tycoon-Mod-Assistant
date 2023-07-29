@@ -73,13 +73,11 @@ def getScreenContainerFilter (page_html):
                 heightList = screenList[iterator].split("ght\":", 1)
                 heightList = heightList[1].split(",", 1)
                 height = int(heightList[0])
-                print(f"height: {height}")
 
                 widthList = screenList[iterator].split("th\":", 1)
                 widthList = widthList[1].split(",\"", 1)
                 width = int(widthList[0])
-                print(f"width: {width}")
-                
+
                 if(height < width):
                     screenIteratingList = screenList[iterator].split("\"path\":\"", 1)
                     screenIteratingList = screenIteratingList[1].split("\"},\"", 1)
@@ -98,13 +96,11 @@ def getScreenContainerFilter (page_html):
             try:
                 heightList = screenList[iterator].split(",&quot;", 1)
                 height = int(heightList[0])
-                print(f"heightSecond: {height}")   
 
                 widthList = screenList[iterator].split(",&quot;width&quot;:", 1)
                 widthList = widthList[1].split(",&quot;path&", 1)
                 width = int(widthList[0])
 
-                print(f"widthSecond: {width}")   
                 
                 if(height < width):
                     screenIteratingList = screenList[iterator].split("path&quot;:&quot;", 1)
@@ -132,7 +128,7 @@ def getScreenContainerFilter (page_html):
                     screenIteratingList = screenList[iterator].split("path\":\"", 1)
                     screenIteratingList = screenIteratingList[1].split("\"},", 1)
                     screenOriginURL = (screenIteratingList[0].replace("\\", "/")).replace("//" ,  "/")
-                    print(screenOriginURL)
+
                     return screenOriginURL
                 else:
                     iterator += 1
