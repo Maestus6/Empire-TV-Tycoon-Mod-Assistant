@@ -6,21 +6,32 @@ def getRating(container, genresSpecial):
     if container.p.find('span', class_ = 'certificate') is not None:
         ratings = []
         rating = container.p.find('span', class_= 'certificate').text
-        ratingFound = ratingFinder(genresSpecial, rating)
-        return ratingFound
+        ratingFound, movieOrSeries = ratingFinder(genresSpecial, rating)
+        return ratingFound, movieOrSeries
 
     else:
-        return "DELETEME"
+        return "DELETEME", "DELETEME"
     
 def ratingFinder(specialGenre, rating):
-    if(specialGenre == 1):
-        return "4"
-    elif(rating == "R" or rating == "NC-16" or rating == "NC-17" or rating == "NC_18" or rating == "TV-MA" or rating == "PG-16" or rating == "PG-17" or rating == "PG-18"):
-        return "1"
-    elif(specialGenre == 2):
-        return "3"
+
+    movieOrSeries = rating.find('TV')
+
+    if specialGenre == 1 and movieOrSeries > 0 :
+        return "4", "2"
+    elif specialGenre == 1 and movieOrSeries < 1 :
+        return "4", "1"
+    elif specialGenre == 2 and movieOrSeries > 0 :
+        return "3", "2"
+    elif specialGenre == 2 and movieOrSeries < 1 :
+        return "3", "1"
+    elif rating == "TV-MA" :
+        return "1", "2"
+    elif movieOrSeries > 0  :
+        return "0", "2"
+    elif(rating == "R" or rating == "NC-16" or rating == "NC-17" or rating == "NC_18" or rating == "PG-16" or rating == "PG-17" or rating == "PG-18"):
+        return "1", "1"
     else:
-        return "0"
+        return "0", "1"
     
 
 
