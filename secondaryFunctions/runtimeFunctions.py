@@ -6,7 +6,7 @@ def getRuntime(container):
         fixedTime = str(runtimeFormatter(time)) #Formatting it to str, to prevent future code to treat int like float while printing
         return fixedTime
     else:
-        return ""
+        return "DELETEME"
 
 def runtimeFormatter(runtime):
     
