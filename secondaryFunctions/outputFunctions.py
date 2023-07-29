@@ -9,7 +9,7 @@ def dataFramer(numOutputFull, year):  #outputResults (numOutputFull)
     with open(f'output/Output_{year}.txt', 'w') as sys.stdout:
         for looper in numOutputFull:
             if looper is not None:
-                for titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic in looper:
+                for titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, ratings,  titleXMLPic in looper:
                     print('<Movie>')
                     print(f"<Id value=\"\">")
                     print(f"<Name value=\"{titles}\">")

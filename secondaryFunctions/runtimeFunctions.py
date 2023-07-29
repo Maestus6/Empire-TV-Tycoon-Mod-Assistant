@@ -14,7 +14,7 @@ def runtimeFormatter(runtime):
         return 1
     elif(runtime < 151):
         return 2
-    elif(runtime > 151):
+    elif(runtime > 150):
         return 3
     
 #Anime Runtime Main

@@ -23,16 +23,18 @@ from secondaryFunctions.quoteFunctions import *
 
 def movieLoops():
 
-    pages = np.arange(1, 2, 1) #entry (start, stop), lines between each entry 
+     #entry (start, stop), lines between each entry 
     headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandarin
-    counter = 0 #to Count loop iterations
+     
     yearValList = [1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000]
     
 
     for yearVal in yearValList:
 
+        pages = np.arange(1, 2, 1)
         endYearVal = yearVal + 1
         numOutputFull = []
+        counter = 0 #to Count loop iterations
         # years = str(yearVal)
         
         for page in pages:
@@ -90,14 +92,14 @@ def movieLoops():
 
                 #Save Movies for usage of Output main once we get every data
                 counter += 1
-                numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter))
+                numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, ratings,  titleXMLPic, counter))
 
-                # if(counter > 20):  #To make loop iterate 20 times
-                #      break
+                # if(counter > 5):  #To make loop iterate 20 times
+                #     break
                 #End of Loop
         
 
 
         #Output Main
-        dataFramer(numOutputFull, years)
+        dataFramer(numOutputFull, int(yearVal))
         print(f"Loop iterated {counter} times")

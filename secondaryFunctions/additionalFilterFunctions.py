@@ -1,7 +1,7 @@
 import pandas as pd #needed for dataframe
 import sys #needed to write on notepad
 #Movies List Main
-def dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, ratings, runtimes, titleXMLPic, counter):
+def dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, ratings, titleXMLPic, counter):
     
     pdOutputFull = pd.DataFrame({'name': str(titles),
                       'storyline': str(storyline),
