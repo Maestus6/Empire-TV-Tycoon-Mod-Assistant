@@ -26,7 +26,7 @@ def movieLoops():
      #entry (start, stop), lines between each entry 
     headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandarin
      
-    yearValList = [1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000]
+    yearValList = [1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000]
     
 
     for yearVal in yearValList:
