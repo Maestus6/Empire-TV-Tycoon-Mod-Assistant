@@ -30,10 +30,13 @@ def movieLoops():
     
 
     for yearVal in yearValList:
+
         endYearVal = yearVal + 1
         numOutputFull = []
+        # years = str(yearVal)
+        
         for page in pages:
-            
+
         #get request for sci-fi
             response = get(f"https://www.imdb.com/search/title/?release_date={str(yearVal)}-01-01,{str(endYearVal)}-01-01&languages=en&start={str(page)}&ref_=adv_nxt", headers=headers)
             
@@ -55,7 +58,7 @@ def movieLoops():
                 #Storyline Main
                 storyline = getStoryline(container)
 
-                #Year Main
+                # #Year Main
                 years = str(yearVal)
 
                 #Genre Main
