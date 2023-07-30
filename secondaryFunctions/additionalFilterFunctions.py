@@ -101,14 +101,16 @@ def checkExistingMovieListMaker(name, year, counter):
 
 
 
-def checkExistingMoviesForYear(existingMovieList, currentYear):
-
+def checkExistingMoviesForYear(existingMovieList, currentYears):
+    
+    currentYear = int(currentYears)
     returnList = []
 
     for eachMovie in existingMovieList:
-        for title, year in eachMovie:
-            if year == str(currentYear):
-                returnList.append(title)
+        for titles, years in eachMovie:
+            year = int(years)
+            if year == currentYear or year == (currentYear + 1) or year == (currentYear - 1):
+                returnList.append(titles)
     
     return returnList
 

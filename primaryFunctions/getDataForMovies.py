@@ -73,7 +73,6 @@ def movieLoops():
 
                     #Cult Main // Using ratingFunctions.py
                     cult = getCult(preexistingCultList, titles, years)
-                    print(f"cult: {cult}, title: {titles}")
 
                     #Genre Main
                     genres,genresSpecial = getGenre(container)

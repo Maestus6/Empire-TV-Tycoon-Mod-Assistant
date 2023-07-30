@@ -60,7 +60,6 @@ def getAnimeBanner(container, titleXMLPic, years):
     if container.find('div', class_ = 'image') is not None:
         animeBanner = container.find('div', class_ = 'image')
         animeBannerFix = animeBannerFormat(str(animeBanner))
-        #print(animeBannerFix)
         downloadBanner(animeBannerFix, titleXMLPic, years)    
 
 
