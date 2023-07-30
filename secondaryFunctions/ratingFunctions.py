@@ -34,13 +34,25 @@ def ratingFinder(specialGenre, rating):
     
 
 
-def isItCult(title, year):
 
-    returnList = []
-    f = open("CultMoviesList.xml", "r")
-    cultsList = f.readline()
-    f.close()
-    counter = 0
+#Cult Main
+
+def getCult(preexistingCultList, titles, years):
+
+    year = int(years)
+
+    for eachList in preexistingCultList:
+        for titlesCult, yearsCult in eachList:
+            
+            yearCult = int(yearsCult)
+
+            if titles == titlesCult and (year == yearCult or year == (yearCult - 1) or year == (yearCult + 1)) : #year range is needed due to differences between sources
+                return "1"
+            
+    return "0"
+
+
+
 
 
 

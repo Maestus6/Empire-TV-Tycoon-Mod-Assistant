@@ -1,7 +1,7 @@
 import pandas as pd #needed for dataframe
 import sys #needed to write on notepad
 #Movies List Main
-def dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, ratings, titleXMLPic, counter):
+def dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, cult, ratings, titleXMLPic, counter):
     
     pdOutputFull = pd.DataFrame({'name': str(titles),
                       'storyline': str(storyline),
@@ -11,6 +11,7 @@ def dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, page
                       'episodes' :str(episodes),
                       'rating': str(pageScore),
                       'block': str(runtimes),
+                      'cult' : str(cult),
                       'special': str(ratings),
                       'titleXMLPic': str(titleXMLPic)} , index = [counter]
                       )
@@ -117,4 +118,54 @@ def checkIfMovieNeeded(title, preexistingTitleList):
         if title == existingTitle:
             return "DONTCONTINUE"
     return "CONTINUE"
+    
+
+
+
+
+#To get Cults list from .txt file
+def getCultList():
+
+    cultsList = []
+    f = open("CultMoviesList.txt", "r", encoding='utf-8')
+    Lines = f.read()
+    f.close()
+    
+    cultsList = Lines.split("//ENDLINE\n")
+
+    cultsList = formatCultList(cultsList)
+
+    return cultsList
+
+
+def formatCultList(cultsList):
+
+    counter = 0
+    returnCultList = []
+
+    for eachTitle in cultsList:
+
+        titleList = eachTitle.split("tle=" , 1)
+        titleList = titleList[1].split("///", 1)
+
+
+        yearList = eachTitle.split("year=")
+        yearList = yearList[1].split("///", 1)
+
+        returnCultList.append(formatCultListMaker(titleList[0], yearList[0], counter))
+
+        counter += 1
+
+    return returnCultList
+
+
+def formatCultListMaker(name, year, counter):
+
+    pdCult = pd.DataFrame({'name': str(name),
+                      'year': str(year)} , index = [counter]
+                      )
+    
+    numCult = pdCult.to_numpy()
+    return numCult
+    
     

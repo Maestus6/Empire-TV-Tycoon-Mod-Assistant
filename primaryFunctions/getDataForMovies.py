@@ -38,6 +38,7 @@ def movieLoops():
         counter = 0 #to Count loop iterations
         # years = str(yearVal)
         preexistingTitleList = checkExistingMoviesForYear(existingMovieList, yearVal)
+        preexistingCultList = getCultList()
         
         for page in pages:
 
@@ -67,14 +68,15 @@ def movieLoops():
                     #Storyline Main
                     storyline = getStoryline(container)
 
-                    # #Year Main
+                    #Year Main
                     years = str(yearVal)
+
+                    #Cult Main // Using ratingFunctions.py
+                    cult = getCult(preexistingCultList, titles, years)
+                    print(f"cult: {cult}, title: {titles}")
 
                     #Genre Main
                     genres,genresSpecial = getGenre(container)
-
-                    #AlternativeScore Main(additionalFilterFunctions.py) (Used to diverse movies from tvshows)
-                    #movieOrSeries = getMoviesOrSeries(container)
 
                     #PageScore ratings(Movie score)
                     pageScore = getPageScore(container)
@@ -99,7 +101,7 @@ def movieLoops():
 
                     #Save Movies for usage of Output main once we get every data
                     counter += 1
-                    numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, ratings,  titleXMLPic, counter))
+                    numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, cult, ratings, titleXMLPic, counter))
 
                     # if(counter > 5):  #To make loop iterate 20 times
                     #     break

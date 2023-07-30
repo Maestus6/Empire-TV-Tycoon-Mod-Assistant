@@ -12,7 +12,7 @@ def dataFramer(numOutputFull, year):  #outputResults (numOutputFull)
         print('	<Movies>')
         for looper in numOutputFull:
             if looper is not None:
-                for titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, ratings,  titleXMLPic in looper:
+                for titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, cult, ratings, titleXMLPic in looper:
                     print('		<Movie>')
                     print(f"			<Id value=\"\">")
                     print(f"			<Name value=\"{titles}\">")
@@ -23,7 +23,7 @@ def dataFramer(numOutputFull, year):  #outputResults (numOutputFull)
                     print(f"			<Episodes value=\"{episodes}\">")
                     print(f"			<Rating value=\"{pageScore}\">")
                     print(f"			<Blocks value=\"{runtimes}\">")
-                    print("			<Cult value=\"0\">")
+                    print(f"			<Cult value=\"{cult}\">")
                     print(f"			<Special value=\"{ratings}\">")
                     print("			<Pirate value=\"0\">")  
                     print("			<Speech value=\"\">")
