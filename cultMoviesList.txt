@@ -1,0 +1,2370 @@
+title=Le Voyage dans la Lune (A Trip to the Moon)///year=1902
+title=The Cabinet of Dr. Caligari///year=1919
+title=Der Golem, wie er in die Welt kam (The Golem: How He Came into the World)///year=1920
+title=Häxan///year=1922
+title=Nosferatu, eine Symphonie des Grauens (Nosferatu: A Symphony of Horror)///year=1922
+title=Aelita///year=1924
+title=Greed///year=1924
+title=Die freudlose Gasse (Joyless Street)///year=1925
+title=Metropolis///year=1927
+title=Napoléon///year=1927
+title=Die Büchse der Pandora (Pandora's Box)///year=1929
+title=Un Chien Andalou///year=1929
+title=Hell's Angels///year=1930
+title=Limite///year=1930
+title=Morocco///year=1930
+title=Dracula///year=1931
+title=Drácula///year=1931
+title=M – Eine Stadt sucht einen Mörder (M)///year=1931
+title=Girls in Uniform///year=1931
+title=Marius///year=1931
+title=Blonde Venus///year=1932
+title=L'Affaire est dans le Sac (The Affair is in The Bag)///year=1932
+title=Freaks///year=1932
+title=Island of Lost Souls///year=1932
+title=The Most Dangerous Game///year=1932
+title=The Old Dark House///year=1932
+title=Scarface///year=1932
+title=Vampyr///year=1932
+title=White Zombie///year=1932
+title=42nd Street///year=1933
+title=Blood Money///year=1933
+title=Duck Soup///year=1933
+title=King Kong///year=1933
+title=Queen Christina///year=1933
+title=Sons of the Desert///year=1933
+title=The Vampire Bat///year=1933
+title=Zéro de Conduite (Zero for Conduct)///year=1933
+title=The Black Cat///year=1934
+title=It's a Gift///year=1934
+title=Maniac///year=1934
+title=The Scarlet Empress///year=1934
+title=Tarzan and His Mate///year=1934
+title=Bride of Frankenstein///year=1935
+title=Mad Love///year=1935
+title=Sylvia Scarlett///year=1935
+title=Top Hat///year=1935
+title=The Devil-Doll///year=1936
+title=Reefer Madness///year=1936
+title=Boys' School///year=1938
+title=La Femme du Boulanger (The Baker's Wife)///year=1938
+title=The Terror of Tiny Town///year=1938
+title=The Wizard of Oz///year=1939
+title=The Women///year=1939
+title=Wuthering Heights///year=1939
+title=Dance, Girl, Dance///year=1940
+title=Dr. Cyclops///year=1940
+title=The Devil Bat///year=1940
+title=Fantasia///year=1940
+title=His Girl Friday///year=1940
+title=The Thief of Bagdad///year=1940
+title=Citizen Kane///year=1941
+title=Hellzapoppin'///year=1941
+title=The Maltese Falcon///year=1941
+title=That Hamilton Woman///year=1941
+title=Casablanca///year=1942
+title=Cat People///year=1942
+title=The Dover Boys///year=1942
+title=Hemp for Victory///year=1942
+title=Now, Voyager///year=1942
+title=Sullivan's Travels///year=1942
+title=To Be or Not to Be///year=1942
+title=Adieu Léonard (Goodbye Léonard)///year=1943
+title=I Walked with a Zombie///year=1943
+title=The Leopard Man///year=1943
+title=Red Hot Riding Hood///year=1943
+title=Die Feuerzangenbowle///year=1944
+title=Laura///year=1944
+title=Dead of Night///year=1945
+title=Detour///year=1945
+title=Les Enfants du Paradis (Children of Paradise)///year=1945
+title=Mildred Pierce///year=1945
+title=Gilda///year=1946
+title=My Darling Clementine///year=1946
+title=The Lady from Shanghai///year=1947
+title=Monsieur Verdoux///year=1947
+title=Nightmare Alley///year=1947
+title=Out of the Past///year=1947
+title=They Live by Night///year=1947
+title=Abbott and Costello Meet Frankenstein///year=1948
+title=The Boy with Green Hair///year=1948
+title=Force of Evil///year=1948
+title=Gangsters Versus Cowboys///year=1948
+title=The Red Shoes///year=1948
+title=The Adventures of Ichabod and Mr. Toad///year=1949
+title=Mahal (The Mansion)///year=1949
+title=The Third Man///year=1949
+title=White Heat///year=1949
+title=All About Eve///year=1950
+title=Gun Crazy///year=1950
+title=In a Lonely Place///year=1950
+title=Los Olvidados (The Young and the Damned)///year=1950
+title=Orphée (Orpheus)///year=1950
+title=Rabbit of Seville///year=1950
+title=Alice in Wonderland///year=1951
+title=Bedtime for Bonzo///year=1951
+title=The African Queen///year=1951
+title=The Day the Earth Stood Still///year=1951
+title=The Man from Planet X///year=1951
+title=Pool of London///year=1951
+title=Scrooge///year=1951
+title=The Thing from Another World///year=1951
+title=The Quiet Man///year=1952
+title=Ruby Gentry///year=1952
+title=Beat the Devil///year=1953
+title=Calamite Jane///year=1953
+title=Devil Girl from Mars///year=1953
+title=The 5,000 Fingers of Dr. T.///year=1953
+title=The Big Heat///year=1953
+title=Gentlemen Prefer Blondes///year=1953
+title=Glen or Glenda///year=1953
+title=House of Wax///year=1953
+title=Invaders from Mars///year=1953
+title=It Came from Outer Space///year=1953
+title=Pickup on South Street///year=1953
+title=Robot Monster///year=1953
+title=Le Salaire de la Peur (The Wages of Fear)///year=1953
+title=I Vitelloni///year=1953
+title=The Wild One///year=1953
+title=Creature from the Black Lagoon///year=1954
+title=The Beast from 20,000 Fathoms///year=1954
+title=Gojira (Godzilla)///year=1954
+title=Inauguration of the Pleasure Dome///year=1954
+title=Johnny Guitar///year=1954
+title=Salt of the Earth///year=1954
+title=A Star Is Born///year=1954
+title=Suddenly///year=1954
+title=Them!///year=1954
+title=Blackboard Jungle///year=1955
+title=Bride of the Monster///year=1955
+title=Cesta do pravěku (Journey to the Beginning of Time)///year=1955
+title=Du Rififi Chez Les Femmes (Rififi)///year=1955
+title=Les Diaboliques///year=1955
+title=The Big Combo///year=1955
+title=It Came from Beneath the Sea///year=1955
+title=Kiss Me Deadly///year=1955
+title=Land of the Pharaohs///year=1955
+title=Lola Montès///year=1955
+title=The Man with the Golden Arm///year=1955
+title=Night of the Hunter///year=1955
+title=Rebel Without a Cause///year=1955
+title=Sissi///year=1955
+title=This Island Earth///year=1955
+title=Earth vs. the Flying Saucers///year=1956
+title=Et Dieu Créa La Femme (And God Created Woman)///year=1956
+title=The Bad Seed///year=1956
+title=Forbidden Planet///year=1956
+title=The Girl Can't Help It///year=1956
+title=Invasion of the Body Snatchers///year=1956
+title=The Killing///year=1956
+title=Mr. B Natural///year=1956
+title=Le Mystère Picasso (The Mystery of Picasso)///year=1956
+title=The Searchers///year=1956
+title=La Traversée de Paris///year=1956
+title=Attack of the Crab Monsters///year=1957
+title=The Curse of Frankenstein///year=1957
+title=From Hell It Came///year=1957
+title=The Giant Claw///year=1957
+title=I Was a Teenage Werewolf///year=1957
+title=The Incredible Shrinking Man///year=1957
+title=Jailhouse Rock///year=1957
+title=Night of the Demon///year=1957
+title=Det Sjunde Inseglet (The Seventh Seal)///year=1957
+title=The Tall T///year=1957
+title=El Vampiro (The Vampire)///year=1957
+title=What's Opera, Doc?///year=1957
+title=Will Success Spoil Rock Hunter?///year=1957
+title=Ascenseur pour l'Echafaud (Elevator to the Gallows)///year=1958
+title=Attack of the 50 Foot Woman///year=1958
+title=Corridors of Blood///year=1958
+title=Horror of Dracula///year=1958
+title=The 7th Voyage of Sinbad///year=1958
+title=The Blob///year=1958
+title=Le Fatiche di Ercole (Hercules)///year=1958
+title=The Fly///year=1958
+title=The Hideous Sun Demon///year=1958
+title=High School Confidential///year=1958
+title=I Bury the Living///year=1958
+title=I Married a Monster from Outer Space///year=1958
+title=Man of the West///year=1958
+title=La Momia Azteca contra el Robot Humano (The Robot vs. The Aztec Mummy)///year=1958
+title=Queen of Outer Space///year=1958
+title=The Screaming Skull///year=1958
+title=Thunder Road///year=1958
+title=Touch of Evil///year=1958
+title=Vertigo///year=1958
+title=Vynález zkázy (The Fabulous World of Jules Verne)///year=1958
+title=Wir Wunderkinder (Aren't We Wonderful?)///year=1958
+title=A Bucket of Blood///year=1959
+title=Attack of the Giant Leeches///year=1959
+title=Beast from Haunted Cave///year=1959
+title=Carry On Nurse///year=1959
+title=The Angry Red Planet///year=1959
+title=The Atomic Submarine///year=1959
+title=The Best of Everything///year=1959
+title=Gidget///year=1959
+title=Hiroshima mon amour///year=1959
+title=House on Haunted Hill///year=1959
+title=Imitation of Life///year=1959
+title=The Killer Shrews///year=1959
+title=Orfeu Negro (Black Orpheus)///year=1959
+title=Plan 9 from Outer Space///year=1959
+title=Rio Bravo///year=1959
+title=Sampo (The Day the Earth Froze)///year=1959
+title=Shadows///year=1959
+title=Some Like It Hot///year=1959
+title=Teenagers from Outer Space///year=1959
+title=The Tingler///year=1959
+title=À Bout de Souffle (Breathless)///year=1960
+title=Hell Is a City///year=1960
+title=Jazz on a Summer's Day///year=1960
+title=Jigoku (Hell or The Sinners of Hell)///year=1960
+title=The Little Shop of Horrors///year=1960
+title=La Maschera del Demonio (The Mask of the Demon, also known as Black Sunday)///year=1960
+title=Peeping Tom///year=1960
+title=Pollyanna///year=1960
+title=Psycho///year=1960
+title=The Savage Innocents///year=1960
+title=Ein Toter hing im Netz (Horror of Spider Island)///year=1960
+title=Village of the Damned///year=1960
+title=Where the Boys Are///year=1960
+title=Les Yeux Sans Visage (Eyes Without a Face)///year=1960
+title=Baron Prášil (The Fabulous Baron Munchausen)///year=1961
+title=Breakfast at Tiffany's///year=1961
+title=Creature from the Haunted Sea///year=1961
+title=L'Année Dernière à Marienbad (Last Year at Marienbad)///year=1961
+title=Gorgo///year=1961
+title=Gritos en la Noche (The Awful Dr. Orloff)///year=1961
+title=Jules et Jim (Jules and Jim)///year=1961
+title=The Last Sunset///year=1961
+title=The Mask///year=1961
+title=The Misfits///year=1961
+title=Mosura (Mothra)///year=1961
+title=Mr. Sardonicus///year=1961
+title=Nude on the Moon///year=1961
+title=One-Eyed Jacks///year=1961
+title=The Parent Trap///year=1961
+title=Reptilicus///year=1961
+title=Viridiana///year=1961
+title=Carnival of Souls///year=1962
+title=Dr. No///year=1962
+title=Eegah///year=1962
+title=El Barón del Terror (The Braniac)///year=1962
+title=The Brain That Wouldn't Die///year=1962
+title=La Jetée///year=1962
+title=The Manchurian Candidate///year=1962
+title=Mondo Cane///year=1962
+title=Nóż w Wodzie (Knife in the Water)///year=1962
+title=Ride the High Country///year=1962
+title=Seppuku (Harakiri)///year=1962
+title=Un Singe en Hiver (A Monkey in Winter)///year=1962
+title=To Kill a Mockingbird///year=1962
+title=What Ever Happened to Baby Jane?///year=1962
+title=Wild Guitar///year=1962
+title=The World's Greatest Sinner///year=1962
+title=Blood Feast///year=1963
+title=The Day of the Triffids///year=1963
+title=Flaming Creatures///year=1963
+title=The Incredibly Strange Creatures Who Stopped Living and Became Mixed-Up Zombies///year=1963
+title=It's a Mad, Mad, Mad, Mad World///year=1963
+title=Jason and the Argonauts///year=1963
+title=Lord of the Flies///year=1963
+title=Matango (also known as Fungus of Terror and Curse/Attack of the Mushroom People)///year=1963
+title=The Nutty Professor///year=1963
+title=Shock Corridor///year=1963
+title=They Saved Hitler's Brain///year=1963
+title=Les Tontons Flingueurs (Crooks in Clover, also known as Monsieur Gangster)///year=1963
+title=À Meia-Noite Levarei Sua Alma (At Midnight I'll Take Your Soul)///year=1964
+title=Bande à part (Band of Outsiders)///year=1964
+title=Empire///year=1964
+title=The Creeping Terror///year=1964
+title=A Hard Day's Night///year=1964
+title=Kaaidan (Kwaidan)///year=1964
+title=The Leather Boys///year=1964
+title=Marnie///year=1964
+title=Mary Poppins///year=1964
+title=The Naked Kiss///year=1964
+title=Les Parapluies de Cherbourg (The Umbrellas of Cherbourg)///year=1964
+title=Per Un Pugno Di Dollari (A Fistful of Dollars)///year=1964
+title=Robinson Crusoe on Mars///year=1964
+title=Santa Claus Conquers the Martians///year=1964
+title=Scorpio Rising///year=1964
+title=Sei Donne per l'Assassino (Blood and Black Lace)///year=1964
+title=Soy Cuba (I Am Cuba)///year=1964
+title=Two Thousand Maniacs!///year=1964
+title=Alphaville///year=1965
+title=Babo 73///year=1965
+title=Bad Girls Go to Hell///year=1965
+title=Beach Blanket Bingo///year=1965
+title=Color Me Blood Red///year=1965
+title=Don't Look Back///year=1965
+title=Dr. Goldfoot and the Bikini Machine///year=1965
+title=The Face of Fu Manchu///year=1965
+title=Faster, Pussycat! Kill! Kill!///year=1965
+title=Gamera (also known as Gamera: The Giant Monster or Gamera the Invincible)///year=1965
+title=Help///year=1965
+title=The Knack ...and How to Get It///year=1965
+title=Motorpsycho///year=1965
+title=Mudhoney///year=1965
+title=Muscle Beach Party///year=1965
+title=The Naked Prey///year=1965
+title=Operatsiya "Y" i Drugie Priklyucheniya Shurika (Operation Y and Shurik's Other Adventures)///year=1965
+title=Per Qualche Dollaro In Piú (For a Few Dollars More)///year=1965
+title=Rękopis Znaleziony w Saragossie (The Saragossa Manuscript)///year=1965
+title=The Sound of Music///year=1965
+title=Terrore Nello Spazio (Planet of the Vampires)///year=1965
+title=Village of the Giants///year=1965
+title=Blowup///year=1966
+title=Chafed Elbows///year=1966
+title=Chelsea Girls///year=1966
+title=Django///year=1966
+title=The Battle of Algiers///year=1966
+title=The Endless Summer///year=1966
+title=Furankenshutain no Kaijū: Sanda tai Gaira (The War of the Gargantuas)///year=1966
+title=Il Buono, Il Brutto, Il Cattivo (The Good, The Bad And The Ugly)///year=1966
+title=Incubus///year=1966
+title=Jesse James Meets Frankenstein's Daughter///year=1966
+title=Lord Love a Duck///year=1966
+title=De Man Die Zijn Haar Kort Liet Knippen (The Man Who Had His Hair Cut Short)///year=1966
+title=Manos: The Hands of Fate///year=1966
+title=Morgan – A Suitable Case for Treatment///year=1966
+title=One Million Years B.C.///year=1966
+title=Persona///year=1966
+title=Qui Êtes-Vous, Polly Maggoo? (Who Are You, Polly Magoo?)///year=1966
+title=Seconds///year=1966
+title=Sedmikrásky (Daisies)///year=1966
+title=The Shooting///year=1966
+title=Tōkyō Nagaremono (Tokyo Drifter)///year=1966
+title=What's Up, Tiger Lily?///year=1966
+title=The Wild Angels///year=1966
+title=Bedazzled///year=1967
+title=Belle de Jour///year=1967
+title=Casino Royale///year=1967
+title=Chappaqua///year=1967
+title=Da Uomo a Uomo (Death Rides a Horse)///year=1967
+title=Esta Noite Encarnarei no Teu Cadáver (This Night I'll Possess Your Corpse)///year=1967
+title=Les Demoiselles de Rochefort (The Young Girls of Rochefort)///year=1967
+title=The Blood Beast Terror///year=1967
+title=The Blood Demon///year=1967
+title=The Fearless Vampire Killers///year=1967
+title=Hoří, má Panenko (The Firemen's Ball)///year=1967
+title=How I Won the War///year=1967
+title=Jag är nyfiken – En Film i Gult (I Am Curious (Yellow))///year=1967
+title=Konchû Daisensô (War of the Insects, also known as Genocide)///year=1967
+title=Koroshi no Rakuin (Branded to Kill)///year=1967
+title=Kōya no Datchi Waifu (Inflatable Sex Doll of the Wastelands, also known as Horror Doll, Dutch Wife of the Wasteland and Dutch Wife of the Wasteland)///year=1967
+title=Mad Monster Party///year=1967
+title=Magical Mystery Tour///year=1967
+title=Martha///year=1967
+title=The Million Eyes of Sumuru///year=1967
+title=Playtime///year=1967
+title=Point Blank///year=1967
+title=The President's Analyst///year=1967
+title=Privilege///year=1967
+title=Quatermass and the Pit (also known as Five Million Years to Earth)///year=1967
+title=Le Roi de Coeur (King of Hearts)///year=1967
+title=Sami Swoi (Our Folks or All Friends Here)///year=1967
+title=Se sei vivo spara (Django Kill... If You Live, Shoot!)///year=1967
+title=Titicut Follies///year=1967
+title=The Trip///year=1967
+title=Two for the Road///year=1967
+title=Uchū Daikaijū Girara (The X from Outer Space)///year=1967
+title=Valley of the Dolls///year=1967
+title=2001: A Space Odyssey///year=1968
+title=Baby Love///year=1968
+title=Bambi Meets Godzilla///year=1968
+title=Barbarella///year=1968
+title=Bye Bye Braverman///year=1968
+title=Candy///year=1968
+title=C'era Una Volta Il West (Once Upon A Time In The West)///year=1968
+title=Chitty Chitty Bang Bang///year=1968
+title=Danger: Diabolik///year=1968
+title=Il Grande Silenzio (The Great Silence)///year=1968
+title=Greetings///year=1968
+title=Head///year=1968
+title=if....///year=1968
+title=Jag är Nyfiken – En Film i Blått (I Am Curious (Blue))///year=1968
+title=The Killing of Sister George///year=1968
+title=Kyuketsuki Gokemidoro (Goke, Body Snatcher from Hell)///year=1968
+title=Kyūketsu Dokurosen (The Living Skeleton)///year=1968
+title=The Mark of the Wolfman (also known as Frankenstein's Bloody Terror///year=1968
+title=La morte ha fatto l'uovo (Death Laid an Egg)///year=1968
+title=Monterey Pop///year=1968
+title=Night of the Living Dead///year=1968
+title=The Party///year=1968
+title=Petulia///year=1968
+title=Planet of the Apes///year=1968
+title=Pretty Poison///year=1968
+title=The Producers///year=1968
+title=Rosemary's Baby///year=1968
+title=Skidoo///year=1968
+title=Spider Baby///year=1968
+title=Symbiopsychotaxiplasm///year=1968
+title=Sympathy for the Devil (also known as One Plus One)///year=1968
+title=Targets///year=1968
+title=Twisted Nerve///year=1968
+title=Wild in the Streets///year=1968
+title=Witchfinder General (also known as The Conqueror Worm)///year=1968
+title=Yellow Submarine///year=1968
+title=You Are What You Eat///year=1968
+title=Alice's Restaurant///year=1969
+title=Brilliantovaya ruka (The Diamond Arm)///year=1969
+title=Dillinger Is Dead///year=1969
+title=Easy Rider///year=1969
+title=The Color of Pomegranates///year=1969
+title=Fellini Satyricon///year=1969
+title=Invocation of My Demon Brother///year=1969
+title=The Magic Christian///year=1969
+title=Medium Cool///year=1969
+title=Mehed ei Nuta (Men don't cry)///year=1969
+title=Mr. Freedom///year=1969
+title=More///year=1969
+title=On Her Majesty's Secret Service///year=1969
+title=En Passion (The Passion of Anna)///year=1969
+title=Putney Swope///year=1969
+title=Qeysar///year=1969
+title=Queimada! (Burn!)///year=1969
+title=The Rain People///year=1969
+title=Take the Money and Run///year=1969
+title=A Tanú (The Witness)///year=1969
+title=Top Sensation (The Seducers)///year=1969
+title=The Wild Bunch///year=1969
+title=Z///year=1969
+title=Alleycat Rock: Female Boss///year=1970
+title=And God Said to Cain///year=1970
+title=Andy Warhol's Trash///year=1970
+title=Beyond the Valley of the Dolls///year=1970
+title=Catch-22///year=1970
+title=Colossus: The Forbin Project///year=1970
+title=Deadlock///year=1970
+title=Deep End///year=1970
+title=Dougal and the Blue Cat///year=1970
+title=El Topo///year=1970
+title=Equinox///year=1970
+title=Gimme Shelter///year=1970
+title=The Honeymoon Killers///year=1970
+title=I Drink Your Blood///year=1970
+title=Lo Chiamavano Trinità (They Call Me Trinity)///year=1970
+title=Love Story///year=1970
+title=Maidstone///year=1970
+title=Mera Naam Joker (My Name Is Joker)///year=1970
+title=Das Millionenspiel///year=1970
+title=Myra Breckinridge///year=1970
+title=Performance///year=1970
+title=The Projectionist///year=1970
+title=Rejs (The Cruise)///year=1970
+title=El Topo///year=1970
+title=L'Urlo (The Howl)///year=1970
+title=Valerie a Týden Divů (Valerie and Her Week of Wonders)///year=1970
+title=The Vampire Doll///year=1970
+title=The Vampire Lovers///year=1970
+title=Where's Poppa?///year=1970
+title=Woodstock///year=1970
+title=Zabriskie Point///year=1970
+title=200 Motels///year=1971
+title=A Clockwork Orange///year=1971
+title=And Now For Something Completely Different///year=1971
+title=Bananas///year=1971
+title=Billy Jack///year=1971
+title=Blindman///year=1971
+title=Carnal Knowledge///year=1971
+title=Die Bettwurst (The Bed Sausage)///year=1971
+title=Dirty Harry///year=1971
+title=Duel (1971 film)///year=1971
+title=Dzhentlmeny Udachi (Gentlemen of Fortune)///year=1971
+title=The Abominable Dr. Phibes///year=1971
+title=The Blood on Satan's Claw///year=1971
+title=The Devils///year=1971
+title=Get Carter///year=1971
+title=Giù la Testa (Duck, You Sucker!)///year=1971
+title=Hare Rama Hare Krishna///year=1971
+title=Harold and Maude///year=1971
+title=Hydrozagadka///year=1971
+title=Johnny Got His Gun///year=1971
+title=The Last Picture Show///year=1971
+title=Let's Scare Jessica to Death///year=1971
+title=Les Lèvres Rouges (Daughters of Darkness)///year=1971
+title=Una lucertola con la pelle di donna (A Lizard in a Woman's Skin)///year=1971
+title=Malpertuis///year=1971
+title=A New Leaf///year=1971
+title=The Omega Man///year=1971
+title=Pink Narcissus///year=1971
+title=Pretty Maids All in a Row///year=1971
+title=Red Sun///year=1971
+title=Shaft///year=1971
+title=Straw Dogs///year=1971
+title=Sweet Sweetback's Baadasssss Song///year=1971
+title=THX 1138///year=1971
+title=Touch of Zen///year=1971
+title=Two-Lane Blacktop///year=1971
+title=Las Vampiras///year=1971
+title=Vanishing Point///year=1971
+title=The Velvet Vampire (also known as Cemetery Girls)///year=1971
+title=W.R. - Misterije Organizma, W.R (WR: Mysteries of the Organism)///year=1971
+title=Wake in Fright///year=1971
+title=Walkabout///year=1971
+title=Willy Wonka & the Chocolate Factory///year=1971
+title=Zaat///year=1971
+title=Aguirre, der Zorn Gottes (Aguirre, the Wrath of God)///year=1972
+title=An American Hippie in Israel///year=1972
+title=Behind the Green Door///year=1972
+title=Blacula///year=1972
+title=Ché? (also known as What?, Quoi?, Was? and Diary of Forbidden Dreams)///year=1972
+title=Children Shouldn't Play with Dead Things///year=1972
+title=Cisco Pike///year=1972
+title=Cocksucker Blues///year=1972
+title=Death Line///year=1972
+title=Deep Throat///year=1972
+title=Dr. Phibes Rises Again///year=1972
+title=Dziewczyny do Wzięcia (Marriageable Girls)///year=1972
+title=Le Charme discret de la bourgeoisie (The Discreet Charm of the Bourgeoisie)///year=1972
+title=The Day The Clown Cried///year=1972
+title=Everything You Always Wanted to Know About Sex* (*But Were Afraid to Ask)///year=1972
+title=Fist of Fury///year=1972
+title=Fritz the Cat///year=1972
+title=Get to Know Your Rabbit///year=1972
+title=Grave of the Vampire///year=1972
+title=The Harder They Come///year=1972
+title=The Last House on the Left///year=1972
+title=Last Tango in Paris///year=1972
+title=Lucifer Rising///year=1972
+title=Night of the Lepus///year=1972
+title=La Novia Ensangrentada (The Blood Spattered Bride)///year=1972
+title=Pánico en el Transiberiano (Horror Express)///year=1972
+title=Pink Flamingos///year=1972
+title=The Poseidon Adventure///year=1972
+title=Prime Cut///year=1972
+title=Rocker///year=1972
+title=The Ruling Class///year=1972
+title=Sensuela///year=1972
+title=Silent Running///year=1972
+title=Snoopy Come Home///year=1972
+title=Solaris///year=1972
+title=Sunshine Daydream///year=1972
+title=Super Fly///year=1972
+title=The Thing With Two Heads///year=1972
+title=Tiān Xià Dì Yī Quán (also known as Five Fingers of Death and King Boxer)///year=1972
+title=Tombs of the Blind Dead///year=1972
+title=Vampire Circus///year=1972
+title=Viskningar och Rop (Cries and Whispers)///year=1972
+title=Voulez-vous Coucher avec God?///year=1972
+title=Vous n'aurez pas l'Alsace et la Lorraine (You Won't Have Alsace-Lorraine)///year=1972
+title=What Have You Done to Solange?///year=1972
+title=Alvin Purple///year=1973
+title=American Graffiti///year=1973
+title=Andy Warhol's Frankenstein (also known as Flesh for Frankenstein)///year=1973
+title=Badlands///year=1973
+title=Can Dialectics Break Bricks?///year=1973
+title=Coffy///year=1973
+title=Detroit 9000///year=1973
+title=Don't Be Afraid of the Dark///year=1973
+title=Don't Look Now///year=1973
+title=Enter the Dragon///year=1973
+title=L'An 01 (The Year 01)///year=1973
+title=L'Emmerdeur (A Pain in the...)///year=1973
+title=Les Aventures de Rabbi Jacob (The Mad Adventures of Rabbi Jacob)///year=1973
+title=The Baby///year=1973
+title=The Candy Snatchers///year=1973
+title=The Devil in Miss Jones///year=1973
+title=The Exorcist///year=1973
+title=Fantastic Planet///year=1973
+title=Film d'Amore e d'Anarchia, Ovvero: Stamattina Alle 10, in Via dei Fiori, Nella Nota Casa di Tolleranza... (Love and Anarchy)///year=1973
+title=Ganja & Hess///year=1973
+title=La Grande Bouffe (also known as La Grande Abbuffata, The Grande Bouffe and Blow-Out)///year=1973
+title=Heavy Traffic///year=1973
+title=Il Mio Nome è Nessuno (My Name Is Nobody)///year=1973
+title=Ivan Vasilyevich Menyayet Professiyu (Ivan Vasilievich: Back to the Future)///year=1973
+title=Jesus Christ Superstar (film)///year=1973
+title=Kanashimi no Belladonna (Belladonna of Sadness)///year=1973
+title=Die Legende von Paul und Paula (The Legend of Paul and Paula)///year=1973
+title=The Long Goodbye///year=1973
+title=The Mack///year=1973
+title=Le Magnifique///year=1973
+title=Mean Streets///year=1973
+title=La Montaña Sagrada (The Holy Mountain)///year=1973
+title=The No Mercy Man///year=1973
+title=Pat Garrett and Billy the Kid///year=1973
+title=La Planète Sauvage (Fantastic Planet)///year=1973
+title=Robin Hood///year=1973
+title=Scarecrow///year=1973
+title=Schlock///year=1973
+title=Shurayuki-hime (Lady Snowblood)///year=1973
+title=Sisters///year=1973
+title=Sleeper///year=1973
+title=Soylent Green///year=1973
+title=Themroc///year=1973
+title=Turks Fruit (Turkish Delight)///year=1973
+title=Wattstax///year=1973
+title=The Werewolf of Washington///year=1973
+title=Westworld///year=1973
+title=The Wicker Man///year=1973
+title=The Ascended///year=1973
+title=The Year 01///year=1973
+title=Ziggy Stardust and the Spiders from Mars///year=1973
+title=Ali: Fear Eats the Soul///year=1974
+title=Andy Warhol's Dracula (also known as Blood for Dracula)///year=1974
+title=Big Bad Mama///year=1974
+title=Black Belt Jones///year=1974
+title=Black Christmas///year=1974
+title=Blazing Saddles///year=1974
+title=Bring Me the Head of Alfredo Garcia///year=1974
+title=Caged Heat///year=1974
+title=Captain Kronos – Vampire Hunter///year=1974
+title=Dark Star///year=1974
+title=Death Wish///year=1974
+title=Deathdream///year=1974
+title=Deranged///year=1974
+title=Dunderklumpen!///year=1974
+title=Emmanuelle///year=1974
+title=The Antichrist (also known as L'anticristo and The Tempter)///year=1974
+title=Female Trouble///year=1974
+title=Flesh Gordon///year=1974
+title=Foxy Brown///year=1974
+title=Freebie and the Bean///year=1974
+title=Frightmare///year=1974
+title=Gekitotsu! Satsujin Ken (The Street Fighter)///year=1974
+title=Gone in 60 Seconds///year=1974
+title=The Groove Tube///year=1974
+title=Ilsa, She Wolf of the SS///year=1974
+title=It's Alive///year=1974
+title=The Legend of the 7 Golden Vampires///year=1974
+title=The Little Prince///year=1974
+title=Love and Death///year=1974
+title=Macon County Line///year=1974
+title=Madhouse///year=1974
+title=The Night Porter///year=1974
+title=The Nine Lives of Fritz the Cat///year=1974
+title=No Profanar El Sueño De Los Muertos (also known as Non Si Deve Profanare Il Sonno Dei Morti and Let Sleeping Corpses Lie)///year=1974
+title=The Parallax View///year=1974
+title=Phantom of the Paradise///year=1974
+title=Phase IV///year=1974
+title=Il Portiere di Notte (The Night Porter)///year=1974
+title=Şeytan///year=1974
+title=Space Is the Place///year=1974
+title=Stone///year=1974
+title=The Sugarland Express///year=1974
+title=Sweet Movie///year=1974
+title=The Texas Chain Saw Massacre///year=1974
+title=The Texas Chainsaw Massacre///year=1974
+title=Travolti da un Insolito Destino Nell'azzurro Mare d'Agosto (Swept Away)///year=1974
+title=Les Valseuses (Going Places)///year=1974
+title=Vampyres///year=1974
+title=Vase de Noces (also known as The Pigfucking Movie)///year=1974
+title=Young Frankenstein///year=1974
+title=Zardoz///year=1974
+title=A Boy and His Dog///year=1975
+title=Black Moon///year=1975
+title=Cooley High///year=1975
+title=Coonskin///year=1975
+title=Criminally Insane///year=1975
+title=Darktown Strutters///year=1975
+title=Deafula///year=1975
+title=Death Race 2000///year=1975
+title=Dolemite///year=1975
+title=Down and Dirty Duck///year=1975
+title=The Devil's Rain///year=1975
+title=Flåklypa Grand Prix (The Pinchcliffe Grand Prix)///year=1975
+title=The Giant Spider Invasion///year=1975
+title=Histoire d'O (Story of O)///year=1975
+title=Inserts///year=1975
+title=Jaws///year=1975
+title=Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles (also known as Everyday Life of a Housewife)///year=1975
+title=Je t'Aime...Moi non Plus///year=1975
+title=A Kenguru (The Kangaroo)///year=1975
+title=Lisztomania///year=1975
+title=The Man from Hong Kong (also known as The Dragon Flies)///year=1975
+title=Monty Python and the Holy Grail///year=1975
+title=One Flew Over The Cuckoo’s Nest///year=1975
+title=Picnic at Hanging Rock///year=1975
+title=Profondo rosso (Deep Red)///year=1975
+title=Quasi at the Quackadero///year=1975
+title=The Rocky Horror Picture Show///year=1975
+title=Salò o le 120 Giornate di Sodoma (Salò, or the 120 Days of Sodom)///year=1975
+title=Shivers///year=1975
+title=Sholay///year=1975
+title=The Stepford Wives///year=1975
+title=Supervixens///year=1975
+title=Switchblade Sisters (also known as The Jezebels)///year=1975
+title=Tarzoon, la Honte de la Jungle (Tarzoon: Shame of the Jungle)///year=1975
+title=Thundercrack!///year=1975
+title=Tommy///year=1975
+title=Trilogy of Terror///year=1975
+title=Die verlorene Ehre der Katharina Blum (The Lost Honour of Katharina Blum)///year=1975
+title=Zdravstvuyte, Ya Vasha Tyotya! (Hello, I'm Your Aunt!)///year=1975
+title=Ai no Korīda / L'Empire des Sens (also known as In the Realm of the Senses)///year=1976
+title=Alice in Wonderland: An X-Rated Musical Fantasy///year=1976
+title=Alice, Sweet Alice///year=1976
+title=Allegro Non Troppo///year=1976
+title=Assault on Precinct 13///year=1976
+title=Car Wash///year=1976
+title=Carrie///year=1976
+title=Eaten Alive///year=1976
+title=The Astrologer///year=1976
+title=The Bad News Bears///year=1976
+title=The Twelve Tasks of Asterix///year=1976
+title=The First Nudie Musical///year=1976
+title=Giv'at Halfon Eina Ona (Halfon Hill Doesn't Answer)///year=1976
+title=The Great Texas Dynamite Chase///year=1976
+title=Grey Gardens///year=1976
+title=Ironiya Sudby, ili S Lyogkim Parom! (The Irony of Fate, also known as Enjoy Your Bath!)///year=1976
+title=Jackson County Jail///year=1976
+title=Lipstick///year=1976
+title=Le Locataire (The Tenant)///year=1976
+title=Logan's Run///year=1976
+title=Mad Dog Morgan///year=1976
+title=Mandingo///year=1976
+title=The Man Who Fell to Earth///year=1976
+title=Massacre at Central High///year=1976
+title=Master of the Flying Guillotine///year=1976
+title=North Sea Is Dead Sea///year=1976
+title=The Outlaw Josey Wales///year=1976
+title=Parlez-nous d'amour///year=1976
+title=The Ritz///year=1976
+title=Rocky///year=1976
+title=The Song Remains the Same///year=1976
+title=Squirm///year=1976
+title=Taxi Driver///year=1976
+title=To the Devil a Daughter///year=1976
+title=The Town That Dreaded Sundown///year=1976
+title=Andy Warhol's Bad///year=1977
+title=Close Encounters of the Third Kind///year=1977
+title=Death Bed: The Bed That Eats///year=1977
+title=Der Amerikanische Freund (The American Friend)///year=1977
+title=Desperate Living///year=1977
+title=Eraserhead///year=1977
+title=The Grateful Dead Movie///year=1977
+title=Hausu (House)///year=1977
+title=The Hills Have Eyes///year=1977
+title=Inside Jennifer Welles///year=1977
+title=Jesus of Nazareth (Miniseries)///year=1977
+title=The Kentucky Fried Movie///year=1977
+title=The Last Wave///year=1977
+title=The Mouse and His Child///year=1977
+title=New York, New York///year=1977
+title=Outrageous!///year=1977
+title=Pumping Iron///year=1977
+title=Rabid ///year=1977
+title=Raggedy Ann & Andy: A Musical Adventure///year=1977
+title=Rolling Thunder///year=1977
+title=Slap Shot///year=1977
+title=Star Wars///year=1977
+title=Suspiria///year=1977
+title=Unsichtbare Gegner (Invisible Adversaries)///year=1977
+title=Wizards///year=1977
+title=Alucarda///year=1978
+title=Animal House///year=1978
+title=Attack of the Killer Tomatoes///year=1978
+title=Big Wednesday///year=1978
+title=Blue Sunshine///year=1978
+title=Co Mi Zrobisz, Jak Mnie Złapiesz? (What Will You Do When You Catch Me?)///year=1978
+title=Dawn of the Dead///year=1978
+title=Die Abfahrer///year=1978
+title=Don///year=1978
+title=Eskimo Limon (Lemon Popsicle)///year=1978
+title=La Cage aux Folles///year=1978
+title=The Driver///year=1978
+title=The Evil///year=1978
+title=Faces of Death///year=1978
+title=Felicity///year=1978
+title=Five Deadly Venoms///year=1978
+title=Game of Death///year=1978
+title=Halloween///year=1978
+title=Harper Valley P.T.A.///year=1978
+title=I Spit on Your Grave///year=1978
+title=Jubilee///year=1978
+title=Kiss Meets the Phantom of the Park///year=1978
+title=Laserblast///year=1978
+title=The Last Waltz///year=1978
+title=Let Me Die a Woman///year=1978
+title=Long Weekend///year=1978
+title=The Lord of the Rings///year=1978
+title=The Mafu Cage///year=1978
+title=Magic///year=1978
+title=Martin///year=1978
+title=Messer im Kopf (Knife in the Head)///year=1978
+title=New York City Inferno///year=1978
+title=Nighthawks///year=1978
+title=Patrick///year=1978
+title=Piranha///year=1978
+title=Pretty Baby///year=1978
+title=Pretty Peaches///year=1978
+title=Rockers///year=1978
+title=The Rutles: All You Need Is Cash///year=1978
+title=Sextette///year=1978
+title=Shao Lin san Shi liu Fang (The 36th Chamber of Shaolin, also known as The Master Killer and Shaolin Master Killer)///year=1978
+title=The Star Wars Holiday Special///year=1978
+title=Stunt Rock (also known as Sorcery and Crash)///year=1978
+title=Superman///year=1978
+title=The Swarm///year=1978
+title=The Toolbox Murders///year=1978
+title=Up in Smoke///year=1978
+title=Watership Down///year=1978
+title=The Wiz///year=1978
+title=1941///year=1979
+title=Baby Snakes///year=1979
+title=Beyond the Darkness///year=1979
+title=Buffet Froid///year=1979
+title=Caligula///year=1979
+title=Cha Cha///year=1979
+title=Chilly Scenes of Winter///year=1979
+title=Cocaine Cowboys///year=1979
+title=Die Blechtrommel (The Tin Drum)///year=1979
+title=The Amityville Horror///year=1979
+title=The Black Hole///year=1979
+title=The Brood///year=1979
+title=The Driller Killer///year=1979
+title=The Great Rock 'n' Roll Swindle///year=1979
+title=Harpya///year=1979
+title=Inside Désirée Cousteau///year=1979
+title=Love at First Bite///year=1979
+title=Mad Max///year=1979
+title=Meatballs///year=1979
+title=Monty Python's Life of Brian///year=1979
+title=Moskva Slezam ne Verit (Moscow Does Not Believe in Tears)///year=1979
+title=Mr. Mike's Mondo Video///year=1979
+title=The Muppet Movie///year=1979
+title=Nosferatu: Phantom der Nacht (Nosferatu the Vampyre)///year=1979
+title=Oh God!///year=1979
+title=Over the Edge///year=1979
+title=Le Père Noël est une Ordure (Santa Claus Is a Stinker)///year=1979
+title=Phantasm///year=1979
+title=Quadrophenia///year=1979
+title=Rock 'n' Roll High School///year=1979
+title=Rupan Sansei: Kariosutoro no Shiro (Lupin III: The Castle of Cagliostro)///year=1979
+title=Salem's Lot///year=1979
+title=Siin me Oleme! (Here We are!)///year=1979
+title=Stalker///year=1979
+title=Star Trek: The Motion Picture///year=1979
+title=Surakshaa (Protection)///year=1979
+title=Tian Can Di Que (The Crippled Masters)///year=1979
+title=The Warriors///year=1979
+title=Tourist Trap///year=1979
+title=The Visitor///year=1979
+title=The Wanderers///year=1979
+title=The Warriors///year=1979
+title=When a Stranger Calls///year=1979
+title=The Wizard of Speed and Time///year=1979
+title=Zombi 2 (Zombie, also known as Zombie Flesh Eaters)///year=1979
+title=Alligator///year=1980
+title=Altered States///year=1980
+title=Antropophagus///year=1980
+title=Arrebato///year=1980
+title=Blank Generation///year=1980
+title=Breaking Glass///year=1980
+title=Caddyshack///year=1980
+title=Cannibal Holocaust///year=1980
+title=Can't Stop the Music///year=1980
+title=Carny///year=1980
+title=Christmas Evil///year=1980
+title=Cruising///year=1980
+title=Dressed to Kill///year=1980
+title=Erotic Nights of the Living Dead///year=1980
+title=The Apple///year=1980
+title=The Blues Brothers///year=1980
+title=The Changeling///year=1980
+title=Exit... nur Keine Panik (Exit – But Don't Panic)///year=1980
+title=Fade to Black///year=1980
+title=The Final Countdown///year=1980
+title=Flash Gordon///year=1980
+title=The Fog///year=1980
+title=Forbidden Zone///year=1980
+title=Foxes///year=1980
+title=Friday the 13th///year=1980
+title=The Gods Must Be Crazy///year=1980
+title=Hawk the Slayer///year=1980
+title=He Knows You're Alone///year=1980
+title=Heaven's Gate///year=1980
+title=Hell of the Living Dead///year=1980
+title=The Hollywood Knights///year=1980
+title=Inferno///year=1980
+title=Karz (The Debt)///year=1980
+title=Kozure Ōkami (Shogun Assassin)///year=1980
+title=Maniac///year=1980
+title=Midnight Madness///year=1980
+title=Miś (Teddy Bear)///year=1980
+title=The Monster Club///year=1980
+title=Mother's Day///year=1980
+title=Out of the Blue///year=1980
+title=Pepi, Luci, Bom///year=1980
+title=Popeye///year=1980
+title=Prom Night///year=1980
+title=Raging Bull///year=1980
+title=Return of the Secaucus 7///year=1980
+title=Rude Boy///year=1980
+title=The Shining (film)///year=1980
+title=Somewhere in Time///year=1980
+title=Spetters///year=1980
+title=Stardust Memories///year=1980
+title=The Stunt Man///year=1980
+title=Terror Train///year=1980
+title=Times Square///year=1980
+title=Used Cars///year=1980
+title=The Watcher in the Woods///year=1980
+title=Xanadu///year=1980
+title=...E tu vivrai nel terrore! L'aldilà (The Beyond)///year=1981
+title=Absurd///year=1981
+title=An American Werewolf in London///year=1981
+title=Body Heat///year=1981
+title=Butcher, Baker, Nightmare Maker///year=1981
+title=Cannibal Ferox///year=1981
+title=Christiane F. - Wir Kinder vom Bahnhof Zoo (Christiane F. - We Children from Bahnhof Zoo)///year=1981
+title=Clash of the Titans///year=1981
+title=Condorman///year=1981
+title=Coup de Torchon///year=1981
+title=Cutter's Way///year=1981
+title=Dark Night of the Scarecrow///year=1981
+title=Dead & Buried///year=1981
+title=Dead Kids (also known as Strange Behavior and Small Town Massacre)///year=1981
+title=Diva///year=1981
+title=Dragonslayer///year=1981
+title=Dreszcze (Shivers)///year=1981
+title=Enter the Ninja///year=1981
+title=Escape from New York///year=1981
+title=The Burning///year=1981
+title=Excalibur///year=1981
+title=For Your Height Only///year=1981
+title=The Fox and the Hound///year=1981
+title=Frightmare///year=1981
+title=The Funhouse///year=1981
+title=Galaxy of Terror///year=1981
+title=Goodbye Pork Pie///year=1981
+title=Graduation Day///year=1981
+title=Gregory's Girl///year=1981
+title=Happy Birthday to Me///year=1981
+title=Heavy Metal///year=1981
+title=Hell Night///year=1981
+title=The Howling///year=1981
+title=Inseminoid///year=1981
+title=Just Before Dawn///year=1981
+title=Knightriders///year=1981
+title=Mad Max 2: The Road Warrior///year=1981
+title=Mommie Dearest///year=1981
+title=Ms. 45///year=1981
+title=My Bloody Valentine///year=1981
+title=My Dinner with Andre///year=1981
+title=The Mystery of the Third Planet///year=1981
+title=Mystics in Bali///year=1981
+title=The Pit///year=1981
+title=Polyester///year=1981
+title=Porno Holocaust///year=1981
+title=Possession///year=1981
+title=The Prowler///year=1981
+title=Quest for Fire///year=1981
+title=Raiders of the Lost Ark///year=1981
+title=Roadgames///year=1981
+title=Roar///year=1981
+title=Scanners///year=1981
+title=Shock Treatment///year=1981
+title=Stripes///year=1981
+title=Tajemství hradu v Karpatech (The Mysterious Castle in the Carpathians)///year=1981
+title=Taxi zum Klo///year=1981
+title=Time Bandits///year=1981
+title=Wolfen///year=1981
+title=1990: The Bronx Warriors///year=1982
+title=An Officer and a Gentleman///year=1982
+title=Annie///year=1982
+title=Basket Case///year=1982
+title=Big Meat Eater///year=1982
+title=Blade Runner///year=1982
+title=Britannia Hospital///year=1982
+title=Café Flesh///year=1982
+title=Class of 1984///year=1982
+title=Conan the Barbarian///year=1982
+title=Countryman///year=1982
+title=Creepshow///year=1982
+title=Death Wish II///year=1982
+title=Disco Dancer///year=1982
+title=Eating Raoul///year=1982
+title=Egymásra Nézve (Another Way)///year=1982
+title=La Balance (The Nark)///year=1982
+title=Quarter To Two Before Jesus-Christ///year=1982
+title=The Aftermath///year=1982
+title=The Beastmaster///year=1982
+title=The Dark Crystal///year=1982
+title=Turkish Star Wars///year=1982
+title=E.T. the Extra-Terrestrial///year=1982
+title=Der Fan (The Fan)///year=1982
+title=Fast Times at Ridgemont High///year=1982
+title=First Blood///year=1982
+title=Fitzcarraldo///year=1982
+title=Grease 2///year=1982
+title=Hey, Good Lookin'///year=1982
+title=The King of Comedy///year=1982
+title=Koyaanisqatsi///year=1982
+title=Ladies and Gentlemen, The Fabulous Stains///year=1982
+title=The Last Unicorn///year=1982
+title=Liquid Sky///year=1982
+title=Madman///year=1982
+title=Maratonci Trče Počasni Krug (The Marathon Family)///year=1982
+title=Mil Gritos Tiene la Noche (Pieces)///year=1982
+title=Monty Python Live at the Hollywood Bowl///year=1982
+title=The New York Ripper///year=1982
+title=Pásla kone na Betóne (She Grazed Horses on Concrete)///year=1982
+title=Pieces///year=1982
+title=Pink Floyd – The Wall///year=1982
+title=The Pirate Movie///year=1982
+title=The Plague Dogs///year=1982
+title=Poltergeist///year=1982
+title=Porky's///year=1982
+title=Q (also known as Q – The Winged Serpent)///year=1982
+title=Runaway Nightmare///year=1982
+title=The Secret of NIMH///year=1982
+title=The Slumber Party Massacre///year=1982
+title=Star Trek II: The Wrath of Khan///year=1982
+title=Swamp Thing///year=1982
+title=Tenebrae///year=1982
+title=The Thing///year=1982
+title=Tron///year=1982
+title=Turkey Shoot (also known as Escape 2000 and Blood Camp Thatcher)///year=1982
+title=Urgh! A Music War///year=1982
+title=White Dog///year=1982
+title=10 to Midnight///year=1983
+title=2019, After the Fall of New York///year=1983
+title=A Christmas Story///year=1983
+title=A Night to Dismember///year=1983
+title=Angst///year=1983
+title=Banzaï///year=1983
+title=Blood Simple///year=1983
+title=BMX Bandits///year=1983
+title=Born in Flames///year=1983
+title=Burroughs: The Movie///year=1983
+title=Christine///year=1983
+title=Copkiller (also known as Corrupt and The Order of Death)///year=1983
+title=Cracking Up///year=1983
+title=Cujo///year=1983
+title=Doctor Detroit///year=1983
+title=The Big Chill///year=1983
+title=The Deadly Spawn///year=1983
+title=Fire and Ice///year=1983
+title=Get Crazy///year=1983
+title=The Hunger///year=1983
+title=Jaane Bhi Do Yaaro (Just Let It Go, Friends)///year=1983
+title=The Keep///year=1983
+title=Krull///year=1983
+title=De Lift (The Lift)///year=1983
+title=Local Hero///year=1983
+title=The Man with Two Brains///year=1983
+title=Monty Python's Meaning of Life///year=1983
+title=National Lampoon's Vacation///year=1983
+title=The New Barbarians///year=1983
+title=Nightmares///year=1983
+title=The Outsiders///year=1983
+title=Rembètiko///year=1983
+title=Risky Business///year=1983
+title=Rock & Rule///year=1983
+title=Rumble Fish///year=1983
+title=Scarface///year=1983
+title=Sleepaway Camp///year=1983
+title=Strange Brew///year=1983
+title=Terms of Endearment///year=1983
+title=Twice Upon a Time (1983 film)///year=1983
+title=National Lampoon's Vacation///year=1983
+title=Videodrome///year=1983
+title=De Vierde Man (The Fourth Man)///year=1983
+title=WarGames///year=1983
+title=Wild Style///year=1983
+title=Xtro///year=1983
+title=Zu Warriors from the Magic Mountain///year=1983
+title=Beverly Hills Cop///year=1984
+title=Bloodsuckers from Outer Space///year=1984
+title=Body Double///year=1984
+title=Breakin'///year=1984
+title=Breakin' 2: Electric Boogaloo///year=1984
+title=C.H.U.D.///year=1984
+title=C'era Una Volta In America (Once Upon A Time In America)///year=1984
+title=Children of the Corn///year=1984
+title=Choose Me///year=1984
+title=Desperate Teenage Lovedolls///year=1984
+title=Don't Open Till Christmas///year=1984
+title=Dune///year=1984
+title=Il Bacio di Tosca (Tosca's Kiss)///year=1984
+title=The Adventures of Buckaroo Banzai Across the 8th Dimension///year=1984
+title=The Brother from Another Planet///year=1984
+title=The Company of Wolves///year=1984
+title=The Dungeonmaster///year=1984
+title=Forbrydelsens Element (The Element of Crime)///year=1984
+title=Ghostbusters///year=1984
+title=Gremlins///year=1984
+title=The Ice Pirates///year=1984
+title=The Karate Kid///year=1984
+title=The Last Starfighter///year=1984
+title=Love Streams///year=1984
+title=Mother's Meat and Freud's Flesh///year=1984
+title=The Neverending Story///year=1984
+title=Night of the Comet///year=1984
+title=A Nightmare on Elm Street///year=1984
+title=Nothing Lasts Forever///year=1984
+title=Paris, Texas///year=1984
+title=Police Academy///year=1984
+title=Purple Rain///year=1984
+title=¿Qué He Hecho Yo para Merecer Esto? (What Have I Done to Deserve This?)///year=1984
+title=Razorback///year=1984
+title=Red Dawn///year=1984
+title=Repo Man///year=1984
+title=Revenge of the Nerds///year=1984
+title=Runaway///year=1984
+title=Seksmisja (Sexmission)///year=1984
+title=Sheena///year=1984
+title=Silent Night, Deadly Night///year=1984
+title=Sixteen Candles///year=1984
+title=Stop Making Sense///year=1984
+title=Stranger Than Paradise///year=1984
+title=Streets of Fire///year=1984
+title=The Terminator///year=1984
+title=This Is Spinal Tap///year=1984
+title=Top Secret!///year=1984
+title=The Toxic Avenger///year=1984
+title=After Hours///year=1985
+title=Back to the Future///year=1985
+title=Banpaia Hantā Dī (Vampire Hunter D)///year=1985
+title=Better Off Dead///year=1985
+title=Brazil///year=1985
+title=Cat's Eye///year=1985
+title=Clue///year=1985
+title=Code of Silence///year=1985
+title=Commando///year=1985
+title=Daheim Sterben die Leut'///year=1985
+title=Day of the Dead///year=1985
+title=Death Wish 3///year=1985
+title=Demons///year=1985
+title=Desert Hearts///year=1985
+title=Desperately Seeking Susan///year=1985
+title=Enemy Mine///year=1985
+title=Esperando la Carroza (Waiting for the Hearse)///year=1985
+title=The Big Snit///year=1985
+title=The Black Cauldron///year=1985
+title=The Boys Next Door///year=1985
+title=The Breakfast Club///year=1985
+title=The Dead Father///year=1985
+title=Explorers///year=1985
+title=Fletch///year=1985
+title=Fright Night///year=1985
+title=Galaxy Invader (also known as The Galaxy Invader)///year=1985
+title=The Goonies///year=1985
+title=Guinea Pig: Devil's Experiment///year=1985
+title=Hard Rock Zombies///year=1985
+title=Ladyhawke (film)///year=1985
+title=The Last Dragon///year=1985
+title=Legend///year=1985
+title=The Legend of Billie Jean///year=1985
+title=Lifeforce///year=1985
+title=Lost in America///year=1985
+title=Mr. Vampire///year=1985
+title=A Nightmare on Elm Street 2: Freddy's Revenge///year=1985
+title=Pee-wee's Big Adventure///year=1985
+title=Phenomena///year=1985
+title=Pulgasari///year=1985
+title=The Quiet Earth///year=1985
+title=Radioactive Dreams///year=1985
+title=Real Genius///year=1985
+title=Re-Animator///year=1985
+title=Restless Natives///year=1985
+title=The Return of the Living Dead///year=1985
+title=Return to Oz///year=1985
+title=St. Elmo's Fire///year=1985
+title=Santa Claus: The Movie///year=1985
+title=The Stuff///year=1985
+title=Tampopo///year=1985
+title=Teen Wolf///year=1985
+title=Tenshi no Tamago (Angel's Egg)///year=1985
+title=To Live and Die in L.A.///year=1985
+title=Trancers///year=1985
+title=Vampire Hunter D///year=1985
+title=Vision Quest///year=1985
+title=Weird Science///year=1985
+title=Witness///year=1985
+title=37°2 le Matin (Betty Blue)///year=1986
+title=Ai City///year=1986
+title=Big Fun In The Big Town///year=1986
+title=Big Trouble in Little China///year=1986
+title=Blue Velvet///year=1986
+title=Chopping Mall///year=1986
+title=Class of Nuke 'Em High///year=1986
+title=Cobra///year=1986
+title=Combat Shock///year=1986
+title=Critters///year=1986
+title=Dead End Drive-In///year=1986
+title=Deadly Friend///year=1986
+title=Deadly Prey///year=1986
+title=Down By Law///year=1986
+title=The Decline of the American Empire///year=1986
+title=Fair Game///year=1986
+title=Ferris Bueller's Day Off///year=1986
+title=Flight of the Navigator///year=1986
+title=Flodder///year=1986
+title=The Fly///year=1986
+title=Footrot Flats: The Dog's Tale///year=1986
+title=Frog Dreaming (also known as The Quest and The Go-Kids)///year=1986
+title=From Beyond///year=1986
+title=The Great Mouse Detective///year=1986
+title=Heavy Metal Parking Lot///year=1986
+title=Henry: Portrait of a Serial Killer///year=1986
+title=Highlander///year=1986
+title=The Hitcher///year=1986
+title=Hoosiers///year=1986
+title=House///year=1986
+title=Howard the Duck///year=1986
+title=Kin-dza-dza!///year=1986
+title=Kuryer (Courier)///year=1986
+title=Labyrinth///year=1986
+title=Little Shop of Horrors///year=1986
+title=Malcolm///year=1986
+title=Manhunter///year=1986
+title=Müllers Büro///year=1986
+title=Night of the Creeps///year=1986
+title=Pretty in Pink///year=1986
+title=Project A-ko///year=1986
+title=Rad///year=1986
+title=Rawhead Rex///year=1986
+title=River's Edge///year=1986
+title=The Seventh Curse///year=1986
+title=Sid & Nancy///year=1986
+title=Sokihei M.D. Gaisuto (M.D. Geist)///year=1986
+title=Stand by Me///year=1986
+title=TerrorVision///year=1986
+title=The Texas Chain Saw Massacre 2///year=1986
+title=Three Amigos///year=1986
+title=Top Gun///year=1986
+title=The Transformers: The Movie///year=1986
+title=True Stories///year=1986
+title=Vamp///year=1986
+title=Witchboard///year=1986
+title=A Chinese Ghost Story///year=1987
+title=Amazon Women on the Moon///year=1987
+title=Angel Heart///year=1987
+title=Assa (Acca)///year=1987
+title=Bad Taste///year=1987
+title=Bagdad Cafe///year=1987
+title=Blood Harvest///year=1987
+title=Cherry 2000///year=1987
+title=Deliria (Stage Fright, AKA StageFright: Aquarius)///year=1987
+title=Dolls///year=1987
+title=Eat the Rich///year=1987
+title=Ernest Goes to Camp///year=1987
+title=The Brave Little Toaster///year=1987
+title=Full Metal Jacket///year=1987
+title=The Garbage Pail Kids Movie///year=1987
+title=The Gate///year=1987
+title=The Hanoi Hilton///year=1987
+title=Hard Ticket to Hawaii///year=1987
+title=Harry and the Hendersons///year=1987
+title=Hellraiser///year=1987
+title=The Hidden///year=1987
+title=Der Himmel über Berlin (Wings of Desire)///year=1987
+title=House II: The Second Story///year=1987
+title=Innerspace///year=1987
+title=Ishtar///year=1987
+title=Killer Workout///year=1987
+title=Kingsajz///year=1987
+title=Kiss Daddy Goodnight///year=1987
+title=Klątwa Doliny Węży (Curse of Snakes Valley)///year=1987
+title=Lethal Weapon///year=1987
+title=The Lost Boys///year=1987
+title=Masters of the Universe///year=1987
+title=Miami Connection///year=1987
+title=The Monster Squad///year=1987
+title=Nail Gun Massacre///year=1987
+title=Near Dark///year=1987
+title=Nekromantik///year=1987
+title=Nukie///year=1987
+title=Over the Top///year=1987
+title=Overboard///year=1987
+title=Planes, Trains and Automobiles///year=1987
+title=Prince of Darkness///year=1987
+title=The Princess Bride///year=1987
+title=Przypadek (Blind Chance)///year=1987
+title=Predator///year=1987
+title=Raising Arizona///year=1987
+title=Rita, Sue and Bob Too///year=1987
+title=RoboCop///year=1987
+title=Rolling Vengeance///year=1987
+title=The Running Man///year=1987
+title=The Sicilian///year=1987
+title=Silent Night, Deadly Night Part 2///year=1987
+title=Spaceballs///year=1987
+title=The Stepfather///year=1987
+title=Street Trash///year=1987
+title=Strike Commando///year=1987
+title=Superstar: The Karen Carpenter Story///year=1987
+title=Three O'Clock High///year=1987
+title=Throw Momma from the Train///year=1987
+title=Tough Guys Don't Dance///year=1987
+title=The Untouchables///year=1987
+title=Walker///year=1987
+title=Wall Street///year=1987
+title=Withnail and I///year=1987
+title=Yōjū Toshi (Wicked City)///year=1987
+title=555///year=1988
+title=976-EVIL///year=1988
+title=Akira///year=1988
+title=Amsterdamned///year=1988
+title=Beaches///year=1988
+title=Beetlejuice///year=1988
+title=Big///year=1988
+title=Bloodsport///year=1988
+title=Child's Play///year=1988
+title=Cocktail///year=1988
+title=Comic Book Confidential///year=1988
+title=Coming to America///year=1988
+title=Critters 2: The Main Course///year=1988
+title=Dead Heat///year=1988
+title=Dead Ringers///year=1988
+title=Dekalog///year=1988
+title=Die Hard///year=1988
+title=Earth Girls Are Easy///year=1988
+title=Elvira: Mistress of the Dark///year=1988
+title=The Blob///year=1988
+title=The Brain///year=1988
+title=The Decline of Western Civilization Part II: The Metal Years///year=1988
+title=Gandahar///year=1988
+title=Le Grand Bleu (The Big Blue)///year=1988
+title=Grave of the Fireflies///year=1988
+title=The Great Outdoors (film)///year=1988
+title=Hairspray///year=1988
+title=Heathers///year=1988
+title=Hēi Tài Yáng 731 (Men Behind the Sun)///year=1988
+title=Hell Comes to Frogtown///year=1988
+title=Hobgoblins///year=1988
+title=Hollywood Chainsaw Hookers///year=1988
+title=I'm Gonna Git You Sucka///year=1988
+title=Iguana///year=1988
+title=Killer Klowns from Outer Space///year=1988
+title=Lady in White///year=1988
+title=The Lair Of The White Worm///year=1988
+title=The Last Temptation of Christ (film)///year=1988
+title=Let's Get Lost///year=1988
+title=Mac and Me///year=1988
+title=Maniac Cop///year=1988
+title=Married to the Mob///year=1988
+title=Midnight Run///year=1988
+title=Miracle Mile///year=1988
+title=Moonwalker///year=1988
+title=Mystic Pizza///year=1988
+title=The Naked Gun: From the Files of Police Squad!///year=1988
+title=Něco z Alenky (Alice)///year=1988
+title=Night of the Demons///year=1988
+title=Nuovo Cinema Paradiso (Cinema Paradiso)///year=1988
+title=Oliver & Company///year=1988
+title=Pumpkinhead///year=1988
+title=Rain Man ///year=1988
+title=Return of the Killer Tomatoes///year=1988
+title=Scrooged///year=1988
+title=The Serpent and the Rainbow///year=1988
+title=Slugs///year=1988
+title=Spoorloos (The Vanishing)///year=1988
+title=Taffin///year=1988
+title=Tapeheads (also known as Corrupt and The Order of Death)///year=1988
+title=They Live///year=1988
+title=Tonari no Totoro (My Neighbor Totoro)///year=1988
+title=Traxx///year=1988
+title=White Mischief///year=1988
+title=Who Framed Roger Rabbit///year=1988
+title=Willow///year=1988
+title=All Dogs Go to Heaven///year=1989
+title=Amanece, que no es poco///year=1989
+title=Batman///year=1989
+title=Bill & Ted's Excellent Adventure///year=1989
+title=Bloodfist///year=1989
+title=Coming Out///year=1989
+title=Communion///year=1989
+title=Dead Poets Society///year=1989
+title=Death Spa///year=1989
+title=Drugstore Cowboy///year=1989
+title=The Abyss///year=1989
+title=The Adventures of Baron Munchausen///year=1989
+title=The BFG///year=1989
+title=The 'Burbs///year=1989
+title=The Cook, the Thief, His Wife & Her Lover///year=1989
+title=The Dead Pit///year=1989
+title=The Killer///year=1989
+title=The Firm///year=1989
+title=Gleaming the Cube///year=1989
+title=Hamoun///year=1989
+title=How to Get Ahead in Advertising///year=1989
+title=Kickboxer///year=1989
+title=Leningrad Cowboys Go America///year=1989
+title=Major League///year=1989
+title=Marquis///year=1989
+title=Meet the Feebles///year=1989
+title=Mystery Train///year=1989
+title=Parents///year=1989
+title=The Punisher///year=1989
+title=Puppet Master///year=1989
+title=Road House///year=1989
+title=Roger & Me///year=1989
+title=Rosencrantz and Guildenstern are Dead ///year=1989
+title=Santa Sangre///year=1989
+title=Say Anything...///year=1989
+title=Sex, Lies, and Videotape///year=1989
+title=Society///year=1989
+title=Spalovač Mrtvol (The Cremator)///year=1989
+title=Sundown: The Vampire in Retreat///year=1989
+title=Teen Witch///year=1989
+title=Tetsuo: The Iron Man///year=1989
+title=Theo en Thea en de Ontmaskering van Het Tenenkaasimperium (Theo and Thea and the Exposure of the Toe Jam Imperium)///year=1989
+title=Things///year=1989
+title=Troop Beverly Hills///year=1989
+title=UHF///year=1989
+title=Uncle Buck ///year=1989
+title=National Lampoon's Christmas Vacation///year=1989
+title=Vampire's Kiss///year=1989
+title=Warlock///year=1989
+title=Weekend at Bernie's///year=1989
+title=The Wizard///year=1989
+title=Agneepath///year=1990
+title=Begotten///year=1990
+title=Circuitry Man///year=1990
+title=Cry-Baby///year=1990
+title=Darkman///year=1990
+title=The Adventures of Ford Fairlane///year=1990
+title=Frankenhooker///year=1990
+title=Goodfellas///year=1990
+title=Gremlins 2: The New Batch///year=1990
+title=Hardware///year=1990
+title=Home Alone///year=1990
+title=House Party///year=1990
+title=The Hunt for Red October///year=1990
+title=I Bought a Vampire Motorcycle///year=1990
+title=I Come in Peace///year=1990
+title=Jacob's Ladder///year=1990
+title=Joe Versus the Volcano///year=1990
+title=The Kill-Off///year=1990
+title=Kindergarten Cop///year=1990
+title=King of New York///year=1990
+title=Lionheart///year=1990
+title=Miami Blues///year=1990
+title=Miller's Crossing///year=1990
+title=Misery///year=1990
+title=Nightbreed///year=1990
+title=Night of the Living Dead///year=1990
+title=Paris Is Burning///year=1990
+title=Pretty Woman///year=1990
+title=Pump Up the Volume///year=1990
+title=Quick Change///year=1990
+title=Quigley Down Under///year=1990
+title=The Reflecting Skin///year=1990
+title=Singapore Sling: O Anthropos pou Agapise ena Ptoma (also shortened as just Singapore Sling)///year=1990
+title=Teenage Mutant Ninja Turtles///year=1990
+title=Total Recall///year=1990
+title=Tremors///year=1990
+title=Troll 2///year=1990
+title=Trust///year=1990
+title=Wild at Heart///year=1990
+title=The Witches///year=1990
+title=Barton Fink///year=1991
+title=Boyz n the Hood///year=1991
+title=Cast a Deadly Spell///year=1991
+title=Daughters of the Dust///year=1991
+title=Defending Your Life///year=1991
+title=Delicatessen///year=1991
+title=Dogfight///year=1991
+title=Don't Tell Mom the Babysitter's Dead///year=1991
+title=Drop Dead Fred///year=1991
+title=Europa (Zentropa)///year=1991
+title=Les Amants du Pont Neuf (The Lovers on the Bridge)///year=1991
+title=The Commitments///year=1991
+title=The Dark Backward///year=1991
+title=The Fisher King///year=1991
+title=Hook///year=1991
+title=Hudson Hawk///year=1991
+title=Intensive Care///year=1991
+title=Johnny Suede///year=1991
+title=Kafka///year=1991
+title=Kit Kat///year=1991
+title=Kouř (Smoke)///year=1991
+title=Lamhe///year=1991
+title=The Mighty Ducks///year=1991
+title=My Own Private Idaho///year=1991
+title=Naked Lunch///year=1991
+title=New Jack City///year=1991
+title=Nothing but Trouble///year=1991
+title=Nudist Colony of the Dead///year=1991
+title=The People Under the Stairs///year=1991
+title=Point Break///year=1991
+title=Popcorn///year=1991
+title=The Rapture///year=1991
+title=Riki-Oh: The Story of Ricky///year=1991
+title=The Rocketeer///year=1991
+title=Samurai Cop///year=1991
+title=Showdown in Little Tokyo///year=1991
+title=The Silence of the Lambs///year=1991
+title=Slacker///year=1991
+title=Sólo Con Tu Pareja (Love in the Time of Hysteria)///year=1991
+title=Stone Cold///year=1991
+title=Thelma & Louise///year=1991
+title=Trancers II///year=1991
+title=Until the End of the World///year=1991
+title=Vegas in Space///year=1991
+title=Wax or the Discovery of Television Among the Bees///year=1991
+title=1991: The Year Punk Broke///year=1992
+title=Aladdin///year=1992
+title=Army of Darkness///year=1992
+title=Bad Lieutenant///year=1992
+title=Braindead///year=1992
+title=Buffy the Vampire Slayer///year=1992
+title=Candyman///year=1992
+title=Captain Ron///year=1992
+title=Careful///year=1992
+title=C'est Arrivé Près De Chez Vous (Man Bites Dog)///year=1992
+title=Cool World///year=1992
+title=Death Becomes Her///year=1992
+title=Diggstown///year=1992
+title=El Mariachi///year=1992
+title=Encino Man///year=1992
+title=Evil Toons///year=1992
+title=Gayniggers from Outer Space///year=1992
+title=Glengarry Glen Ross///year=1992
+title=Highway to Hell///year=1992
+title=Innocent Blood///year=1992
+title=Juice///year=1992
+title=Lat Sau San Taam (Hard Boiled)///year=1992
+title=The Lawnmower Man///year=1992
+title=Mr. Baseball///year=1992
+title=Naked Killer///year=1992
+title=Newsies///year=1992
+title=Noises Off///year=1992
+title=De Noordelingen (The Northerners)///year=1992
+title=Les Nuits Fauves (Savage Nights)///year=1992
+title=Psy (Pigs, also translated as Dogs)///year=1992
+title=Reservoir Dogs///year=1992
+title=Shakes the Clown///year=1992
+title=Toys///year=1992
+title=Trancers III///year=1992
+title=The Tune///year=1992
+title=Twin Peaks: Fire Walk with Me///year=1992
+title=Universal Soldier///year=1992
+title=Wayne's World///year=1992
+title=Batman: Mask of the Phantasm///year=1993
+title=Benny & Joon///year=1993
+title=Blood In Blood Out (Bound by Honor)///year=1993
+title=Body Melt///year=1993
+title=Boxing Helena///year=1993
+title=Cannibal! The Musical///year=1993
+title=Carlito's Way///year=1993
+title=Carnosaur///year=1993
+title=Cronos///year=1993
+title=Dazed and Confused///year=1993
+title=Demolition Man///year=1993
+title=Ed and His Dead Mother///year=1993
+title=La Classe américaine (also known as Le Grand Détournement)///year=1993
+title=The Ballad of Little Jo///year=1993
+title=Freaked///year=1993
+title=Groundhog Day///year=1993
+title=Hard Target///year=1993
+title=Hocus Pocus///year=1993
+title=Jūbē Ninpūchō (Ninja Scroll)///year=1993
+title=Jurassic Park///year=1993
+title=Last Action Hero///year=1993
+title=Leprechaun///year=1993
+title=El Mariachi///year=1993
+title=Naked///year=1993
+title=The Nightmare Before Christmas///year=1993
+title=No Skin Off My Ass///year=1993
+title=Poetic Justice///year=1993
+title=Robin Hood: Men in Tights///year=1993
+title=Rookie of the Year///year=1993
+title=Rudy///year=1993
+title=Sankofa///year=1993
+title=The Sandlot///year=1993
+title=So I Married an Axe Murderer///year=1993
+title=Sonachine (Sonatine)///year=1993
+title=Super Mario Bros.///year=1993
+title=The Thief and the Cobbler///year=1993
+title=Totally Fucked Up///year=1993
+title=The Untold Story///year=1993
+title=Ace Ventura: Pet Detective///year=1994
+title=Andaz Apna Apna (Everyone Has Their Own Style)///year=1994
+title=Angels in the Outfield///year=1994
+title=Baby's Day Out///year=1994
+title=Bad Boy Bubby///year=1994
+title=Bandit Queen///year=1994
+title=Brainscan///year=1994
+title=Cabin Boy///year=1994
+title=Cemetery Man///year=1994
+title=Chungking Express///year=1994
+title=Clerks///year=1994
+title=Clifford///year=1994
+title=Crumb///year=1994
+title=Dark Waters (1994 film)///year=1994
+title=Dellamorte Dellamore (Cemetery Man)///year=1994
+title=Der bewegte Mann (The Most Desired Man, also known as Maybe... Maybe Not)///year=1994
+title=Dumb and Dumber///year=1994
+title=Ed Wood///year=1994
+title=La Cité de la peur///year=1994
+title=The Adventures of Priscilla, Queen of the Desert///year=1994
+title=The Crow///year=1994
+title=Exotica///year=1994
+title=Felidae///year=1994
+title=Forrest Gump///year=1994
+title=Funny Man///year=1994
+title=Half-Cocked///year=1994
+title=Heavenly Creatures///year=1994
+title=The Hudsucker Proxy///year=1994
+title=In the Mouth of Madness///year=1994
+title=Interview with the Vampire///year=1994
+title=Jízda (The Ride)///year=1994
+title=The Last Seduction///year=1994
+title=Leningrad Cowboys Meet Moses///year=1994
+title=Léon: The Professional///year=1994
+title=Leprechaun 2///year=1994
+title=Muriel's Wedding///year=1994
+title=Natural Born Killers///year=1994
+title=Le Péril Jeune (The Good Old Gaze)///year=1994
+title=Pulp Fiction///year=1994
+title=Reality Bites///year=1994
+title=The Santa Clause///year=1994
+title=Sátántangó (Satan's Tango)///year=1994
+title=Serial Mom///year=1994
+title=The Shadow///year=1994
+title=Shallow Grave///year=1994
+title=The Shawshank Redemption///year=1994
+title=Spanking the Monkey///year=1994
+title=Stargate///year=1994
+title=Street Fighter///year=1994
+title=Trancers 4: Jack of Swords///year=1994
+title=Trancers 5: Sudden Deth///year=1994
+title=La Vie Sexuelle des Belges 1950-1978 (The Sexual Life of the Belgians 1950–1978)///year=1994
+title=12 Monkeys///year=1995
+title=Bad Boys///year=1995
+title=Balto///year=1995
+title=Billy Madison///year=1995
+title=Blood and Donuts///year=1995
+title=Canadian Bacon///year=1995
+title=Casper///year=1995
+title=Castle Freak///year=1995
+title=Clueless///year=1995
+title=Dead Man///year=1995
+title=Demon Knight///year=1995
+title=Empire Records///year=1995
+title=La Cité des Enfants Perdus (The City of Lost Children)///year=1995
+title=Le Bonheur est dans le Pré (Happiness is in the Field)///year=1995
+title=The Doom Generation///year=1995
+title=Friday///year=1995
+title=A Goofy Movie///year=1995
+title=Hackers///year=1995
+title=La haine (The Hate)///year=1995
+title=Heavyweights///year=1995
+title=Ice Cream Man (film)///year=1995
+title=I.D. (1995 film)///year=1995
+title=Jack-O///year=1995
+title=Johnny Mnemonic///year=1995
+title=Judge Dredd///year=1995
+title=Jumanji///year=1995
+title=Kicking and Screaming///year=1995
+title=Kids///year=1995
+title=Kōkaku Kidōtai Gōsuto In Za Sheru (Ghost in the Shell)///year=1995
+title=Leprechaun 3///year=1995
+title=Living in Oblivion///year=1995
+title=Lord of Illusions///year=1995
+title=Mallrats///year=1995
+title=Mighty Morphin Power Rangers: The Movie///year=1995
+title=Mortal Kombat///year=1995
+title=Mosquito///year=1995
+title=The Net///year=1995
+title=Now and Then///year=1995
+title=Out of the Dark///year=1995
+title=The Prophecy///year=1995
+title=The Quick and the Dead///year=1995
+title=Showgirls///year=1995
+title=Species///year=1995
+title=Strange Days///year=1995
+title=Tales From the Hood///year=1995
+title=Tank Girl///year=1995
+title=To Wong Foo, Thanks for Everything! Julie Newmar///year=1995
+title=Tommy Boy///year=1995
+title=Waterworld///year=1995
+title=Welcome to the Dollhouse///year=1995
+title=Wild Side///year=1995
+title=101 Dalmatians///year=1996
+title=2 Days in the Valley///year=1996
+title=Barb Wire///year=1996
+title=Beautiful Thing///year=1996
+title=Beavis and Butt-Head Do America///year=1996
+title=Bordello of Blood///year=1996
+title=Bottle Rocket///year=1996
+title=Bound///year=1996
+title=Camping Cosmos///year=1996
+title=Comment Je Me Suis Disputé... (Ma Vie Sexuelle) (My Sex Life... or How I Got into an Argument)///year=1996
+title=Crash///year=1996
+title=Dragonheart///year=1996
+title=Dunston Checks In///year=1996
+title=The Cable Guy///year=1996
+title=The Craft///year=1996
+title=Fargo///year=1996
+title=Fear///year=1996
+title=The First Wives Club///year=1996
+title=Freeway///year=1996
+title=The Frighteners///year=1996
+title=From Dusk till Dawn///year=1996
+title=Happy Gilmore///year=1996
+title=Harriet the Spy///year=1996
+title=Hustler White///year=1996
+title=Irma Vep///year=1996
+title=Jerry Maguire///year=1996
+title=Jingle All the Way///year=1996
+title=Kids in the Hall: Brain Candy///year=1996
+title=Kingpin///year=1996
+title=Kondom des Grauens (Killer Condom)///year=1996
+title=Mars Attacks!///year=1996
+title=Matilda///year=1996
+title=Mission: Impossible///year=1996
+title=Mystery Science Theater 3000: The Movie///year=1996
+title=The Phantom///year=1996
+title=The Pillow Book///year=1996
+title=Pusher///year=1996
+title=The Rock///year=1996
+title=Schizopolis///year=1996
+title=Scream///year=1996
+title=Set It Off///year=1996
+title=Seven Servants///year=1996
+title=Space Jam///year=1996
+title=Space Truckers///year=1996
+title=Swingers///year=1996
+title=That Thing You Do!///year=1996
+title=Trainspotting///year=1996
+title=Tromeo and Juliet///year=1996
+title=Walking and Talking///year=1996
+title=Air Bud///year=1997
+title=Anaconda///year=1997
+title=Austin Powers: International Man of Mystery///year=1997
+title=Brat (Brother)///year=1997
+title=Breakdown///year=1997
+title=Con Air///year=1997
+title=Cube///year=1997
+title=Double Team///year=1997
+title=Event Horizon///year=1997
+title=The Castle///year=1997
+title=The Devil's Advocate///year=1997
+title=Face/Off///year=1997
+title=Fast, Cheap & Out of Control///year=1997
+title=The Fifth Element///year=1997
+title=Funny Games///year=1997
+title=Gattaca///year=1997
+title=Good Will Hunting///year=1997
+title=Good Burger///year=1997
+title=Grosse Pointe Blank///year=1997
+title=Gummo///year=1997
+title=Hana-bi (Fireworks)///year=1997
+title=Happy Together///year=1997
+title=I Married a Strange Person///year=1997
+title=In the Company of Men///year=1997
+title=Jack Frost///year=1997
+title=Kiler (The Hitman)///year=1997
+title=Kyua (Cure)///year=1997
+title=Leprechaun 4: In Space///year=1997
+title=Lost Highway///year=1997
+title=Love Jones///year=1997
+title=Mononoke-hime (Princess Mononoke)///year=1997
+title=Nowhere///year=1997
+title=Open Your Eyes///year=1997
+title=Orgazmo///year=1997
+title=Pāfekuto Burū (Perfect Blue)///year=1997
+title=The Pest///year=1997
+title=Preaching to the Perverted///year=1997
+title=Private Parts///year=1997
+title=Romy and Michele's High School Reunion///year=1997
+title=Shin Seiki Evangerion Gekijō-ban: Ea/Magokoro o, Kimi ni (The End of Evangelion, also known as Neon Genesis Evangelion: The End of Evangelion)///year=1997
+title=Spice World (film)///year=1997
+title=Starship Troopers///year=1997
+title=Titanic///year=1997
+title=54///year=1998
+title=American History X///year=1998
+title=Babe: Pig in the City///year=1998
+title=BASEketball///year=1998
+title=Belly///year=1998
+title=Blade///year=1998
+title=Buffalo '66///year=1998
+title=Can't Hardly Wait///year=1998
+title=Dark City///year=1998
+title=Dirty Work///year=1998
+title=The Big Lebowski///year=1998
+title=The Faculty///year=1998
+title=Fallen///year=1998
+title=Fear and Loathing in Las Vegas///year=1998
+title=Festen (The Celebration)///year=1998
+title=Gunda///year=1998
+title=Half Baked///year=1998
+title=Happiness///year=1998
+title=Idioterne (The Idiots)///year=1998
+title=Jack Frost (1998 film)///year=1998
+title=Kite///year=1998
+title=Lola Rennt (Run, Lola, Run)///year=1998
+title=The Opposite of Sex///year=1998
+title=Pi///year=1998
+title=Pleasantville///year=1998
+title=Practical Magic///year=1998
+title=Ringu (Ring)///year=1998
+title=Rounders///year=1998
+title=The Rugrats Movie///year=1998
+title=Run Lola Run///year=1998
+title=Rushmore///year=1998
+title=Saving Private Ryan///year=1998
+title=Six-String Samurai///year=1998
+title=SLC Punk!///year=1998
+title=Small Soldiers///year=1998
+title=Tholi Prema///year=1998
+title=The Truman Show///year=1998
+title=Vampires///year=1998
+title=Velvet Goldmine///year=1998
+title=The Waterboy///year=1998
+title=Wild Things///year=1998
+title=Zero Effect///year=1998
+title=8mm///year=1999
+title=American Beauty///year=1999
+title=American Movie///year=1999
+title=American Pie///year=1999
+title=Audition///year=1999
+title=Bang Boom Bang///year=1999
+title=Beau Travail///year=1999
+title=Being John Malkovich///year=1999
+title=But I'm A Cheerleader///year=1999
+title=Cruel Intentions///year=1999
+title=Detroit Rock City///year=1999
+title=Dogma///year=1999
+title=Drop Dead Gorgeous///year=1999
+title=Election///year=1999
+title=The 13th Warrior///year=1999
+title=The Blair Witch Project///year=1999
+title=The Boondock Saints///year=1999
+title=Fight Club///year=1999
+title=Galaxy Quest///year=1999
+title=Ghost Dog: The Way of the Samurai///year=1999
+title=Go///year=1999
+title=Human Traffic///year=1999
+title=Idle Hands///year=1999
+title=The Iron Giant///year=1999
+title=Jawbreaker///year=1999
+title=Jezus is een Palestijn (Jesus is a Palestinian)///year=1999
+title=Julien Donkey-Boy///year=1999
+title=Juyuso seubgyuksageun (Attack the Gas Station)///year=1999
+title=Lake Placid///year=1999
+title=The Limey///year=1999
+title=Man on the Moon///year=1999
+title=The Matrix///year=1999
+title=Mivtza Savta (Operation Grandma)///year=1999
+title=The Mummy///year=1999
+title=Mystery Men///year=1999
+title=Never Been Kissed///year=1999
+title=Office Space///year=1999
+title=Ravenous///year=1999
+title=Scarfies///year=1999
+title=The Sixth Sense///year=1999
+title=Sonnenallee///year=1999
+title=South Park: Bigger, Longer & Uncut///year=1999
+title=Superstar///year=1999
+title=The Virgin Suicides///year=1999
+title=Wonderland///year=1999
+title=Almost Famous///year=2000
+title=American Psycho///year=2000
+title=Amores Perros (Love's a Bitch)///year=2000
+title=Baise-moi///year=2000
+title=Battle Royale///year=2000
+title=Battlefield Earth///year=2000
+title=Best in Show///year=2000
+title=Blood: The Last Vampire///year=2000
+title=Cecil B. Demented///year=2000
+title=Chłopaki nie Płaczą (Boys Don't Cry)///year=2000
+title=Chopper///year=2000
+title=Chuck and Buck///year=2000
+title=Code Unknown///year=2000
+title=Coyote Ugly///year=2000
+title=Cry Baby Lane///year=2000
+title=Dancer in the Dark///year=2000
+title=Dude, Where's My Car?///year=2000
+title=The Chronicles of Riddick: Pitch Black (also known as Pitch Black)///year=2000
+title=Fa Thalai Chon (Tears of the Black Tiger)///year=2000
+title=Ginger Snaps///year=2000
+title=High Fidelity///year=2000
+title=Jack Frost 2: Revenge of the Mutant Killer Snowman///year=2000
+title=Leprechaun in the Hood///year=2000
+title=Meet the Parents///year=2000
+title=Memento///year=2000
+title=Otesánek (Little Otik)///year=2000
+title=The Patriot///year=2000
+title=Psycho Beach Party///year=2000
+title=Requiem for a Dream///year=2000
+title=The Road to El Dorado///year=2000
+title=Scary Movie///year=2000
+title=Sexy Beast///year=2000
+title=Shadow of the Vampire///year=2000
+title=Snatch///year=2000
+title=Songs from the Second Floor///year=2000
+title=Thomas and the Magic Railroad///year=2000
+title=Titan A.E.///year=2000
+title=Unbreakable///year=2000
+title=Vāsasu (Versus)///year=2000
+title=The Way of the Gun///year=2000
+title=Werckmeister Harmóniák (Werckmeister Harmonies)///year=2000
+title=X-Men///year=2000
+title=Atlantis: The Lost Empire///year=2001
+title=Bones///year=2001
+title=Donnie Darko///year=2001
+title=Escanaba in da Moonlight///year=2001
+title=Le Fabuleux Destin d'Amélie Poulain (Amélie)///year=2001
+title=Freddy Got Fingered///year=2001
+title=Ghost of Mars///year=2001
+title=Ghost World///year=2001
+title=Glitter///year=2001
+title=Hedwig and the Angry Inch///year=2001
+title=How High///year=2001
+title=I Am Sam///year=2001
+title=Jay and Silent Bob Strike Back///year=2001
+title=Jesus Christ Vampire Hunter///year=2001
+title=Jimmy Neutron: Boy Genius///year=2001
+title=Joe Dirt///year=2001
+title=Josie and the Pussycats///year=2001
+title=Kairo (Pulse)///year=2001
+title=A Knight's Tale///year=2001
+title=Koroshiya Ichi (Ichi the Killer)///year=2001
+title=Kushi///year=2001
+title=Lara Croft: Tomb Raider///year=2001
+title=Legally Blonde///year=2001
+title=The Lost Skeleton of Cadavra///year=2001
+title=Metropolis///year=2001
+title=Monkeybone///year=2001
+title=Mulholland Drive///year=2001
+title=Le Pacte de Loups///year=2001
+title=Pootie Tang///year=2001
+title=The Princess Diaries///year=2001
+title=Rat Race///year=2001
+title=The Royal Tenenbaums///year=2001
+title=Sen to Chihiro no Kamikakushi (Spirited Away)///year=2001
+title=Sennen Joyu (Millennium Actress)///year=2001
+title=Series 7: The Contenders///year=2001
+title=Session 9///year=2001
+title=Shrek///year=2001
+title=Sugar & Spice///year=2001
+title=Super Troopers///year=2001
+title=Thir13en Ghosts///year=2001
+title=Valentine///year=2001
+title=Waking Life///year=2001
+title=Wave Twisters///year=2001
+title=Wet Hot American Summer///year=2001
+title=Y Tu Mamá También (And Your Mother Too)///year=2001
+title=Zoolander///year=2001
+title=28 Days Later///year=2002
+title=8 femmes///year=2002
+title=All About the Benjamins///year=2002
+title=Better Luck Tomorrow///year=2002
+title=Bloody Mallory///year=2002
+title=Bubba Ho-Tep///year=2002
+title=Cidade de Deus (City of God)///year=2002
+title=Death to Smoochy///year=2002
+title=Demonlover///year=2002
+title=Equilibrium///year=2002
+title=L'Auberge Espagnole (The Spanish Inn)///year=2002
+title=Femme Fatale///year=2002
+title=FUBAR///year=2002
+title=Ghost Ship///year=2002
+title=Irréversible///year=2002
+title=Jackass: The Movie///year=2002
+title=Ju-On: The Grudge///year=2002
+title=Kung Pow! Enter the Fist///year=2002
+title=Lilo & Stitch///year=2002
+title=May///year=2002
+title=Morvern Callar///year=2002
+title=Mou gaan dou (Infernal Affairs)///year=2002
+title=National Lampoon's Van Wilder///year=2002
+title=Paid in Full///year=2002
+title=Pumpkin///year=2002
+title=Punch-Drunk Love///year=2002
+title=Rok Ďábla (Year of the Devil)///year=2002
+title=The Rules of Attraction///year=2002
+title=Russkij Kovcheg (Russian Ark)///year=2002
+title=Scooby-Doo///year=2002
+title=Secretary///year=2002
+title=Shottas///year=2002
+title=Signs///year=2002
+title=Spider-Man///year=2002
+title=Trancers 6///year=2002
+title=Treasure Planet///year=2002
+title=Undercover Brother///year=2002
+title=A Walk to Remember///year=2002
+title=American Splendor///year=2003
+title=Anbe Sivam (Love is God)///year=2003
+title=Any Way the Wind Blows///year=2003
+title=Bad Santa///year=2003
+title=Dogville///year=2003
+title=The Brown Bunny///year=2003
+title=The Core///year=2003
+title=Flesh for the Beast///year=2003
+title=The Haunted Mansion///year=2003
+title=The Hebrew Hammer///year=2003
+title=House of 1000 Corpses///year=2003
+title=Identity (2003 film)///year=2003
+title=Intāsutera Fō Faibu (Interstella 5555: The 5tory of the 5ecret 5tar 5ystem)///year=2003
+title=Janghwa, Hongryeon (A Tale of Two Sisters)///year=2003
+title=Jigureul Jikyeora! (Save the Green Planet!)///year=2003
+title=Johnny English///year=2003
+title=Kontroll///year=2003
+title=The Last Samurai///year=2003
+title=The League of Extraordinary Gentlemen///year=2003
+title=Leprechaun: Back 2 tha Hood///year=2003
+title=Looney Tunes: Back in Action///year=2003
+title=Lost in Translation///year=2003
+title=Love Actually///year=2003
+title=Oldeuboi (Oldboy)///year=2003
+title=Party Monster///year=2003
+title=Remake///year=2003
+title=The Room///year=2003
+title=School of Rock///year=2003
+title=Les Triplettes de Belleville (The Triplets of Belleville, also known as Belleville Rendez-vous)///year=2003
+title=Underworld///year=2003
+title=Willard///year=2003
+title=9 Songs///year=2004
+title=Anchorman: The Legend of Ron Burgundy///year=2004
+title=D.E.B.S. (2004 film)///year=2004
+title=Dodgeball: A True Underdog Story///year=2004
+title=Downfall (Der Untergang)///year=2004
+title=Eternal Sunshine of the Spotless Mind///year=2004
+title=Friday Night Lights///year=2004
+title=Garden State///year=2004
+title=Gegen die Wand (Head-On)///year=2004
+title=The Girl Next Door///year=2004
+title=Harold & Kumar Go to White Castle///year=2004
+title=Helbent///year=2004
+title=I Heart Huckabees///year=2004
+title=It's All Gone Pete Tong///year=2004
+title=Kung Fu Hustle///year=2004
+title=Lemony Snicket's A Series of Unfortunate Events///year=2004
+title=The Life Aquatic with Steve Zissou///year=2004
+title=The Machinist///year=2004
+title=Maindo Gēmu (Mind Game)///year=2004
+title=Mean Girls///year=2004
+title=Napoleon Dynamite///year=2004
+title=Nochnoy Dozor (Night Watch)///year=2004
+title=Primer///year=2004
+title=The Punisher///year=2004
+title=Satan's Little Helper///year=2004
+title=Saw///year=2004
+title=Shaun of the Dead///year=2004
+title=Sky Captain and the World of Tomorrow///year=2004
+title=The SpongeBob SquarePants Movie///year=2004
+title=Swades (We, the People)///year=2004
+title=Team America: World Police///year=2004
+title=Troy///year=2004
+title=Van Helsing///year=2004
+title=The Village///year=2004
+title=White Chicks///year=2004
+title=30 Days of Night///year=2005
+title=Bloodrayne///year=2005
+title=Calvaire///year=2005
+title=Constantine///year=2005
+title=Die You Zombie Bastards!///year=2005
+title=Double Down///year=2005
+title=The Descent///year=2005
+title=The Devil's Rejects///year=2005
+title=The Gingerdead Man///year=2005
+title=Hard Candy///year=2005
+title=The Hitchhiker's Guide to the Galaxy///year=2005
+title=Junebug///year=2005
+title=Kiss Kiss Bang Bang///year=2005
+title=Lords of Dogtown///year=2005
+title=Meatball Machine///year=2005
+title=MirrorMask///year=2005
+title=Noroi (Noroi: The Curse)///year=2005
+title=Les Poupées Russes (Russian Dolls)///year=2005
+title=The Proposition///year=2005
+title=Revolver///year=2005
+title=Romanzo Criminale///year=2005
+title=Santa's Slay///year=2005
+title=Serenity///year=2005
+title=Sin City///year=2005
+title=Sky High///year=2005
+title=Wolf Creek///year=2005
+title=300///year=2006
+title=Accepted///year=2006
+title=All the Boys Love Mandy Lane///year=2006
+title=Apocalypto///year=2006
+title=Behind the Mask: The Rise of Leslie Vernon///year=2006
+title=Big Bad Wolf///year=2006
+title=Blood Tea and Red String///year=2006
+title=Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan///year=2006
+title=Brand upon the Brain!///year=2006
+title=Bug///year=2006
+title=Children of Men///year=2006
+title=Clerks II///year=2006
+title=Cocaine Cowboys///year=2006
+title=Daft Punk's Electroma///year=2006
+title=Dikkenek///year=2006
+title=DOA: Dead or Alive///year=2006
+title=The Devil Wears Prada///year=2006
+title=The Fall///year=2006
+title=Fido///year=2006
+title=The Fountain///year=2006
+title=Gedo Senki (Tales from Earthsea)///year=2006
+title=Goemul (The Host)///year=2006
+title=Grandma's Boy///year=2006
+title=Hatchet///year=2006
+title=High School Musical///year=2006
+title=Idiocracy///year=2006
+title=Khosla Ka Ghosla (Khosla's Nest)///year=2006
+title=Pan's Labyrinth///year=2006
+title=Papurika (Paprika)///year=2006
+title=Poultrygeist: Night of the Chicken Dead///year=2006
+title=A Scanner Darkly///year=2006
+title=La Science des Rêves (The Science of Sleep)///year=2006
+title=Severance///year=2006
+title=She's the Man///year=2006
+title=Shortbus///year=2006
+title=Silent Hill///year=2006
+title=Skinwalkers///year=2006
+title=Slither///year=2006
+title=Snakes On A Plane///year=2006
+title=Southland Tales///year=2006
+title=Tales from Earthsea///year=2006
+title=Tenacious D in the Pick of Destiny///year=2006
+title=Trailer Park Boys: The Movie///year=2006
+title=V for Vendetta///year=2006
+title=The Wicker Man///year=2006
+title=Wristcutters: A Love Story///year=2006
+title=100 Tears///year=2007
+title=And When Did You Last See Your Father?///year=2007
+title=Aqua Teen Hunger Force Colon Movie Film for Theaters///year=2007
+title=Bad Reputation///year=2007
+title=Bee Movie///year=2007
+title=Blood & Chocolate///year=2007
+title=Carved: The Slit-Mouthed Woman///year=2007
+title=Control///year=2007
+title=Dead Silence///year=2007
+title=The 40-Year-Old Virgin///year=2007
+title=The Assassination of Jesse James by the Coward Robert Ford///year=2007
+title=The Darjeeling Limited///year=2007
+title=Ex Drummer///year=2007
+title=Grindhouse///year=2007
+title=Heima///year=2007
+title=Hot Fuzz///year=2007
+title=Hot Rod///year=2007
+title=I'm Not There///year=2007
+title=The King of Kong: A Fistful of Quarters///year=2007
+title=Mr. Brooks///year=2007
+title=Murder Party///year=2007
+title=My Winnipeg///year=2007
+title=REC///year=2007
+title=Reno 911!: Miami///year=2007
+title=Shoot 'Em Up///year=2007
+title=The Signal///year=2007
+title=Smokin' Aces///year=2007
+title=Smiley Face///year=2007
+title=Son of Rambow///year=2007
+title=Stardust///year=2007
+title=Stuck///year=2007
+title=Superbad///year=2007
+title=Teeth (2007 film)///year=2007
+title=Trick 'r Treat///year=2007
+title=Viva///year=2007
+title=Zodiac///year=2007
+title=Birdemic: Shock and Terror///year=2008
+title=Christmas on Mars///year=2008
+title=City of Ember///year=2008
+title=Cloverfield///year=2008
+title=Gutterballs///year=2008
+title=The House Bunny///year=2008
+title=The House Bunny///year=2008
+title=I Sell the Dead///year=2008
+title=In Bruges///year=2008
+title=JCVD///year=2008
+title=Låt den Rätte Komma in (Let the Right One In)///year=2008
+title=Mamma Mia!///year=2008
+title=Martyrs///year=2008
+title=The Midnight Meat Train///year=2008
+title=Pineapple Express///year=2008
+title=Punisher: War Zone///year=2008
+title=Repo! The Genetic Opera///year=2008
+title=Speed Racer///year=2008
+title=Step Brothers///year=2008
+title=Stilyagi (Hipsters)///year=2008
+title=The Strangers///year=2008
+title=Synecdoche, New York///year=2008
+title=Taken///year=2008
+title=ThanksKilling///year=2008
+title=Tropic Thunder///year=2008
+title=9///year=2009
+title=Antichrist///year=2009
+title=Avatar///year=2009
+title=Bad Lieutenant: Port of Call New Orleans///year=2009
+title=Best Worst Movie///year=2009
+title=Big Fan///year=2009
+title=Black Dynamite///year=2009
+title=Coraline///year=2009
+title=Dead Hooker in a Trunk///year=2009
+title=Enter the Void///year=2009
+title=The Boondock Saints II: All Saints Day///year=2009
+title=Fantastic Mr. Fox///year=2009
+title=The House of the Devil///year=2009
+title=The Human Centipede (First Sequence)///year=2009
+title=Jennifer's Body///year=2009
+title=Kaminey (The Scoundrels)///year=2009
+title=Law Abiding Citizen///year=2009
+title=The Loved Ones///year=2009
+title=Mr. Nobody///year=2009
+title=Observe and Report///year=2009
+title=Pandorum///year=2009
+title=Redline///year=2009
+title=Splice///year=2009
+title=Trash Humpers///year=2009
+title=Watchmen///year=2009
+title=Where the Wild Things Are///year=2009
+title=Zombieland///year=2009
+title=Beyond the Black Rainbow///year=2010
+title=Burlesque///year=2010
+title=Exit Through the Gift Shop///year=2010
+title=Gandu///year=2010
+title=Khaleja///year=2010
+title=Kick-Ass///year=2010
+title=The Kids Are All Right///year=2010
+title=Kyonyū Doragon: Onsen Zonbi vs Sutorippaa (Big Tits Zombie)///year=2010
+title=MacGruber///year=2010
+title=Machete///year=2010
+title=Mutant Girls Squad///year=2010
+title=Rare Exports: A Christmas Tale///year=2010
+title=Scott Pilgrim vs. the World///year=2010
+title=She's Out of My League///year=2010
+title=Sint (Saint (Nick))///year=2010
+title=Srpski film (A Serbian Film)///year=2010
+title=Trolljegeren (Trollhunter)///year=2010
+title=Tron: Legacy///year=2010
+title=Tucker & Dale vs. Evil///year=2010
+title=Who Killed Captain Alex?///year=2010
+title=Attack the Block///year=2011
+title=Drive///year=2011
+title=The Adventures of Tintin: The Secret of the Unicorn///year=2011
+title=The Cabin in the Woods///year=2011
+title=Goon///year=2011
+title=Hobo with a Shotgun///year=2011
+title=Hoshi o Ou Kodomo (Children Who Chase Lost Voices)///year=2011
+title=Manborg///year=2011
+title=Paul///year=2011
+title=The Raid: Redemption///year=2011
+title=Texas Killing Fields (also known as The Fields)///year=2011
+title=The Tree of Life///year=2011
+title=A Very Harold & Kumar 3D Christmas///year=2011
+title=1: Nenokkadine///year=2012
+title=Cloud Atlas///year=2012
+title=Dredd///year=2012
+title=Elfie Hopkins (AKA Elfie Hopkins: Cannibal Hunter)///year=2012
+title=Frankenweenie///year=2012
+title=Gallowwalkers///year=2012
+title=Gangs of Wasseypur///year=2012
+title=Grabbers///year=2012
+title=Holy Motors///year=2012
+title=Iron Sky///year=2012
+title=It's Such a Beautiful Day///year=2012
+title=Jack & Diane///year=2012
+title=John Carter///year=2012
+title=John Dies at the End///year=2012
+title=Les Misérables///year=2012
+title=The Man with the Iron Fists///year=2012
+title=The Perks of Being a Wallflower///year=2012
+title=Pitch Perfect///year=2012
+title=Spring Breakers///year=2012
+title=Thale///year=2012
+title=That's My Boy///year=2012
+title=Upside Down///year=2012
+title=All Hallows' Eve///year=2013
+title=Avenged///year=2013
+title=Axeman///year=2013
+title=Casse-tête Chinois (Chinese Puzzle)///year=2013
+title=Enemy///year=2013
+title=A Field in England///year=2013
+title=Frankenstein's Army///year=2013
+title=Hansel & Gretel: Witch Hunters///year=2013
+title=Hard to Be a God///year=2013
+title=Jug Face///year=2013
+title=Only Lovers Left Alive///year=2013
+title=Pacific Rim///year=2013
+title=R.I.P.D.///year=2013
+title=Sharknado///year=2013
+title=Shoto Pisu (Short Peace)///year=2013
+title=Snowpiercer///year=2013
+title=Under the Skin///year=2013
+title=The Zero Theorem///year=2013
+title=A Girl Walks Home Alone at Night///year=2014
+title=The Babadook///year=2014
+title=The Duke of Burgundy///year=2014
+title=Fateful Findings///year=2014
+title=Housebound///year=2014
+title=Interstellar (film)///year=2014
+title=Jigarthanda (Cold Heart)///year=2014
+title=John Wick///year=2014
+title=Kingsman: The Secret Service///year=2014
+title=Leprechaun: Origins///year=2014
+title=Nightcrawler///year=2014
+title=Stage Fright///year=2014
+title=Tusk (2014 film)///year=2014
+title=Unfriended///year=2014
+title=What We Do in the Shadows///year=2014
+title=WolfCop///year=2014
+title=Wyrmwood///year=2014
+title=Baahubali: The Beginning///year=2015
+title=Bone Tomahawk///year=2015
+title=Córki dancingu (The Lure)///year=2015
+title=Deathgasm///year=2015
+title=The Death of "Superman Lives": What Happened?///year=2015
+title=Hellions///year=2015
+title=High-Rise///year=2015
+title=Kung Fury///year=2015
+title=The Lobster///year=2015
+title=Mad Max: Fury Road///year=2015
+title=Le Nouveau Testament (The Brand New Testament)///year=2015
+title=Tangerine///year=2015
+title=Turbo Kid///year=2015
+title=A Cure for Wellness///year=2016
+title=Batman v Superman: Dawn of Justice///year=2016
+title=The Accountant///year=2016
+title=The Greasy Strangler///year=2016
+title=The Jungle Book///year=2016
+title=King of Prism series///year=2016
+title=La La Land///year=2016
+title=The Love Witch///year=2016
+title=The Neon Demon///year=2016
+title=The Nice Guys///year=2016
+title=Popstar: Never Stop Never Stopping///year=2016
+title=Sing Street///year=2016
+title=Swiss Army Man///year=2016
+title=Terrifier///year=2016
+title=Train to Busan///year=2016
+title=The Void///year=2016
+title=Zootopia///year=2016
+title=Baby Driver///year=2017
+title=Blade Runner 2049///year=2017
+title=Good Time///year=2017
+title=The Killing of a Sacred Deer///year=2017
+title=My Little Pony: The Movie///year=2017
+title=Climax///year=2018
+title=High Life///year=2018
+title=In Fabric///year=2018
+title=Leprechaun Returns///year=2018
+title=Mandy///year=2018
+title=Mortal Engines///year=2018
+title=Sorry to Bother You///year=2018
+title=Twisted Pair///year=2018
+title=Under the Silver Lake///year=2018
+title=Alita: Battle Angel///year=2019
+title=Booksmart///year=2019
+title=Cats///year=2019
+title=The Beach Bum///year=2019
+title=Guns Akimbo///year=2019
+title=Hatsukoi (First Love)///year=2019
+title=The Lighthouse///year=2019
+title=Uncut Gems///year=2019
+title=Zombieland: Double Tap///year=2019
+title=The Empty Man///year=2020
+title=PG: Psycho Goreman///year=2020
+title=Tenet///year=2020
+title=The Last Duel///year=2021
+title=The Loud House Movie///year=2021
+title=Malignant///year=2021
+title=Willy's Wonderland///year=2021
+title=Zack Snyder's Justice League///year=2021
+title=Arthur, malédiction///year=2022
+title=Babylon///year=2022
+title=Everything Everywhere All At Once///year=2022
+title=Fumer fait tousser (Smoking Causes Coughing)///year=2022
+title=Glorius (film)///year=2022
+title=RRR///year=2022
+title=Studio 666///year=2022
+title=X///year=2022
+title=Cocaine Bear///year=2023
+title=M3GAN///year=2023
+title=The Super Mario Bros. Movie///year=2023
