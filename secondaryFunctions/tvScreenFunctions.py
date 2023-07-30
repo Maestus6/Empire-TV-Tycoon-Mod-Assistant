@@ -147,9 +147,12 @@ def downloadScreen(screenOriginURL, titleXMLPic, years):
     if(os.path.exists(image_path) == False):
         os.mkdir(image_path) ##creates folder as images
 
-    saveName =  titleXMLPic + "_" + years +".png"
+    saveName =  titleXMLPic + "_" + years
 
-    img.save(f"{image_path}/{saveName}")
+    try:
+        img.save(f"{image_path}/{saveName}.png")
+    except: #due to CMYK error
+        img.save(f"{image_path}/{saveName}")
 
 
 

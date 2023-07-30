@@ -34,6 +34,13 @@ def ratingFinder(specialGenre, rating):
     
 
 
+def isItCult(title, year):
+
+    returnList = []
+    f = open("CultMoviesList.xml", "r")
+    cultsList = f.readline()
+    f.close()
+    counter = 0
 
 
 
