@@ -66,7 +66,7 @@ def animeTurnIntoList(animeList):
 
 
 
-
+#To check if movies exists in basegame
 def checkExistingMovies():
 
     returnList = []
