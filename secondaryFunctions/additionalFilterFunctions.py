@@ -64,37 +64,57 @@ def animeTurnIntoList(animeList):
 
 
 
-##HEADER LIST
-# HEADERS = []
-# HEADERS[0] = {
-#         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
-#         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-#         "Accept-Language": "en-US,en;q=0.5",
-#         "Accept-Encoding": "gzip, deflate",
-#         "Connection": "keep-alive",
-#         "Upgrade-Insecure-Requests": "1",
-#         "Sec-Fetch-Dest": "document",
-#         "Sec-Fetch-Mode": "navigate",
-#         "Sec-Fetch-Site": "none",
-#         "Sec-Fetch-User": "?1",
-#         "Cache-Control": "max-age=0",
-#     }
-# HEADERS[1] = {
-#     {
-#         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0",
-#         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-#         "Accept-Language": "en-US,en;q=0.5",
-#         "Accept-Encoding": "gzip, deflate",
-#         "Connection": "keep-alive",
-#         "Upgrade-Insecure-Requests": "1",
-#         "Sec-Fetch-Dest": "document",
-#         "Sec-Fetch-Mode": "navigate",
-#         "Sec-Fetch-Site": "none",
-#         "Sec-Fetch-User": "?1",
-#         "Cache-Control": "max-age=0",
-#     }
-# }
 
-# HEADERS[2] = {
 
-# }
+
+def checkExistingMovies():
+
+    returnList = []
+    f = open("DefaultMovies.xml", "r")
+    lines = f.read()
+    f.close()
+    counter = 0
+
+    movieList = lines.split("<Movie>\n\t\t\t<Id")
+    movieList.pop(0)
+
+    for eachMovie in movieList:
+        nameList = eachMovie.split("<Name value=\"", 1)
+        nameList = nameList[1].split("\"", 1)
+        yearList = eachMovie.split("<Year value=\"", 1)
+        yearList = yearList[1].split("\"", 1)
+        
+        returnList.append(checkExistingMovieListMaker(nameList[0], yearList[0], counter))
+        counter += 1
+
+    return returnList
+
+
+def checkExistingMovieListMaker(name, year, counter):
+    pdMovie = pd.DataFrame({'name': str(name),
+                      'year': str(year)} , index = [counter]
+                      )
+    
+    numMovie = pdMovie.to_numpy()
+    return numMovie
+
+
+
+def checkExistingMoviesForYear(existingMovieList, currentYear):
+
+    returnList = []
+
+    for eachMovie in existingMovieList:
+        for title, year in eachMovie:
+            if year == str(currentYear):
+                returnList.append(title)
+    
+    return returnList
+
+
+def checkIfMovieNeeded(title, preexistingTitleList):
+    for existingTitle in preexistingTitleList:
+        if title == existingTitle:
+            return "DONTCONTINUE"
+    return "CONTINUE"
+    

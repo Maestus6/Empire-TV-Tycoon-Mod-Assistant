@@ -27,7 +27,8 @@ def movieLoops():
     headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandarin
      
     yearValList = [1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000]
-    
+
+    existingMovieList = checkExistingMovies()
 
     for yearVal in yearValList:
 
@@ -36,6 +37,7 @@ def movieLoops():
         numOutputFull = []
         counter = 0 #to Count loop iterations
         # years = str(yearVal)
+        preexistingTitleList = checkExistingMoviesForYear(existingMovieList, yearVal)
         
         for page in pages:
 
@@ -57,46 +59,51 @@ def movieLoops():
                 #Title Main
                 (titles),(titleXMLPic) = getTitle(container)
 
-                #Storyline Main
-                storyline = getStoryline(container)
+                #Check if this movie exists at base game
+                checkExistingCondition = checkIfMovieNeeded(titles, preexistingTitleList)
 
-                # #Year Main
-                years = str(yearVal)
+                if(checkExistingCondition != "DONTCONTINUE"):
 
-                #Genre Main
-                genres,genresSpecial = getGenre(container)
+                    #Storyline Main
+                    storyline = getStoryline(container)
 
-                #AlternativeScore Main(additionalFilterFunctions.py) (Used to diverse movies from tvshows)
-                #movieOrSeries = getMoviesOrSeries(container)
+                    # #Year Main
+                    years = str(yearVal)
 
-                #PageScore ratings(Movie score)
-                pageScore = getPageScore(container)
+                    #Genre Main
+                    genres,genresSpecial = getGenre(container)
 
-                #Runtime Main(Blocks for EmpireTV)
-                runtimes = getRuntime(container)
+                    #AlternativeScore Main(additionalFilterFunctions.py) (Used to diverse movies from tvshows)
+                    #movieOrSeries = getMoviesOrSeries(container)
 
-                #Rating Main
-                ratings, movieOrSeries = getRating(container, genresSpecial)
+                    #PageScore ratings(Movie score)
+                    pageScore = getPageScore(container)
 
-                #Episodes main
-                episodes = getEpisodes(movieOrSeries)
+                    #Runtime Main(Blocks for EmpireTV)
+                    runtimes = getRuntime(container)
 
-                #Banner Main
-                urlSecondPart = getBanner(container, titleXMLPic,years)
+                    #Rating Main
+                    ratings, movieOrSeries = getRating(container, genresSpecial)
 
-                #Quote Main (Hard to make use of it)
-                #quotes = getQuote(urlSecondPart)
+                    #Episodes main
+                    episodes = getEpisodes(movieOrSeries)
 
-                #TV Screen Main
-                getTVScreenAlter(urlSecondPart, titleXMLPic, years)
+                    #Banner Main
+                    urlSecondPart = getBanner(container, titleXMLPic,years)
 
-                #Save Movies for usage of Output main once we get every data
-                counter += 1
-                numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, ratings,  titleXMLPic, counter))
+                    #Quote Main (Hard to make use of it)
+                    #quotes = getQuote(urlSecondPart)
 
-                # if(counter > 5):  #To make loop iterate 20 times
-                #     break
-                #End of Loop
+                    #TV Screen Main
+                    getTVScreenAlter(urlSecondPart, titleXMLPic, years)
+
+                    #Save Movies for usage of Output main once we get every data
+                    counter += 1
+                    numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, ratings,  titleXMLPic, counter))
+
+                    if(counter > 5):  #To make loop iterate 20 times
+                        break
+                    #End of Loop
         
 
 
