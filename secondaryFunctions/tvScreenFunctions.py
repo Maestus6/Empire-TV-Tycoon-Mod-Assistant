@@ -151,8 +151,8 @@ def downloadScreen(screenOriginURL, titleXMLPic, years):
 
     try:
         img.save(f"{image_path}/{saveName}.png")
-    except: #due to CMYK error
-        img.save(f"1111_{image_path}/{saveName}")
+    except:
+        print(f" problem while writing screenOriginalURL = {screenOriginURL}")
 
 
 
