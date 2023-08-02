@@ -3,6 +3,8 @@ import sys #needed to write on notepad
 #Movies List Main
 def dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, cult, ratings, titleXMLPic, counter):
     
+    if str(titles) == "The Witches":
+        print("a")
     pdOutputFull = pd.DataFrame({'name': str(titles),
                       'storyline': str(storyline),
                       'year': str(years),

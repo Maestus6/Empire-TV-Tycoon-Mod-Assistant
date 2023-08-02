@@ -26,7 +26,8 @@ def movieLoops():
      #entry (start, stop), lines between each entry 
     headers = {'Accept-Language': 'en-US,en;q=0.8'} # the default language is mandarin
      
-    yearValList = [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010]
+    # yearValList = [1980, 1981, 1982, 1983, 1984, 1985, 1985 , 1986, 1987, 12010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
+    yearValList = np.arange(1980, 2021).tolist()
 
     existingMovieList = checkExistingMovies()
 

@@ -13,7 +13,7 @@ def getGenre(container):
         return genreCompleted, genresSpecial
     
     else:
-        return (""), "0"
+        return ("DELETEME"), "0"
                 
 
 def genreSpaceFix(genreslist):
@@ -110,17 +110,17 @@ def genrePicker(genre):
     elif(Music == 1):
         return 'Music' ##End of certainity
     
-    elif(War == 1):    ##Phase of Subgenres
+    if(War == 1):    ##Phase of Subgenres
         if(Action == 1):
             return 'Action'
         elif(Drama == 1):
             return 'Drama'
-    elif(Adult == 1):
+    if(Adult == 1):
         if(Drama == 1):
             return 'Drama'
         elif(Romance == 1):
             return 'Romance'
-    elif(Adventure == 1):
+    if(Adventure == 1):
         if(Fantasy == 1):
             return 'Fantasy'
         elif(SciFi == 1):
@@ -129,14 +129,14 @@ def genrePicker(genre):
             return 'Western'
         elif(Action == 1):
             return 'Action'
-    elif(Mystery == 1):
+    if(Mystery == 1):
         if(SciFi == 1):
             return 'Sci-Fi'
         elif(Horror == 1):
             return 'Horror'
         elif(Drama == 1):
             return 'Drama'
-    elif(Thriller == 1):
+    if(Thriller == 1):
         if(Horror == 1):
             return 'Horror'
         elif(Western == 1):
@@ -173,6 +173,8 @@ def genrePicker(genre):
         return 'Drama'
     elif(Comedy == 1):
         return 'Comedy' ##End of sad IF Block and function
+    else:
+        return 'DELETEME'
     
     
 def genreStrToInt(genreStr):
@@ -200,7 +202,9 @@ def genreStrToInt(genreStr):
         case "Action":
             return 10
         case "Gameshow":
-            return 11    
+            return 11
+        case "DELETEME":
+            return "DELETEME"
     
 #Anime Genre Main
 def getAnimeGenre(container):
@@ -287,7 +291,7 @@ def genreAnimePicker(genre):
             return 'Sport'
         elif Mecha == 1:
             return 'SciFi'
-        elif Adventure == 1:
+        if Adventure == 1:
             if(SciFi == 1):
                 return 'SciFi'
             elif(Fantasy == 1):
