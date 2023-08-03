@@ -8,8 +8,8 @@ def dataFramer(numOutputFull, year):  #outputResults (numOutputFull)
         os.mkdir("output") ##creates folder as images
     with open(f'output/Movies_{year}.xml', 'w') as sys.stdout:
 
-        print('<!-- <xml>')
-        print('	<Movies>')
+        # print('<!-- <xml>')
+        # print('	<Movies>')
         for looper in numOutputFull:
             if looper is not None:
                 for titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, cult, ratings, titleXMLPic in looper:
@@ -31,8 +31,8 @@ def dataFramer(numOutputFull, year):  #outputResults (numOutputFull)
                     print(f"			<ImagePoster value=\"{titleXMLPic}_{years}_p.png\">")
                     print('		</Movie>')
 
-        print('	</Movies>')
-        print('</xml> -->')
+        # print('	</Movies>')
+        # print('</xml> -->')
 
     sys.stdout.close()
     sys.stdout=orig_stdout ##Back to original stdout after writing is done

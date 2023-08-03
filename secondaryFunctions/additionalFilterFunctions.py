@@ -3,23 +3,23 @@ import sys #needed to write on notepad
 #Movies List Main
 def dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, cult, ratings, titleXMLPic, counter):
     
-    if str(titles) == "The Witches":
-        print("a")
-    pdOutputFull = pd.DataFrame({'name': str(titles),
-                      'storyline': str(storyline),
-                      'year': str(years),
-                      'genre': str(genres),
-                      'type' : str(movieOrSeries),
-                      'episodes' :str(episodes),
-                      'rating': str(pageScore),
-                      'block': str(runtimes),
-                      'cult' : str(cult),
-                      'special': str(ratings),
-                      'titleXMLPic': str(titleXMLPic)} , index = [counter]
-                      )
-    numOutputFull = pdOutputFull.to_numpy()
+    if (titles != "DELETEME" and storyline != "DELETEME" and years != "DELETEME" and genres != "DELETEME" and movieOrSeries != "DELETEME" and 
+    episodes != "DELETEME" and pageScore != "DELETEME" and runtimes != "DELETEME" and cult != "DELETEME" and ratings != "DELETEME" and titleXMLPic != "DELETEME" and counter != "DELETEME"):
+        pdOutputFull = pd.DataFrame({'name': str(titles),
+                        'storyline': str(storyline),
+                        'year': str(years),
+                        'genre': str(genres),
+                        'type' : str(movieOrSeries),
+                        'episodes' :str(episodes),
+                        'rating': str(pageScore),
+                        'block': str(runtimes),
+                        'cult' : str(cult),
+                        'special': str(ratings),
+                        'titleXMLPic': str(titleXMLPic)} , index = [counter]
+                        )
+        numOutputFull = pdOutputFull.to_numpy()
 
-    return numOutputFull
+        return numOutputFull
 
 
 
