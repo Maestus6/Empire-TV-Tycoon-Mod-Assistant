@@ -1,3 +1,5 @@
+import re
+
 #Storyline Main
 def getStoryline(container):
 
@@ -21,7 +23,12 @@ def storylineFix (storyline):
     storylineFix = storylineFixList[0]
     storylineFixList = storylineFix.split("</p>", 1)
     storylineFix = storylineFixList[0]
+
+    storylineFix = re.sub(r'<.+?>', '', storylineFix) #To remove hyperlinks
+
     return storylineFix
+
+
 
 
 
