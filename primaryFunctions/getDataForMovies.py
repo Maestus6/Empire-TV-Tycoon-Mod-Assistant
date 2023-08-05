@@ -3,7 +3,7 @@ from requests import get  #pip install requests
 from bs4 import BeautifulSoup #pip install beautifulsoup4
 from time import sleep
 from random import randint
-import numpy as np
+import numpy as np #pip install numpy
 
 
 #Functions
