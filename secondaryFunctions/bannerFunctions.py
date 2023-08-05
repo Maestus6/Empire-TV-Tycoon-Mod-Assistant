@@ -1,7 +1,7 @@
 import requests
-from PIL import Image
+from PIL import Image #pip install Pillow
 import os
-import movieposters as mp #ONLY USED FOR MOVIE BANNERS
+import movieposters as mp #ONLY USED FOR MOVIE BANNERS // pip install movieposters
 
 #Banner main
 def getBanner(container, titleXMLPic, years):
