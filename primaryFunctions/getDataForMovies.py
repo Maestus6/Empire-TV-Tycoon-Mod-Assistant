@@ -32,7 +32,8 @@ def movieLoops():
 
     existingMovieList = checkExistingMovies()
 
-    #BUG FIX
+    #heeeeeeeeeey
+    #heeeeeeeeey
 
     for yearVal in yearValList:
 
