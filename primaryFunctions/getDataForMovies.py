@@ -32,6 +32,8 @@ def movieLoops():
 
     existingMovieList = checkExistingMovies()
 
+    #BUG FIX
+
     for yearVal in yearValList:
 
         pages = np.arange(1, 2, 1)
