@@ -1,7 +1,7 @@
 import pandas as pd #needed for dataframe
 import sys #needed to write on notepad
 #Movies List Main
-def dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, cult, ratings, titleXMLPic, counter):
+def dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, cult, ratings, titleXMLPic, counter, gotTVScreen):
     
     if (titles != "DELETEME" and storyline != "DELETEME" and years != "DELETEME" and genres != "DELETEME" and movieOrSeries != "DELETEME" and 
     episodes != "DELETEME" and pageScore != "DELETEME" and runtimes != "DELETEME" and cult != "DELETEME" and ratings != "DELETEME" and titleXMLPic != "DELETEME" and counter != "DELETEME"):
@@ -15,7 +15,8 @@ def dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, page
                         'block': str(runtimes),
                         'cult' : str(cult),
                         'special': str(ratings),
-                        'titleXMLPic': str(titleXMLPic)} , index = [counter]
+                        'titleXMLPic': str(titleXMLPic),
+                        'gotTVScreen': str(gotTVScreen)} , index = [counter]
                         )
         numOutputFull = pdOutputFull.to_numpy()
 

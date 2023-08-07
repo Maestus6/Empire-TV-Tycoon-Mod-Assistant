@@ -100,7 +100,6 @@ def movieLoops():
 
                     #Save Movies for usage of Output main once we get every data
                     counter += 1
-                    numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, cult, ratings, titleXMLPic, counter))
 
                     if (titles != "DELETEME" and storyline != "DELETEME" and years != "DELETEME" and genres != "DELETEME" and movieOrSeries != "DELETEME" and 
                     episodes != "DELETEME" and pageScore != "DELETEME" and runtimes != "DELETEME" and cult != "DELETEME" and ratings != "DELETEME" and titleXMLPic != "DELETEME" and counter != "DELETEME"):
@@ -108,7 +107,9 @@ def movieLoops():
                         urlSecondPart = getBanner(container, titleXMLPic,years)
 
                         #TV Screen Main
-                        getTVScreenAlter(urlSecondPart, titleXMLPic, years)
+                        gotTVScreen = getTVScreenAlter(urlSecondPart, titleXMLPic, years)
+
+                    numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, cult, ratings, titleXMLPic, counter, gotTVScreen))
 
                     # if(counter > 5):  #To make loop iterate 20 times
                     #     break

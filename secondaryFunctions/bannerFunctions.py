@@ -6,7 +6,7 @@ import movieposters as mp #ONLY USED FOR MOVIE BANNERS // pip install movieposte
 #Banner main
 def getBanner(container, titleXMLPic, years):
 
-    check_file = os.path.isfile(titleXMLPic + "_" + years +"_p.png")
+    check_file = os.path.isfile("images/imagesMoviePoster_" + years + "/" + titleXMLPic + "_" + years +"_p.png")
     if(check_file == False):
         if container.find('h3', class_ = 'lister-item-header') is not None:
             bannerURLList = container.find('h3', class_ = 'lister-item-header')

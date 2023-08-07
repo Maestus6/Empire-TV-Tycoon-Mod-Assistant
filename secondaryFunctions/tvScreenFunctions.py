@@ -32,6 +32,13 @@ def getTVScreenAlter (urlSecondPart, titleXMLPic, years):
                 screenOriginURL = getScreenContainerFilter(page_html)
                 if screenOriginURL != "DELETEME":
                     downloadScreen(screenOriginURL, titleXMLPic, years)
+                    return "Downloaded"
+                else:
+                    return "DELETEME"
+            else:
+                return "DELETEME"
+        else:
+            return "DELETEME"
 
 
 
