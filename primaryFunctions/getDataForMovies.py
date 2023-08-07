@@ -104,10 +104,10 @@ def movieLoops():
                     if (titles != "DELETEME" and storyline != "DELETEME" and years != "DELETEME" and genres != "DELETEME" and movieOrSeries != "DELETEME" and 
                     episodes != "DELETEME" and pageScore != "DELETEME" and runtimes != "DELETEME" and cult != "DELETEME" and ratings != "DELETEME" and titleXMLPic != "DELETEME" and counter != "DELETEME"):
                         #Banner Main
-                        urlSecondPart = getBanner(container, titleXMLPic,years)
+                        getBanner(container, titleXMLPic,years)
 
                         #TV Screen Main
-                        gotTVScreen = getTVScreenAlter(urlSecondPart, titleXMLPic, years)
+                        gotTVScreen = getTVScreenAlter(container, titleXMLPic, years)
 
                     numOutputFull.append(dataArrSaver(titles, storyline, years, genres, movieOrSeries, episodes, pageScore, runtimes, cult, ratings, titleXMLPic, counter, gotTVScreen))
 

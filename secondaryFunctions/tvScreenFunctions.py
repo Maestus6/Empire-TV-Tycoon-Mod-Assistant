@@ -6,6 +6,7 @@ from random import randint
 from random import choice
 from PIL import Image
 import os
+import secondaryFunctions.bannerFunctions as bf #need to use bannerURL function
 
 
 userAgentsList = [
@@ -21,10 +22,15 @@ userAgentsList = [
 
 
 #TV Screen Main
-def getTVScreenAlter (urlSecondPart, titleXMLPic, years):
+def getTVScreenAlter (container, titleXMLPic, years):
 
     check_file = os.path.isfile("images/imagesMovieTV_" + years + "/" + titleXMLPic + "_" + years +".png")
     if(check_file == False):
+
+        bannerURLList = container.find('h3', class_ = 'lister-item-header')
+        bannerURL = bf.getUrlFormatter(str(bannerURLList))
+        urlSecondPart = bf.getMovieBannerLink(bannerURL)
+
         if urlSecondPart != "DELETEME":
             screenLinkURL = getScreenSearchContainer(urlSecondPart)
             if screenLinkURL != "DELETEME":
