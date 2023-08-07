@@ -35,18 +35,23 @@ def getMovieBannerLink (movieUrl):
 def downloadBanner(bannerURL, titleXMLPic, years):
     
     img_url = bannerURL
-    img = Image.open(requests.get(img_url, stream = True).raw)
-    newImgSize = (112, 168)
-    img = img.resize(newImgSize)
-    image_path = f"images/imagesMoviePoster_{years}"
-    if(os.path.exists("images/") == False):
-        os.mkdir("images/")
-    if(os.path.exists(image_path) == False):
-        os.mkdir(image_path) ##creates folder as images
+    try:
+        img = Image.open(requests.get(img_url, stream = True, timeout = 10).raw)
+        newImgSize = (112, 168)
+        img = img.resize(newImgSize)
+        image_path = f"images/imagesMoviePoster_{years}"
+        if(os.path.exists("images/") == False):
+            os.mkdir("images/")
+        if(os.path.exists(image_path) == False):
+            os.mkdir(image_path) ##creates folder as images
 
-    saveName =  titleXMLPic + "_" + years +"_p.png"
+        saveName =  titleXMLPic + "_" + years +"_p.png"
 
-    img.save(f"{image_path}/{saveName}")
+        img.save(f"{image_path}/{saveName}")
+    except:
+        print(f"Timeout while trying to download banner for {img_url}")
+        
+
     
 
 

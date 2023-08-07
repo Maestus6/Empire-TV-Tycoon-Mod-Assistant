@@ -27,25 +27,27 @@ def getTVScreenAlter (urlSecondPart, titleXMLPic, years):
     if(check_file == False):
         if urlSecondPart != "DELETEME":
             screenLinkURL = getScreenSearchContainer(urlSecondPart)
-            page_html = getScreenOriginContainerAlter(screenLinkURL)
-            screenOriginURL = getScreenContainerFilter(page_html)
-            if screenOriginURL != "DELETEME":
-                downloadScreen(screenOriginURL, titleXMLPic, years)
+            if screenLinkURL != "DELETEME":
+                page_html = getScreenOriginContainerAlter(screenLinkURL)
+                screenOriginURL = getScreenContainerFilter(page_html)
+                if screenOriginURL != "DELETEME":
+                    downloadScreen(screenOriginURL, titleXMLPic, years)
 
 
 
 def getScreenSearchContainer(urlSecondPart):
     # connect_timeout = 0.1
     # read_timeout = 10
-    response = get(f"https://www.moviestillsdb.com/search?query={urlSecondPart}", timeout = 10, headers={'User-Agent': choice(userAgentsList)})
-        
-    sleep(randint(12,18)) #anti rate limit
-
-    page_html = BeautifulSoup(response.text, 'html.parser')
-    
-    screenList = str(page_html).split("<a href=\"" , 1)
-    screenList = screenList[1].split("\" style")
-    screenSearchURL = f"https://www.moviestillsdb.com{screenList[0]}"
+    try:
+        response = get(f"https://www.moviestillsdb.com/search?query={urlSecondPart}", timeout = 10, headers={'User-Agent': choice(userAgentsList)})
+        sleep(randint(12,18)) #anti rate limit
+        page_html = BeautifulSoup(response.text, 'html.parser')
+        screenList = str(page_html).split("<a href=\"" , 1)
+        screenList = screenList[1].split("\" style")
+        screenSearchURL = f"https://www.moviestillsdb.com{screenList[0]}"
+    except:
+        print(f"Error while trying to download tv Screen for https://www.moviestillsdb.com/search?query={urlSecondPart}")
+        screenSearchURL = "DELETEME"
     return screenSearchURL
 
 
