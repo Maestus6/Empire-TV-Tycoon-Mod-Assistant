@@ -30,7 +30,7 @@ def dataFramer(numOutputFull, year):  #outputResults (numOutputFull)
                     if(gotTVScreen != "DELETEME"):
                         print(f"			<ImageTV value=\"{titleXMLPic}_{years}_tv.png\">")
                     else:
-                        print("			<ImageTV value=\"\"")
+                        print("			<ImageTV value=\"\">")
                     print(f"			<ImagePoster value=\"{titleXMLPic}_{years}_p.png\">")
                     print('		</Movie>')
 
