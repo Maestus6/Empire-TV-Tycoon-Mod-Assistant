@@ -22,7 +22,7 @@ userAgentsList = [
 def getQuote (urlSecondPart):
     if(urlSecondPart != "DELETEME"):
 
-        response = get(f"https://www.imdb.com/title/{urlSecondPart}/quotes/", headers={'User-Agent': choice(userAgentsList)})
+        response = get(f"https://www.imdb.com/title/{urlSecondPart}/quotes/", timeout = 10, headers={'User-Agent': choice(userAgentsList)})
         sleep(randint(8,15)) #anti rate limit
 
         page_html = BeautifulSoup(response.text, 'html.parser')

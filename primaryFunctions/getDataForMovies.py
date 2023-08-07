@@ -48,7 +48,7 @@ def movieLoops():
         for page in pages:
 
         #get request for sci-fi
-            response = get(f"https://www.imdb.com/search/title/?release_date={str(yearVal)}-01-01,{str(endYearVal)}-01-01&languages=en&start={str(page)}&ref_=adv_nxt", headers=headers)
+            response = get(f"https://www.imdb.com/search/title/?release_date={str(yearVal)}-01-01,{str(endYearVal)}-01-01&languages=en&start={str(page)}&ref_=adv_nxt", timeout = 10, headers=headers)
             
             sleep(randint(8,15)) #anti rate limit
 

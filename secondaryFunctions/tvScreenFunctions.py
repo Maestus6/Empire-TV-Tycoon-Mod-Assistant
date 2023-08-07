@@ -61,7 +61,7 @@ def getScreenSearchContainer(urlSecondPart):
 
 def getScreenOriginContainerAlter (screenLinkURL):
      
-    response = get(screenLinkURL, headers={'User-Agent': choice(userAgentsList)})  
+    response = get(screenLinkURL, timeout = 10, headers={'User-Agent': choice(userAgentsList)})  
     #sleep(randint(8,15))  we already wait during searchcontainer
     page_html = BeautifulSoup(response.text, 'html.parser')
     return str(page_html)

@@ -31,7 +31,7 @@ def animeLoops():
 
 
     #get request for anime series
-    response = get(f"https://myanimelist.net/anime/season/{yearVal}/{seasonVal}", headers=headers)
+    response = get(f"https://myanimelist.net/anime/season/{yearVal}/{seasonVal}", timeout = 10, headers=headers)
     
 
     sleep(randint(8,15)) #anti rate limit
