@@ -39,6 +39,8 @@ def getTVScreenAlter (urlSecondPart, titleXMLPic, years):
                 return "DELETEME"
         else:
             return "DELETEME"
+    else:
+        sleep(2)
 
 
 

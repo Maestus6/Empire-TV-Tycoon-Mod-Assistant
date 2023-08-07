@@ -1,4 +1,5 @@
 import requests
+from time import sleep
 from PIL import Image #pip install Pillow
 import os
 import movieposters as mp #ONLY USED FOR MOVIE BANNERS // pip install movieposters
@@ -16,6 +17,8 @@ def getBanner(container, titleXMLPic, years):
             return bannerURL
         else:
             return "DELETEME"
+    else:
+        sleep(2)
 
 
 def getUrlFormatter(bannerURLList):
