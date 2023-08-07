@@ -35,10 +35,11 @@ def getTVScreenAlter (urlSecondPart, titleXMLPic, years):
 
 
 def getScreenSearchContainer(urlSecondPart):
-
-    response = get(f"https://www.moviestillsdb.com/search?query={urlSecondPart}", headers={'User-Agent': choice(userAgentsList)})
+    # connect_timeout = 0.1
+    # read_timeout = 10
+    response = get(f"https://www.moviestillsdb.com/search?query={urlSecondPart}", timeout = 10, headers={'User-Agent': choice(userAgentsList)})
         
-    sleep(randint(8,15)) #anti rate limit
+    sleep(randint(12,18)) #anti rate limit
 
     page_html = BeautifulSoup(response.text, 'html.parser')
     
