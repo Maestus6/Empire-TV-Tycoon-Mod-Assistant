@@ -25,6 +25,7 @@ def storylineFix (storyline):
     storylineFix = storylineFixList[0]
 
     storylineFix = re.sub(r'<.+?>', '', storylineFix) #To remove hyperlinks
+    storylineFix = storylineFix.replace("\"", "")
 
     return storylineFix
 
