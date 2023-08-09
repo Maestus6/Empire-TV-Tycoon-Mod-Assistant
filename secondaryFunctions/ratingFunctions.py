@@ -11,21 +11,24 @@ def getRating(container, genresSpecial):
     else:
         return "DELETEME", "DELETEME"
     
-def ratingFinder(specialGenre, rating):
+def ratingFinder(strSpecialGenre, rating):
 
     movieOrSeries = rating.find('TV')
+    specialGenre = int(strSpecialGenre)
 
-    if specialGenre == 1 and movieOrSeries > 0 :
+
+
+    if specialGenre == 1 and movieOrSeries > -1 :
         return "4", "2"
-    elif specialGenre == 1 and movieOrSeries < 1 :
+    elif specialGenre == 1 and movieOrSeries < 0 :
         return "4", "1"
-    elif specialGenre == 2 and movieOrSeries > 0 :
+    elif specialGenre == 2 and movieOrSeries > -1 :
         return "3", "2"
-    elif specialGenre == 2 and movieOrSeries < 1 :
+    elif specialGenre == 2 and movieOrSeries < 0 :
         return "3", "1"
     elif rating == "TV-MA" :
         return "1", "2"
-    elif movieOrSeries > 0  :
+    elif movieOrSeries > -1  :
         return "0", "2"
     elif(rating == "R" or rating == "NC-16" or rating == "NC-17" or rating == "NC_18" or rating == "PG-16" or rating == "PG-17" or rating == "PG-18"):
         return "1", "1"

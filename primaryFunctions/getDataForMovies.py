@@ -28,7 +28,7 @@ def movieLoops():
      
     # yearValList = [1980, 1981, 1982, 1983, 1984, 1985, 1985 , 1986, 1987, 12010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
     yearValList = np.arange(1980, 2000).tolist()
-    # yearValList = [1994, 1995]
+    # yearValList = [1992]
 
     existingMovieList = checkExistingMovies()
 
@@ -70,6 +70,9 @@ def movieLoops():
 
                 if(checkExistingCondition != "DONTCONTINUE"):
 
+                    if(titles == "X-Men: The Animated Series"):
+                        print("hey")
+                        
                     #Storyline Main
                     storyline = getStoryline(container)
 
