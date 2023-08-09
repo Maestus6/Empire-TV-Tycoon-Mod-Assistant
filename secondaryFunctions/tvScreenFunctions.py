@@ -28,17 +28,20 @@ def getTVScreenAlter (container, titleXMLPic, years):
     if(check_file == False):
 
         bannerURLList = container.find('h3', class_ = 'lister-item-header')
-        bannerURL = bf.getUrlFormatter(str(bannerURLList))
-        urlSecondPart = bf.getMovieBannerLink(bannerURL)
+        urlSecondPart = bf.getUrlFormatter(str(bannerURLList))
+        # urlSecondPart = bf.getMovieBannerLink(bannerURL)
 
         if urlSecondPart != "DELETEME":
             screenLinkURL = getScreenSearchContainer(urlSecondPart)
             if screenLinkURL != "DELETEME":
                 page_html = getScreenOriginContainerAlter(screenLinkURL)
-                screenOriginURL = getScreenContainerFilter(page_html)
-                if screenOriginURL != "DELETEME":
-                    downloadScreen(screenOriginURL, titleXMLPic, years)
-                    return "Downloaded"
+                if page_html != "DELETEME":
+                    screenOriginURL = getScreenContainerFilter(page_html)
+                    if screenOriginURL != "DELETEME":
+                        downloadScreen(screenOriginURL, titleXMLPic, years)
+                        return "Downloaded"
+                    else:
+                        return "DELETEME"
                 else:
                     return "DELETEME"
             else:
@@ -69,10 +72,13 @@ def getScreenSearchContainer(urlSecondPart):
 
 def getScreenOriginContainerAlter (screenLinkURL):
      
-    response = get(screenLinkURL, timeout = 10, headers={'User-Agent': choice(userAgentsList)})  
-    #sleep(randint(8,15))  we already wait during searchcontainer
-    page_html = BeautifulSoup(response.text, 'html.parser')
-    return str(page_html)
+    try:
+        response = get(screenLinkURL, timeout = 10, headers={'User-Agent': choice(userAgentsList)})  
+        #sleep(randint(8,15))  we already wait during searchcontainer
+        page_html = BeautifulSoup(response.text, 'html.parser')
+        return str(page_html)
+    except:
+        return "DELETEME"
 
 
 
@@ -156,21 +162,23 @@ def getScreenContainerFilter (page_html):
 
 
 def downloadScreen(screenOriginURL, titleXMLPic, years):
-    img_url = screenOriginURL
-    img = Image.open(requests.get(img_url, stream = True).raw)
-    newImgSize = (374, 254)
-    img = img.resize(newImgSize)
-
-    image_path = f"images/imagesMovieTV_{years}"
-    if(os.path.exists(image_path) == False):
-        os.mkdir(image_path) ##creates folder as images
-
-    saveName =  titleXMLPic + "_" + years
-
     try:
-        img.save(f"{image_path}/{saveName}.png")
+        img = Image.open(requests.get(screenOriginURL, stream = True, timeout= 20).raw)
+        newImgSize = (374, 254)
+        img = img.resize(newImgSize)
+
+        image_path = f"images/imagesMovieTV_{years}"
+        if(os.path.exists(image_path) == False):
+            os.mkdir(image_path) ##creates folder as images
+
+        saveName =  titleXMLPic + "_" + years
+
+        try:
+            img.save(f"{image_path}/{saveName}.png")
+        except:
+            print(f" problem while writing screenOriginalURL = {screenOriginURL}")
     except:
-        print(f" problem while writing screenOriginalURL = {screenOriginURL}")
+        print(f"Problem while downloading screenOriginalURL = {screenOriginURL}")
 
 
 
