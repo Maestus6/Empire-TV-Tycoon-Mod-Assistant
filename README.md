@@ -1,6 +1,8 @@
 # Empire-TV-Tycoon-Mod-Assistant
+Currently on hold, as this was a project to learn basics of Python and Webscrapping.
 
-Here are some useful notes for future development:
+
+<!-- Here are some useful notes for future development:  -->
 
 <!-- Format for XML files are: -->
 
